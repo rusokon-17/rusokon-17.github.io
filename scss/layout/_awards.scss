@@ -1,0 +1,32 @@
+.awards {
+  padding: 60px 0;
+  // border: 1px solid red;
+}
+
+.award {
+  bower: 1px solid red;
+  margin: 0 auto;
+  &__title {
+    font: 16px $cb;
+    text-align: center;
+    color: $award-t;
+    margin-bottom: 40px;
+    @include mq-lg {
+      font-size: 20px;
+      max-width: 630px;
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+.bxslider2 {
+  margin: 0;
+  padding: 0;
+}
+.bxslider2-wrapper {
+  max-width: 63%;
+  margin: 0 auto;
+    @include mq-md {
+      max-width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/common';
+
+@import 'vendor/jquery.bxslider';
+// @import 'vendor/responsive-tabs/style';
+// @import 'vendor/responsive-tabs/responsive-tabs';
+
+// Блоки на главной
+
+@import 'layout/head';
+@import 'layout/features';
+@import 'layout/innovations';
+@import 'layout/tvshow';
+@import 'layout/feedback';
+@import 'layout/comfort';
+@import 'layout/installation';
+@import 'layout/montage';
+@import 'layout/awards';
+@import 'layout/measure';
+@import 'layout/foot';
+
+
+
+
+
+
+

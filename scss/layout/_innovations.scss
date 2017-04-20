@@ -1,0 +1,96 @@
+.innovations {
+  padding: 60px 0;
+  border: 1px solid red;
+}
+
+.innovations .headers {
+  text-align: center;
+
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
+    }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+    @include mq-lg {
+      font-size: 18px;
+    }
+  }
+}
+
+.innovations .numbers {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  @include mq-md {
+    display: flex;
+  }
+}
+
+.innovations .numb {
+  // border: 1px solid red;
+  height: 258px;
+  &:nth-of-type(odd) {
+    margin-bottom: 15px;
+    @include mq-md {
+      margin-bottom: 0;
+    }
+  }
+  @include mq-md {
+    height: 270px;
+    flex: 1 1 345px;
+    &:nth-of-type(even) {
+      margin-right: 30px;
+    }
+  }
+  @include mq-lg {
+    height: 420px;
+  }
+  &--bg {
+    background: url('../images/numb--bg.jpg') center top no-repeat;
+    background-size: cover;
+    order: 2;
+    @include mq-md {
+      background: url('../images/numb--bg.jpg') center top no-repeat;
+      height: 270px;
+         background-size: cover;
+    }
+    @include mq-lg {
+      height: 420px;
+      background-image: url('../images/numb--bg-980.jpg');
+    }
+  }
+  &--pd {
+
+    background: $innov-bg url('../images/numb--pd.png') center top no-repeat;
+      // background-size: cover;
+        @include mq-lg {
+           height: 420px;
+      background-image: url('../images/numb--pd-980.png');
+
+        }
+  }
+
+}

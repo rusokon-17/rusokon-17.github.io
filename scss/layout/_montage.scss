@@ -1,0 +1,96 @@
+.montage {
+  height: 490px;
+  background-color: $grey10;
+    @include mq-md {
+           height: 370px;
+            background: $grey10 url('../images/montage-992.jpg') center top no-repeat;
+    }
+  @include mq-lg {
+    background: $grey10 url('../images/montage.jpg') center top no-repeat;
+  }
+}
+
+.montage .measurement {
+  padding-top: 105px;
+    @include mq-md {
+      display: flex;
+             padding-top: 60px;
+    }
+  &__title {
+    font: 18px $cb;
+    text-align: center;
+    color: $measure-t;
+    max-width: 260px;
+    margin: 0 auto 30px;
+    position: relative;
+      @include mq-md {
+        text-align: left;
+         margin: 74px 0 0 0;
+      }
+        @include mq-lg {
+          font-size: 26px;
+          line-height: 36px;
+          max-width: 260px;
+        }
+    &:before {
+      content: url('../images/montage__title-2.png');
+      position: absolute;
+      top: -75px;
+      left: 0;
+      right: 0;
+      text-align: center;
+        @include mq-md {
+          right: initial;
+        }
+    }
+  }
+}
+
+.montage .order {
+  border: 8px solid $order-border;
+  border-radius: 3px;
+  height: 263px;
+  padding: 30px 15px;
+  background-color: $white;
+  max-width: 400px;
+  margin: 0 auto;
+    @include mq-md {
+      max-width: 306px;
+      margin: 0 0 0 auto;
+    }
+  &__title {
+    font: 19px $cr;
+    color: $black;
+    text-align: center;
+  }
+  &__input {
+    display: block;
+    padding: 10px 10px 10px 50px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $order-inp;
+    border-radius: 3px;
+    color: $light-grey;
+    font: 13px $cr;
+  }
+  &__input--name {
+    background: url('../images/order__input--name.png') 10px center no-repeat;
+  }
+  &__input--tel {
+    background: url('../images/order__input--tel.png') 10px center no-repeat;
+  }
+  &__btn {
+    font: 15px $cb;
+    text-transform: uppercase;
+    color: #fff;
+    width: 188px;
+    height: 39px;
+    background-color: $order-btn;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+  }
+}

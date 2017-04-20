@@ -1,0 +1,25 @@
+{
+  "name": "scss-template",
+  "homepage": "https://github.com/barrum/scss-template",
+  "authors": [
+    "Dmitry Odnostorontsev <jivotest@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jQuery": "^3.2.1",
+    "normalize-css": "^6.0.0",
+    "bxslider-4": "^4.2.12",
+    "magnific-popup": "^1.1.0",
+    "responsive-tabs": "^1.6.2"
+  }
+}

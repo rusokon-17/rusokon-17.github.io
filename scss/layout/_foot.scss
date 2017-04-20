@@ -1,0 +1,127 @@
+.foot {
+  // border: 1px solid red;
+  background-color: $footer-bg;
+  padding: 1px 0;
+}
+
+.footer {
+  @include mq-md {
+    display: flex;
+  }
+}
+
+.footer .logo {
+  // border: 1px solid red;
+  width: 186px;
+  margin: 15px auto 0;
+  background: url('../images/logo-footer.png') left top no-repeat;
+  padding-left: 50px;
+  height: 70px;
+  @include mq-md {
+    flex: 0 0 200px;
+    margin: 15px 0 0 0;
+    padding-left: 50px;
+    background-position: 0 0;
+  }
+  @include mq-lg {
+    flex: 0 0 210px;
+  }
+  &__title {
+    margin: 6px 0 0 0;
+    font: 32px $cb;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  &__text {
+    margin: 0 0 10px;
+    color: $white;
+    font: 14px $cr;
+  }
+}
+
+.footer .discount {
+  text-align: center;
+  margin-top: 5px;
+  @include mq-md {
+    flex: 0 0 200px;
+    margin-top: 25px;
+    padding: 0 20px 0 0;
+    text-align: left;
+    @include mq-lg {
+      flex: 0 0 300px;
+    }
+  }
+  &__text {
+    font: 14px $cr;
+    margin: 0;
+    color: $white;
+    @include mq-lg {
+      font-size: 16px;
+    }
+  }
+}
+
+.footer .phone-wrapper {
+  display: flex;
+  margin: 10px auto 20px;
+  max-width: 300px;
+  @include mq-md {
+    flex: 1 1 300px;
+    margin-top: 23px;
+  }
+  @include mq-lg {
+    margin: 23px 0 20px auto;
+    // margin-left: auto;
+    max-width: 340px;
+  }
+}
+
+.footer .call {
+  margin-left: auto;
+  margin-top: 6px;
+}
+
+.footer .phone__number,
+.footer .phone__span {
+  font: 22px $cl;
+  color: $white;
+  @include mq-lg {
+    font-size: 26px;
+  }
+}
+
+.footer .phone__span {
+  font-family: $cb;
+}
+.footer .phone__link {
+   color: $white;
+   font-family: $cl;
+}
+
+.footer .phone__time {
+  font: 12px $cr;
+  color: $white;
+  @include mq-lg {
+    font-size: 13px;
+  }
+}
+
+.footer .call {
+  width: 124px;
+  height: 32px;
+  background-color: $head-btn;
+  text-align: center;
+  font: 13px $cr;
+  color: $white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include mq-lg {
+    width: 138px;
+    height: 36px;
+    font-size: 15px;
+  }
+}

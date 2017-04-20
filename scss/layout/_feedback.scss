@@ -1,0 +1,175 @@
+.feedback {
+  padding: 60px 0 20px;
+  // border: 1px solid red;
+}
+
+.feedback .headers {
+  text-align: center;
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
+    }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+    @include mq-lg {
+      font-size: 18px;
+    }
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+  }
+}
+
+// Слайдер
+.bxslider1 {
+  margin: 0;
+  padding: 0;
+}
+
+.bxslider1-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  @include mq-md {
+    max-width: 80%;
+  }
+}
+
+.slide {
+  &__head {
+    padding: 15px;
+    max-width: 100%;
+    @include mq-lg {
+      display: table-cell;
+      padding: 35px 40px;
+      width: 252px;
+    }
+  }
+  &__body {
+    padding: 15px;
+    max-width: 100%;
+    @include mq-lg {
+      display: table-cell;
+      padding: 35px 60px;
+      width: 532px;
+    }
+  }
+  @include mq-lg {
+    display: table;
+    flex-flow: row nowrap;
+  }
+}
+
+.slide__name,
+.slide__name-date,
+.slide__product {
+  font: 14px $cr;
+  color: $grey14;
+}
+
+.slide__name {
+  position: relative;
+  &:after {
+    content: url('../images/slide__head.png');
+    position: absolute;
+    top: 36px;
+    left: 0;
+    @include mq-lg {
+      top: 52px;
+    }
+  }
+}
+
+.slide__name-date {
+  margin-left: 20px;
+  font-style: normal;
+  @include mq-lg {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.slide__name-span {
+  display: block;
+  font: 18px $cb;
+  color: $black;
+}
+
+.slide__product {
+  margin-top: 20px;
+}
+
+.slide__product-span {
+  font: 18px $cb;
+  color: $black;
+}
+
+.slide__btn {
+  font: 15px $cb;
+  text-transform: uppercase;
+  color: #fff;
+  width: 188px;
+  height: 39px;
+  background-color: $order-btn;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+}
+
+.slide__body {
+  // background: $grey10 url('../images/slide__body.png') 30px 337px no-repeat;
+  background-color: $grey10;
+  padding: 25px 30px 35px;
+  font: 16px $cr;
+  line-height: 23px;
+  color: $black;
+  position: relative;
+
+  &:before {
+    content: url('../images/slide__body-prev.png');
+    position: absolute;
+    top: 30px;
+    left: 12px;
+      @include mq-lg {
+        top: 40px;
+      }
+  }
+  &:after {
+    content: url('../images/slide__body-next.png');
+    position: absolute;
+    bottom: 65px;
+    right: 15px;
+      @include mq-lg {
+        bottom: 60px;
+      }
+  }
+}
+
+.stars {
+  &:after {
+    content: url('../images/slide__body.png');
+    position: relative;
+    top: 15px;
+    background-color: $grey10;
+  }
+}

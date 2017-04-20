@@ -1,0 +1,259 @@
+.installation {
+  padding: 60px 0 40px;
+  // border: 1px solid red;
+    @include mq-lg {
+      padding: 60px 0;
+    }
+}
+
+.installation .headers {
+  text-align: center;
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
+    }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+    @include mq-lg {
+      font-size: 18px;
+    }
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+  }
+}
+
+.steps {
+  &__text {
+    background: url('../images/steps.jpg') center top no-repeat;
+    padding-top: 190px;
+    max-width: 290px;
+    margin: 0 auto;
+    // border: 1px solid red;
+    @include mq-sm {
+      max-width: initial;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    @include mq-lg {
+      display: block;
+      position: relative;
+      padding-top: 0;
+      height: 500px;
+      background: url('../images/steps-980.png') center center no-repeat;
+    }
+  }
+}
+
+.steps__item {
+  padding-left: 50px;
+  // border: 1px solid red;
+  margin-top: 20px;
+  @include mq-sm {
+    flex: 1 1 200px;
+  }
+  @include mq-lg {
+    position: absolute;
+    margin-top: 0;
+    padding: 20px 5px 20px 70px;
+    width: 360px;
+  }
+}
+
+.steps__item--bg1 {
+  background: url('../images/steps__item--bg1.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg11.png') left 24px no-repeat;
+    top: -1px;
+    right: 33px;
+  }
+}
+
+.steps__item--bg2 {
+  background: url('../images/steps__item--bg2.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg22.png') left 22px no-repeat;
+    top: 208px;
+    right: -81px;
+  }
+}
+
+.steps__item--bg3 {
+  background: url('../images/steps__item--bg3.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg33.png') left center no-repeat;
+    top: 415px;
+    right: 33px;
+  }
+}
+
+.steps__item--bg4 {
+  background: url('../images/steps__item--bg4.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg44.png') right 14px no-repeat;
+    padding: 20px 70px 20px 5px;
+    top: 417px;
+    left: 33px;
+    text-align: right;
+  }
+}
+
+.steps__item--bg5 {
+  background: url('../images/steps__item--bg5.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg55.png') right 14px no-repeat;
+    padding: 20px 70px 20px 5px;
+    top: 217px;
+    left: -83px;
+    text-align: right;
+  }
+}
+
+.steps__item--bg6 {
+  background: url('../images/steps__item--bg6.png') left center no-repeat;
+  @include mq-sm {
+    background-position: left top;
+  }
+  @include mq-lg {
+    background: url('../images/steps__item--bg66.png') right 14px no-repeat;
+    padding: 20px 70px 20px 5px;
+    top: 9px;
+    left: 34px;
+    text-align: right;
+  }
+}
+
+.installation .keyses {
+  max-width: 290px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-flow: row wrap;
+  @include mq-sm {
+    max-width: initial;
+     margin: 40px initial;
+  }
+  @include mq-lg {
+    flex-flow: row nowrap;
+  }
+  .key {
+    flex: 1 1 300px;
+    padding-left: 120px;
+    height: 120px;
+    // border: 1px solid red;
+    @include mq-sm {
+      flex: 1 1 200px;
+      padding: 120px 0 0 0;
+      height: initial;
+      &:nth-of-type(odd) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+    }
+    @include mq-md {
+      flex: 1 1 210px;
+      margin-right: 20px;
+      &:nth-of-type(3n+3) {
+        margin-right: 0;
+      }
+    }
+    @include mq-lg {
+      &:nth-of-type(odd) {
+        margin-right: 20px;
+      }
+    }
+    &:nth-of-type(1n+1) {
+      margin-bottom: 20px;
+        @include mq-lg {
+          margin-bottom: 0;
+        }
+    }
+    &__title {
+      font: 16px $cb;
+      color: $black;
+      @include mq-sm {
+        text-align: center;
+      }
+    }
+    &__text {
+      margin-top: 10px;
+      position: relative;
+      @include mq-sm {
+        text-align: center;
+        margin-top: 20px;
+      }
+      &:before {
+        content: url('../images/key__title-icon.png');
+        position: absolute;
+        top: -18px;
+        left: 0;
+        @include mq-sm {
+          right: 0;
+          text-align: center;
+          top: -23px;
+        }
+      }
+    }
+    &--bg11 {
+      background: url('../images/key--bg11.png') left top no-repeat;
+      @include mq-sm {
+        background-position: center top;
+      }
+    }
+    &--bg22 {
+      background: url('../images/key--bg22.png') left top no-repeat;
+      @include mq-sm {
+        background-position: center top;
+      }
+    }
+    &--bg33 {
+      background: url('../images/key--bg33.png') left top no-repeat;
+      @include mq-sm {
+        background-position: center top;
+      }
+    }
+    &--bg44 {
+      background: url('../images/key--bg44.png') left top no-repeat;
+      @include mq-sm {
+        background-position: center top;
+      }
+    }
+    &--bg55 {
+      background: url('../images/key--bg55.png') left top no-repeat;
+      @include mq-sm {
+        background-position: center top;
+      }
+    }
+  }
+}

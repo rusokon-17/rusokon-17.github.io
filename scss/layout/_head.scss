@@ -1,0 +1,126 @@
+.head {
+  // border: 1px solid red;
+  // background-color: $footer-bg;
+}
+
+.header {
+  @include mq-md {
+    display: flex;
+  }
+}
+
+.logo {
+  // border: 1px solid red;
+  width: 186px;
+  margin: 15px auto 0;
+  background: url('../images/logo.png') left top no-repeat;
+  padding-left: 50px;
+  height: 70px;
+  @include mq-md {
+    flex: 0 0 200px;
+    margin: 15px 0 0 0;
+    padding-left: 50px;
+    background-position: 0 0;
+  }
+  @include mq-lg {
+    flex: 0 0 210px;
+  }
+  &__title {
+    margin: 6px 0 0 0;
+    font: 32px $cb;
+    color: $logo;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  &__text {
+    margin: 0 0 10px;
+    color: $logo-text;
+    font: 14px $cr;
+  }
+}
+
+.discount {
+  text-align: center;
+  margin-top: 5px;
+  @include mq-md {
+    flex: 0 0 200px;
+    margin-top: 25px;
+    padding: 0 20px 0 0;
+    text-align: left;
+    @include mq-lg {
+      flex: 0 0 300px;
+    }
+  }
+  &__text {
+    font: 14px $cr;
+    margin: 0;
+    color: $discount-text;
+    @include mq-lg {
+      font-size: 16px;
+    }
+  }
+}
+
+.phone-wrapper {
+  display: flex;
+  margin: 10px auto 20px;
+  max-width: 300px;
+  @include mq-md {
+    flex: 1 1 300px;
+    margin-top: 23px;
+  }
+  @include mq-lg {
+    margin: 23px 0 20px auto;
+    // margin-left: auto;
+    max-width: 340px;
+  }
+}
+
+.call {
+  margin-left: auto;
+  margin-top: 6px;
+}
+
+.phone__number,
+.phone__span {
+  font: 22px $cl;
+  color: $phone;
+  @include mq-lg {
+    font-size: 26px;
+  }
+}
+
+.phone__span {
+  font-family: $cb;
+}
+.phone__link {
+   color: $phone;
+   font-family: $cl;
+}
+
+.phone__time {
+  font: 12px $cr;
+  color: $phone;
+  @include mq-lg {
+    font-size: 13px;
+  }
+}
+
+.call {
+  width: 124px;
+  height: 32px;
+  background-color: $head-btn;
+  text-align: center;
+  font: 13px $cr;
+  color: $white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include mq-lg {
+    width: 138px;
+    height: 36px;
+    font-size: 15px;
+  }
+}

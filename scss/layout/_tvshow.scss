@@ -1,0 +1,111 @@
+.tvshow {
+  padding: 35px 0;
+  border: 1px solid red;
+  background-color: $tvshow-b;
+    @include mq-lg {
+      padding: 60px 0;
+    }
+}
+
+.tvshow .headers {
+  text-align: center;
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
+    }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+    @include mq-lg {
+      font-size: 18px;
+    }
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+  }
+}
+
+.quest {
+  padding: 15px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  border-radius: 3px;
+  @include mq-md {
+    display: flex;
+  }
+    @include mq-lg {
+      padding: 30px;
+    }
+  &__img {
+    background: url('../images/quest__img.jpg') center top no-repeat;
+    height: 111px;
+    @include mq-md {
+      background-image: url('../images/quest__img-768.jpg');
+      flex: 1;
+      height: 134px;
+      margin-right: 30px;
+    }
+    @include mq-lg {
+      background-image: url('../images/quest__img-980.jpg');
+      height: 189px;
+    }
+  }
+  &__text {
+    @include mq-md {
+      flex: 1;
+    }
+      @include mq-lg {
+        padding: 15px 0;
+      }
+  }
+}
+
+.quest__title {
+  font: 16px $cb;
+  margin-top: 20px;
+  @include mq-md {
+    margin-top: 0;
+  }
+    @include mq-lg {
+      max-width: 180px;
+      font-size: 20px;
+    }
+}
+
+.quest__descr {
+  font: 14px $cr;
+    @include mq-lg {
+      font-size: 16px;
+      line-height: 23px;
+      margin-top: 20px;
+    }
+
+}
+.bxslider3-wrapper,
+.bxslider4-wrapper {
+  margin-top: 100px;
+}
+.bxslider3,
+.bxslider4 {
+  margin: 0;
+  padding: 0;
+background-color: $tvshow-b;
+}

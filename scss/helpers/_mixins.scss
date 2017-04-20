@@ -1,0 +1,20 @@
+@mixin mq-sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+@mixin mq-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+@mixin mq-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+// @mixin mq-xl {
+//   @media (min-width: $screen-xl) {
+//     @content;
+//   }
+// }
