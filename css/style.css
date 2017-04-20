@@ -851,12 +851,27 @@ ul.bxslider {
   padding: 0; }
 
 .bxslider3-slide {
-  height: 630px;
   padding-top: 200px;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset; }
   @media (min-width: 768px) {
     .bxslider3-slide {
-      padding-top: 70px; } }
+      height: 630px;
+      padding-top: 0; } }
+
+@media (min-width: 768px) {
+  .bann {
+    overflow: auto; } }
+
+@media (min-width: 768px) {
+  .bann__text {
+    float: left;
+    margin-top: 70px; } }
+
+@media (min-width: 768px) {
+  .bann__form {
+    float: right;
+    position: relative;
+    margin-top: 85px; } }
 
 .bx-pager--banners {
   display: none; }
@@ -914,11 +929,13 @@ ul.bxslider {
 
 .bann__text1 {
   max-width: 290px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   @media (min-width: 768px) {
     .bann__text1 {
       max-width: initial;
-      margin: 0; } }
+      margin: 0;
+      text-align: left; } }
 
 .bann__text1-head,
 .bann__text1-body {
@@ -997,6 +1014,80 @@ ul.bxslider {
   @media (min-width: 768px) {
     .bann__text2-block--bg3 {
       background-position: left top; } }
+
+.banners .order {
+  border: 8px solid #ff1a44;
+  border-radius: 3px;
+  height: 330px;
+  padding: 30px 15px;
+  background-color: #fff;
+  max-width: 400px;
+  margin: 20px auto 0;
+  position: relative; }
+  .banners .order:before {
+    content: url("../images/order-icon.png");
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3133; }
+    @media (min-width: 768px) {
+      .banners .order:before {
+        content: url("../images/order-icon-980.png");
+        top: -55px; } }
+  @media (min-width: 768px) {
+    .banners .order {
+      max-width: 306px;
+      margin: 0 auto;
+      height: 400px;
+      padding: 60px 15px; } }
+  .banners .order__title {
+    font: 19px "Calibri-Regular", sans-serif;
+    color: #000;
+    text-align: center; }
+  .banners .order__input {
+    display: block;
+    padding: 10px 10px 10px 50px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    color: #808080;
+    font: 13px "Calibri-Regular", sans-serif; }
+  .banners .order__input--name {
+    background: url("../images/order__input--name.png") 10px center no-repeat; }
+  .banners .order__input--tel {
+    background: url("../images/order__input--tel.png") 10px center no-repeat; }
+  .banners .order__btn {
+    font: 15px "Calibri-Bold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    width: 188px;
+    height: 39px;
+    background-color: #ff1a44;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    display: block; }
+
+.order__title-span {
+  font: 20px "Calibri-Bold", sans-serif;
+  display: block;
+  margin-bottom: 5px; }
+  @media (min-width: 768px) {
+    .order__title-span {
+      font-size: 26px; } }
+  .order__title-span i {
+    font: 20px "Calibri-Bold", sans-serif;
+    display: block;
+    font-style: normal;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .order__title-span i {
+        font-size: 26px; } }
 
 .features {
   padding: 60px 0 40px; }

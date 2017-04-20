@@ -17,7 +17,10 @@ $(document).ready(function() {
     });
     // banner slider
     $('.bxslider3').bxSlider({
-        pagerCustom: '#bx-pager'
+        pagerCustom: '#bx-pager',
+        adaptiveHeight: true,
+        adaptiveHeightSpeed: 300,
+        preloadImages: 'all'
     });
 
 });

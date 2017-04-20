@@ -9,11 +9,31 @@
 }
 
 .bxslider3-slide {
-  height: 630px;
+  // height: 830px; //630
   padding-top: 200px;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset;
   @include mq-md {
-    padding-top: 70px;
+    height: 630px; //630
+    padding-top: 0;
+  }
+}
+
+.bann {
+  @include mq-md {
+    overflow: auto;
+  }
+  &__text {
+    @include mq-md {
+      float: left;
+      margin-top: 70px;
+    }
+  }
+  &__form {
+    @include mq-md {
+      float: right;
+      position: relative;
+      margin-top: 85px;
+    }
   }
 }
 
@@ -78,96 +98,189 @@
   left: 20px;
   bottom: 7px;
 }
+
 .bann__text1 {
   max-width: 290px;
   margin: 0 auto;
-    @include mq-md {
-       max-width: initial;
-      margin: 0;
-    }
+  text-align: center;
+  @include mq-md {
+    max-width: initial;
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .bann__text1-head,
 .bann__text1-body {
   font: 31px $cb;
   text-transform: uppercase;
-    @include mq-md {
-      font-size: 54px;
-    }
+  @include mq-md {
+    font-size: 54px;
+  }
 }
 
 .bann__text1-head {
   color: $rose-red;
 }
+
 .bann__text1-body {
   @include mq-md {
     width: 340px;
   }
 }
+
 .bann__text1-foot {
   font: 20px $cr;
   color: $grey3;
   // margin-top: 5px;
-    @include mq-md {
-      font-size: 36px;
-    }
+  @include mq-md {
+    font-size: 36px;
+  }
 }
+
 .bann__text2 {
   max-width: 290px;
   margin: 20px auto 0;
   overflow: auto;
-
   // border: 1px solid red;
-    @include mq-md {
-      margin: initial;
-      margin-top: 30px;
-       max-width: 320px;
-    }
-
+  @include mq-md {
+    margin: initial;
+    margin-top: 30px;
+    max-width: 320px;
+  }
 }
+
 .bann__text2-block {
-  float: left; 
+  float: left;
   width: 76px;
   margin-left: 30px;
   text-align: center;
   padding: 60px 0 0 0;
-    @include mq-md {
-      text-align: left;
-    }
+  @include mq-md {
+    text-align: left;
+  }
   &:first-child {
     margin-left: 0;
   }
 }
+
 .bann__text2-block {
   font: 14px $cb;
   color: $grey3;
-    @include mq-md {
-      font-size: 16px;
-    }
+  @include mq-md {
+    font-size: 16px;
+  }
 }
+
 .bann__text2-block span {
-font: 10px $cr;
-display: block;
-margin-bottom: 5px;
+  font: 10px $cr;
+  display: block;
+  margin-bottom: 5px;
   @include mq-md {
     font-size: 12px;
   }
 }
+
 .bann__text2-block--bg1 {
   background: url('../images/bann__text2-block--bg1.png') center top no-repeat;
-    @include mq-md {
-      background-position: left top;
-    }
+  @include mq-md {
+    background-position: left top;
+  }
 }
+
 .bann__text2-block--bg2 {
   background: url('../images/bann__text2-block--bg2.png') center top no-repeat;
-    @include mq-md {
-      background-position: left -8px;
-    }
+  @include mq-md {
+    background-position: left -8px;
+  }
 }
+
 .bann__text2-block--bg3 {
   background: url('../images/bann__text2-block--bg3.png') center top no-repeat;
+  @include mq-md {
+    background-position: left top;
+  }
+}
+
+.banners .order {
+  border: 8px solid $order-border;
+  border-radius: 3px;
+  height: 330px;
+  padding: 30px 15px;
+  background-color: $white;
+  max-width: 400px;
+  margin: 20px auto 0;
+  position: relative;
+  &:before {
+    content: url('../images/order-icon.png');
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3133;
     @include mq-md {
-      background-position: left top;
+      content: url('../images/order-icon-980.png');
+      top: -55px;
     }
+  }
+  @include mq-md {
+    max-width: 306px;
+    margin: 0 auto;
+    height: 400px;
+    padding: 60px 15px;
+  }
+  &__title {
+    font: 19px $cr;
+    color: $black;
+    text-align: center;
+  }
+  &__input {
+    display: block;
+    padding: 10px 10px 10px 50px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $order-inp;
+    border-radius: 3px;
+    color: $light-grey;
+    font: 13px $cr;
+  }
+  &__input--name {
+    background: url('../images/order__input--name.png') 10px center no-repeat;
+  }
+  &__input--tel {
+    background: url('../images/order__input--tel.png') 10px center no-repeat;
+  }
+  &__btn {
+    font: 15px $cb;
+    text-transform: uppercase;
+    color: #fff;
+    width: 188px;
+    height: 39px;
+    background-color: $order-btn;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+  }
+}
+
+.order__title-span {
+  font: 20px $cb;
+  display: block;
+  margin-bottom: 5px;
+  @include mq-md {
+    font-size: 26px;
+  }
+  i {
+    font: 20px $cb;
+    display: block;
+    font-style: normal;
+    text-transform: uppercase;
+    @include mq-md {
+      font-size: 26px;
+    }
+  }
 }
