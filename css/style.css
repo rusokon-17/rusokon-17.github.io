@@ -483,6 +483,9 @@ a:focus {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
 
+.contacts .bx-wrapper {
+  margin-bottom: 0; }
+
 .bx-wrapper img {
   max-width: 100%;
   display: block; }
@@ -528,6 +531,13 @@ ul.bxslider {
   box-shadow: none;
   border: none;
   background-color: #eaeaea; }
+
+.contacts .bx-wrapper {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: #fff; }
 
 .feedback .bx-wrapper .bx-pager,
 .feedback .bx-wrapper .bx-controls-auto {
@@ -2047,6 +2057,86 @@ ul.bxslider {
   @media (min-width: 768px) {
     .bxslider2-wrapper {
       max-width: 100%; } }
+
+.contacts {
+  border: 1px solid red;
+  padding: 60px 0 0; }
+
+.consultation {
+  font: 16px "Calibri-Bold", sans-serif;
+  color: #1d1d1b;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9f9f9f; }
+  @media (min-width: 768px) {
+    .consultation {
+      max-width: 650px;
+      margin: 0 auto 40px;
+      font-size: 20px;
+      padding-bottom: 0;
+      border-bottom: none; } }
+  @media (min-width: 1060px) {
+    .consultation {
+      max-width: 770px; } }
+
+.bxslider4 {
+  padding: 0;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .bxslider4-slide {
+    height: 380px; } }
+
+.bx-pager4--banners {
+  max-width: 290px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .bx-pager4--banners {
+      max-width: 730px;
+      position: relative;
+      top: 10px;
+      z-index: 10; } }
+
+.bx-pager4__link {
+  color: #000;
+  background-color: initial;
+  display: inline-block;
+  text-align: center;
+  padding: 0 12px;
+  font: 16px "Calibri-Regular", sans-serif;
+  text-decoration: underline;
+  cursor: pointer; }
+  @media (min-width: 768px) {
+    .bx-pager4__link {
+      width: 227px;
+      height: 52px;
+      padding: 18px 0 18px;
+      background-color: #57595b;
+      color: #fff;
+      text-decoration: none; } }
+  @media (min-width: 1060px) {
+    .bx-pager4__link {
+      width: 240px; } }
+
+.bx-pager4__link.active {
+  color: #ff1a44; }
+  @media (min-width: 768px) {
+    .bx-pager4__link.active {
+      background-color: #ff1a44;
+      height: 70px;
+      color: #fff;
+      padding: 26px 0 26px 0; } }
+
+.cbot {
+  margin: 65px 0 35px; }
+  .cbot__title {
+    font: 20px "Calibri-Bold", sans-serif;
+    color: #1d1d1b;
+    text-align: center; }
+  @media (min-width: 768px) {
+    .cbot__map {
+      height: 530px; } }
 
 .measure {
   height: 490px;
