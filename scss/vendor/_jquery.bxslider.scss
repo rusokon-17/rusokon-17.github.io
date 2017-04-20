@@ -13,6 +13,10 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+.banners .bx-wrapper {
+  margin-bottom: 0;
+}
+
 .awards .bx-wrapper {
   position: relative;
   margin-bottom: 0;
@@ -21,6 +25,7 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+
 .tvshow .bx-wrapper {
   position: relative;
   margin-bottom: 0;
@@ -60,6 +65,13 @@ ul.bxslider {
   border: 5px solid #fff;
   background: #fff;
 }
+
+.banners .bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: #fff;
+}
+
 .feedback .bx-wrapper {
   // -moz-box-shadow: 0 0 5px #ccc;
   // -webkit-box-shadow: 0 0 5px #ccc;
@@ -68,8 +80,9 @@ ul.bxslider {
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
-   border: none;
+  border: none;
 }
+
 .awards .bx-wrapper {
   // -moz-box-shadow: 0 0 5px #ccc;
   // -webkit-box-shadow: 0 0 5px #ccc;
@@ -79,6 +92,7 @@ ul.bxslider {
   border: none;
   background: #fff;
 }
+
 .tvshow .bx-wrapper {
   // -moz-box-shadow: 0 0 5px #ccc;
   // -webkit-box-shadow: 0 0 5px #ccc;
@@ -86,7 +100,7 @@ ul.bxslider {
   box-shadow: none;
   // border: 5px solid #fff;
   border: none;
-background-color: $tvshow-b;
+  background-color: $tvshow-b;
 }
 
 .feedback .bx-wrapper .bx-pager,
@@ -129,6 +143,7 @@ background-color: $tvshow-b;
   padding-top: 20px;
 }
 
+
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
@@ -140,6 +155,7 @@ background-color: $tvshow-b;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -173,6 +189,7 @@ background-color: $tvshow-b;
   left: -50px;
   background: url('../images/controls1.png') no-repeat 0 0px;
 }
+
 .awards .bx-wrapper .bx-prev {
   left: -50px;
   background: url('../images/controls1.png') no-repeat 0 0px;
@@ -187,26 +204,32 @@ background-color: $tvshow-b;
 .feedback .bx-wrapper .bx-prev:focus {
   background-position: 0 -56px;
 }
+
 .awards .bx-wrapper .bx-prev:hover,
 .awards .bx-wrapper .bx-prev:focus {
   background-position: 0 -56px;
 }
+
 .bx-wrapper .bx-next {
   right: 10px;
   background: url('images/controls.png') no-repeat -43px -32px;
 }
+
 .feedback .bx-wrapper .bx-next {
   right: -50px;
   background: url('../images/controls1.png') no-repeat -38px 0px;
 }
+
 .awards .bx-wrapper .bx-next {
   right: -50px;
   background: url('../images/controls1.png') no-repeat -38px 0px;
 }
+
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
   background-position: -43px 0;
 }
+
 .feedback .bx-wrapper .bx-next:hover,
 .feedback .bx-wrapper .bx-next:focus {
   background-position: -38px -56px;
@@ -218,15 +241,16 @@ background-color: $tvshow-b;
 }
 
 .bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 23px;
-    height: 41px;
-    text-indent: -9999px;
-    z-index: 9999;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 23px;
+  height: 41px;
+  text-indent: -9999px;
+  z-index: 9999;
 }
+
 .feedback .bx-wrapper .bx-controls-direction a {
   display: none;
   @include mq-md {
@@ -241,20 +265,21 @@ background-color: $tvshow-b;
     z-index: 999;
   }
 }
-.awards  .bx-wrapper .bx-controls-direction a {
+
+.awards .bx-wrapper .bx-controls-direction a {
   position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 23px;
-    height: 41px;
-    text-indent: -9999px;
-    z-index: 999;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 23px;
+  height: 41px;
+  text-indent: -9999px;
+  z-index: 999;
   @include mq-md {
     display: none;
-    
   }
 }
+
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }

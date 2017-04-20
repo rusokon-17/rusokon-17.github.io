@@ -15,5 +15,9 @@ $(document).ready(function() {
         pager: false,
         oneToOneTouch: false
     });
+    // banner slider
+    $('.bxslider3').bxSlider({
+        pagerCustom: '#bx-pager'
+    });
 
 });
