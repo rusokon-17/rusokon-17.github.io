@@ -909,6 +909,20 @@ ul.bxslider {
     .banner-1 {
       background: url("../images/banner-1.jpg") center top no-repeat; } }
 
+.banner-2 {
+  background: url("../images/banner-2-small.jpg") center top no-repeat;
+  background-size: auto 180px; }
+  @media (min-width: 768px) {
+    .banner-2 {
+      background: url("../images/banner-2.jpg") center top no-repeat; } }
+
+.banner-3 {
+  background: url("../images/banner-3-small.jpg") center top no-repeat;
+  background-size: auto 180px; }
+  @media (min-width: 768px) {
+    .banner-3 {
+      background: url("../images/banner-3.jpg") center top no-repeat; } }
+
 .bx-pager__link--bg1:before {
   content: url("../images/bx-pager__link--bg1.png");
   position: absolute;
@@ -959,6 +973,15 @@ ul.bxslider {
   @media (min-width: 768px) {
     .bann__text1-foot {
       font-size: 36px; } }
+
+.bann__text1-foot2 {
+  font: 16px "Calibri-Regular", sans-serif;
+  color: #000;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .bann__text1-foot2 {
+      font-size: 22px;
+      width: 260px; } }
 
 .bann__text2 {
   max-width: 290px;
@@ -1022,7 +1045,7 @@ ul.bxslider {
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   position: relative; }
   .banners .order:before {
     content: url("../images/order-icon.png");

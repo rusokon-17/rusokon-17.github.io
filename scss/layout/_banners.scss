@@ -77,6 +77,20 @@
     background: url('../images/banner-1.jpg') center top no-repeat;
   }
 }
+.banner-2 {
+  background: url('../images/banner-2-small.jpg') center top no-repeat;
+  background-size: auto 180px;
+  @include mq-md {
+    background: url('../images/banner-2.jpg') center top no-repeat;
+  }
+}
+.banner-3 {
+  background: url('../images/banner-3-small.jpg') center top no-repeat;
+  background-size: auto 180px;
+  @include mq-md {
+    background: url('../images/banner-3.jpg') center top no-repeat;
+  }
+}
 
 .bx-pager__link--bg1:before {
   content: url('../images/bx-pager__link--bg1.png');
@@ -135,6 +149,15 @@
   // margin-top: 5px;
   @include mq-md {
     font-size: 36px;
+  }
+}
+.bann__text1-foot2 {
+  font: 16px $cr;
+  color: $black;
+  margin-top: 20px;
+  @include mq-md {
+    font-size: 22px;
+    width: 260px;
   }
 }
 
@@ -209,7 +232,7 @@
   padding: 30px 15px;
   background-color: $white;
   max-width: 400px;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   position: relative;
   &:before {
     content: url('../images/order-icon.png');
