@@ -2,9 +2,9 @@
   padding: 35px 0;
   border: 1px solid red;
   background-color: $tvshow-b;
-    @include mq-lg {
-      padding: 60px 0;
-    }
+  @include mq-lg {
+    padding: 60px 0;
+  }
 }
 
 .tvshow .headers {
@@ -51,9 +51,9 @@
   @include mq-md {
     display: flex;
   }
-    @include mq-lg {
-      padding: 30px;
-    }
+  @include mq-lg {
+    padding: 30px;
+  }
   &__img {
     background: url('../images/quest__img.jpg') center top no-repeat;
     height: 111px;
@@ -72,9 +72,9 @@
     @include mq-md {
       flex: 1;
     }
-      @include mq-lg {
-        padding: 15px 0;
-      }
+    @include mq-lg {
+      padding: 15px 0;
+    }
   }
 }
 
@@ -84,28 +84,31 @@
   @include mq-md {
     margin-top: 0;
   }
-    @include mq-lg {
-      max-width: 180px;
-      font-size: 20px;
-    }
+  @include mq-lg {
+    max-width: 180px;
+    font-size: 20px;
+  }
 }
 
 .quest__descr {
   font: 14px $cr;
-    @include mq-lg {
-      font-size: 16px;
-      line-height: 23px;
-      margin-top: 20px;
-    }
+  @include mq-lg {
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 20px;
+  }
+}
 
-}
-.bxslider3-wrapper,
-.bxslider4-wrapper {
-  margin-top: 100px;
-}
-.bxslider3,
-.bxslider4 {
+.bxslider5,
+.bxslider6,
+.bxslider7 {
   margin: 0;
   padding: 0;
-background-color: $tvshow-b;
 }
+
+
+.bxslider5__slide {
+// height: 275px;
+//   border: 1px solid red;
+}
+

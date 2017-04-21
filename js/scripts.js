@@ -17,18 +17,79 @@ $(document).ready(function() {
     });
     // banner slider
     $('.bxslider3').bxSlider({
+        mode: 'fade',
+        speed: 100,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all'
+        preloadImages: 'all',
+        controls: false
     });
     // contacts slider
     $('.bxslider4').bxSlider({
+        mode: 'fade',
+        speed: 100,
         pagerCustom: '#bx-pager4',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all'
+        preloadImages: 'all',
+        controls: false
     });
+
+
+
+
+
+
+
+    // TVshow slider Main
+    var slider5 = $('.bxslider5').bxSlider({
+        mode: 'fade',
+        speed: 100,
+        pagerCustom: '#bx-pager5',
+        // adaptiveHeight: true,
+        // adaptiveHeightSpeed: 300,
+        // preloadImages: 'all',
+        controls: false,
+        touchEnabled: false
+    });
+
+    $('.bxslider6').bxSlider({
+        slideWidth: 306.6666666666667,
+        minSlides: 1,
+        maxSlides: 3,
+        slideMargin: 30,
+        moveSlides: 1,
+    });
+
+    $('.bxslider7').bxSlider({
+        slideWidth: 306.6666666666667,
+        minSlides: 1,
+        maxSlides: 3,
+        slideMargin: 30,
+        moveSlides: 1,
+    });
+
+
+
+
+
+    // $('#reload-photo').click(function(e) {
+    //     e.preventDefault();
+    //     slider5.reloadSlider({
+    //         mode: 'fade',
+    //         speed: 100,
+    //         pagerCustom: '#bx-pager5',
+    //         adaptiveHeight: true,
+    //         adaptiveHeightSpeed: 300,
+    //         preloadImages: 'all',
+    //         controls: false,
+    //         touchEnabled: false
+    //     });
+    // });
+
+
+
 
 
     /*Настройки API Yandex.map*/
