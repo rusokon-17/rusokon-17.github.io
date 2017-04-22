@@ -2002,12 +2002,11 @@ li.fancybox-thumbs-loading {
         background-image: url("../images/numb--pd-980.png"); } }
 
 .tvshow {
-  padding: 35px 0;
-  border: 1px solid red;
+  padding: 35px 0 0;
   background-color: #eaeaea; }
-  @media (min-width: 1060px) {
+  @media (min-width: 768px) {
     .tvshow {
-      padding: 60px 0; } }
+      padding: 60px 0 0; } }
 
 .tvshow .headers {
   text-align: center;
@@ -2095,6 +2094,75 @@ li.fancybox-thumbs-loading {
 .bxslider7 {
   margin: 0;
   padding: 0; }
+
+.bxslider5-wr {
+  margin-top: 38px; }
+  @media (min-width: 768px) {
+    .bxslider5-wr {
+      margin-top: 50px; } }
+
+.bx-pager5 {
+  width: 268px;
+  border: 3px solid #b9b9b9;
+  border-radius: 26px;
+  margin: 0 auto 27px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: auto; }
+  @media (min-width: 768px) {
+    .bx-pager5 {
+      width: 370px;
+      border-radius: 30px; } }
+  .bx-pager5__link {
+    display: block;
+    padding: 12px 0;
+    width: 131px;
+    border-radius: 20px;
+    font: 11px "Calibri-Bold", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    float: left; }
+    @media (min-width: 768px) {
+      .bx-pager5__link {
+        font-size: 16px;
+        width: 182px;
+        border-radius: 30px; } }
+  .bx-pager5__link.active {
+    display: block;
+    padding: 12px 0;
+    width: 131px;
+    color: #fff;
+    background-color: #ff1a44;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      .bx-pager5__link.active {
+        width: 182px; } }
+
+.bxslider5__slide {
+  height: 275px; }
+  @media (min-width: 768px) {
+    .bxslider5__slide {
+      height: 315px; } }
+
+.bxslider6__slide:hover,
+.bxslider7__slide:hover {
+  cursor: pointer;
+  opacity: .8; }
+
+.bxslider7__slide {
+  position: relative; }
+
+.bxslider7__slide--icon:before {
+  content: url("../images/video-icon.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 75px auto 0;
+  text-align: center;
+  cursor: pointer; }
 
 .feedback {
   padding: 60px 0 20px; }

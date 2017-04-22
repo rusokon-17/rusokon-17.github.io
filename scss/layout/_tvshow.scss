@@ -1,9 +1,9 @@
 .tvshow {
-  padding: 35px 0;
-  border: 1px solid red;
+  padding: 35px 0 0;
+  // border: 1px solid red;
   background-color: $tvshow-b;
-  @include mq-lg {
-    padding: 60px 0;
+  @include mq-md {
+    padding: 60px 0 0;
   }
 }
 
@@ -106,9 +106,80 @@
   padding: 0;
 }
 
-
-.bxslider5__slide {
-// height: 275px;
-//   border: 1px solid red;
+.bxslider5-wr {
+  margin-top: 38px;
+  @include mq-md {
+    margin-top: 50px;
+  }
 }
 
+.bx-pager5 {
+  width: 268px;
+  border: 3px solid #b9b9b9;
+  border-radius: 26px;
+  margin: 0 auto 27px;
+  background-color: $white;
+  box-sizing: border-box;
+  overflow: auto;
+  @include mq-md {
+    width: 370px;
+    border-radius: 30px;
+  }
+  &__link {
+    display: block;
+    padding: 12px 0;
+    width: 131px;
+    border-radius: 20px;
+    font: 11px $cb;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    float: left;
+    @include mq-md {
+      font-size: 16px;
+      width: 182px;
+      border-radius: 30px;
+    }
+  }
+  &__link.active {
+    display: block;
+    padding: 12px 0;
+    width: 131px;
+    color: $white;
+    background-color: $rose-red;
+    text-decoration: none;
+    @include mq-md {
+      width: 182px;
+    }
+  }
+}
+
+.bxslider5__slide {
+  height: 275px;
+  // border: 1px solid red;
+  @include mq-md {
+    height: 315px;
+  }
+}
+
+.bxslider6__slide:hover,
+.bxslider7__slide:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.bxslider7__slide {
+  position: relative;
+}
+
+.bxslider7__slide--icon:before {
+  content: url('../images/video-icon.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 75px auto 0;
+  text-align: center;
+  cursor: pointer;
+}
