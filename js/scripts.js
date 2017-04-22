@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-        mode: 'fade',
+        // mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
@@ -70,47 +70,23 @@ $(document).ready(function() {
     /*
     Используется метод перегрузки слайдера,
     для корректного отображения на новой вкладке*/
-    $('#reload-photo').click(function(e) {
-        e.preventDefault();
-        slider5.reloadSlider({
-            mode: 'horizontal',
-            speed: 100,
-            pagerCustom: '#bx-pager5',
-            controls: false,
-            touchEnabled: false
-        });
-        slider6.reloadSlider({
-            slideWidth: 306.6666666666667,
-            minSlides: 1,
-            maxSlides: 3,
-            slideMargin: 30,
-            moveSlides: 1,
-            speed: 100,
-               oneToOneTouch: false
+    // $('#reload-photo').click(function(e) {
+    //     e.preventDefault();
 
-        });
-    });
+    //     slider6.reloadSlider({
+
+
+    //     });
+    // });
     /*
     Используется метод перегрузки слайдера,
     для корректного отображения на новой вкладке*/
     $('#reload-video').click(function(e) {
         e.preventDefault();
-        slider5.reloadSlider({
-            mode: 'horizontal',
-            speed: 100,
-            pagerCustom: '#bx-pager5',
-            controls: false,
-            // touchEnabled: false
-        });
+
         slider7.reloadSlider({
 
-            slideWidth: 306.6666666666667,
-            minSlides: 1,
-            maxSlides: 3,
-            slideMargin: 30,
-            moveSlides: 1,
-            speed: 100,
-               oneToOneTouch: false
+
 
         });
     });
