@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-        mode: 'horizontal',
+        mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
@@ -65,6 +65,7 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
+
     });
     /*
     Используется метод перегрузки слайдера,
@@ -85,6 +86,7 @@ $(document).ready(function() {
             slideMargin: 30,
             moveSlides: 1,
             speed: 100,
+               oneToOneTouch: false
 
         });
     });
@@ -108,6 +110,7 @@ $(document).ready(function() {
             slideMargin: 30,
             moveSlides: 1,
             speed: 100,
+               oneToOneTouch: false
 
         });
     });
