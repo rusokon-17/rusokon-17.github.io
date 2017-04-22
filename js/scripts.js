@@ -3,7 +3,10 @@ $(document).ready(function() {
     $('.bxslider1').bxSlider({
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all'
+        preloadImages: 'all',
+        oneToOneTouch: false,
+        mode: 'fade',
+         speed: 100
 
     });
     // awards slider
@@ -38,7 +41,7 @@ $(document).ready(function() {
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-        mode: 'fade',
+        mode: 'horizontal',
         speed: 100,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
@@ -91,11 +94,11 @@ $(document).ready(function() {
     $('#reload-video').click(function(e) {
         e.preventDefault();
         slider5.reloadSlider({
-             mode: 'horizontal',
+            mode: 'horizontal',
             speed: 100,
             pagerCustom: '#bx-pager5',
             controls: false,
-            touchEnabled: false
+            // touchEnabled: false
         });
         slider7.reloadSlider({
 
