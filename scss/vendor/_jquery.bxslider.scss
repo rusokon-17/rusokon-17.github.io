@@ -13,6 +13,7 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+
 .banners .bx-wrapper {
   margin-bottom: 0;
 }
@@ -34,8 +35,17 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+
 .contacts .bx-wrapper {
   margin-bottom: 0;
+}
+
+.best .bx-wrapper {
+   margin-bottom: 30px;
+    @include mq-md {
+        margin-bottom: 40px;
+    }
+
 }
 
 .bx-wrapper img {
@@ -105,12 +115,24 @@ ul.bxslider {
   border: none;
   background-color: $tvshow-b;
 }
+
 .contacts .bx-wrapper {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   border: none;
   background: #fff;
+}
+
+.best .bx-wrapper {
+  // -moz-box-shadow: 0 0 5px #ccc;
+  // -webkit-box-shadow: 0 0 5px #ccc;
+  // box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: none;
 }
 
 .feedback .bx-wrapper .bx-pager,
@@ -153,7 +175,6 @@ ul.bxslider {
   padding-top: 20px;
 }
 
-
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
@@ -165,7 +186,6 @@ ul.bxslider {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,

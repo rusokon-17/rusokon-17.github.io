@@ -90,6 +90,44 @@ $(document).ready(function() {
         slider6.reloadSlider();
     });
 
+    // banner slider
+    var slider8 = $('.bxslider8').bxSlider({
+        // mode: 'fade',
+        speed: 100,
+        pagerCustom: '#bx-pager8',
+        // adaptiveHeight: true,
+        // adaptiveHeightSpeed: 300,
+        // preloadImages: 'all',
+        // controls: false,
+    });
+
+
+    // Блок best
+    /*    Суть: при разрешении окна меньше чем 768px
+        слайдер отключается благодаря
+        slider8.destroySlider
+        Сначала ширина окна проверяется при загрузки страницы.
+        Затем отслеживается при ресайзе*/
+
+
+
+    // Проверка первоначальной загрузки
+    var w = $(window).width();
+    if (w < 768) {
+        slider8.destroySlider();
+    } else {
+        slider8.reloadSlider();
+    }
+
+    // При ресайзе
+    $(window).resize(function() {
+        var w = $(window).width();
+        if (w < 768) {
+            slider8.destroySlider();
+        } else {
+            slider8.reloadSlider();
+        }
+    });
 
 
 

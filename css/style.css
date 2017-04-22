@@ -487,6 +487,12 @@ a:focus {
 .contacts .bx-wrapper {
   margin-bottom: 0; }
 
+.best .bx-wrapper {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .best .bx-wrapper {
+      margin-bottom: 40px; } }
+
 .bx-wrapper img {
   max-width: 100%;
   display: block; }
@@ -539,6 +545,13 @@ ul.bxslider {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   border: none;
   background: #fff; }
+
+.best .bx-wrapper {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: none; }
 
 .feedback .bx-wrapper .bx-pager,
 .feedback .bx-wrapper .bx-controls-auto {
@@ -1964,7 +1977,7 @@ li.fancybox-thumbs-loading {
 .best .order {
   border: 8px solid #ff1a44;
   border-radius: 3px;
-  height: 320px;
+  height: 310px;
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
@@ -2041,6 +2054,24 @@ li.fancybox-thumbs-loading {
 @media (min-width: 768px) {
   .best__form {
     overflow: auto; } }
+
+.bxslider8 {
+  margin: 0 0 30px 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .bxslider8 {
+      margin: 0; } }
+
+.bxslider8__slide {
+  list-style-type: none;
+  height: 200px;
+  border: 1px solid red; }
+
+.bx-pager8 {
+  display: none; }
+  @media (min-width: 768px) {
+    .bx-pager8 {
+      display: initial; } }
 
 .innovations {
   padding: 60px 0;
