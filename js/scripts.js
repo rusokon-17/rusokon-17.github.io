@@ -6,7 +6,7 @@ $(document).ready(function() {
         preloadImages: 'all',
         oneToOneTouch: false,
         mode: 'fade',
-         speed: 100
+        speed: 100
 
     });
     // awards slider
@@ -48,7 +48,8 @@ $(document).ready(function() {
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         controls: false,
-        touchEnabled: false
+        touchEnabled: false,
+
     });
 
     var slider6 = $('.bxslider6').bxSlider({
@@ -58,6 +59,7 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
+
     });
 
     var slider7 = $('.bxslider7').bxSlider({
@@ -84,21 +86,11 @@ $(document).ready(function() {
     для корректного отображения на новой вкладке*/
     $('#reload-video').click(function(e) {
         e.preventDefault();
-
-        slider7.reloadSlider({
-
-
-
-        });
+        slider7.reloadSlider();
     });
     $('#reload-photo').click(function(e) {
         e.preventDefault();
-
-        slider6.reloadSlider({
-
-
-
-        });
+        slider6.reloadSlider();
     });
 
 
