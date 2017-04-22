@@ -52,6 +52,7 @@ $(document).ready(function() {
     });
 
     var slider6 = $('.bxslider6').bxSlider({
+        mode: 'horizontal',
         slideWidth: 306.6666666666667,
         minSlides: 1,
         maxSlides: 3,
@@ -90,7 +91,15 @@ $(document).ready(function() {
 
         });
     });
+    $('#reload-photo').click(function(e) {
+        e.preventDefault();
 
+        slider6.reloadSlider({
+
+
+
+        });
+    });
 
 
 
