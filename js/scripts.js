@@ -51,6 +51,7 @@ $(document).ready(function() {
         touchEnabled: false,
 
 
+
     });
 
 
@@ -61,8 +62,9 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
-        preloadImages: 'visible',
+        preloadImages: 'all',
         oneToOneTouch: false
+
 
     });
 
@@ -72,7 +74,7 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
-        preloadImages: 'visible',
+        preloadImages: 'all',
         oneToOneTouch: false
 
     });
