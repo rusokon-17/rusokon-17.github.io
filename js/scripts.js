@@ -50,7 +50,9 @@ $(document).ready(function() {
         controls: false,
         touchEnabled: false,
 
+
     });
+
 
     var slider6 = $('.bxslider6').bxSlider({
         mode: 'horizontal',
@@ -59,6 +61,8 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
+        preloadImages: 'visible',
+        oneToOneTouch: false
 
     });
 
@@ -68,19 +72,10 @@ $(document).ready(function() {
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
+        preloadImages: 'visible',
+        oneToOneTouch: false
 
     });
-    /*
-    Используется метод перегрузки слайдера,
-    для корректного отображения на новой вкладке*/
-    // $('#reload-photo').click(function(e) {
-    //     e.preventDefault();
-
-    //     slider6.reloadSlider({
-
-
-    //     });
-    // });
     /*
     Используется метод перегрузки слайдера,
     для корректного отображения на новой вкладке*/
