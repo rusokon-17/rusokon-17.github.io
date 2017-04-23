@@ -90,15 +90,16 @@ $(document).ready(function() {
         slider6.reloadSlider();
     });
 
-    // banner slider
+    // best slider
     var slider8 = $('.bxslider8').bxSlider({
-        // mode: 'fade',
+        mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager8',
         // adaptiveHeight: true,
         // adaptiveHeightSpeed: 300,
-        // preloadImages: 'all',
-        // controls: false,
+        preloadImages: 'all',
+        controls: false,
+                oneToOneTouch: false
     });
 
 
