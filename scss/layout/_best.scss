@@ -206,28 +206,153 @@
   @include mq-md {
     padding: 40px;
   }
+  @include mq-lg {
+    padding: 50px 55px;
+  }
   &__title {
     font: 18px $cr;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid #9f9f9f;
+    @include mq-lg {
+      font-size: 26px;
+    }
+    .prod__span {
+      font: 18px $cb;
+      @include mq-lg {
+        font-size: 26px;
+      }
+    }
   }
 }
 
 .cardp {
+  margin-top: 30px;
   @include mq-md {
+    margin-top: 30px;
     display: flex;
   }
   &__photo {
-    border: 1px solid red;
+    // border: 1px solid red;
+    height: 150px;
     @include mq-md {
       flex: 1;
+      /*  0 1 350px */
+      height: 350px;
+      margin-right: 30px;
     }
   }
   &__descr {
-    border: 1px solid red;
+    // border: 1px solid red;
     @include mq-md {
       flex: 1;
     }
+    .cardp__title {
+      font: 16px $cb;
+      margin-top: 20px;
+      @include mq-md {
+        margin-top: 0;
+      }
+      @include mq-lg {
+        font-size: 18px;
+      }
+    }
+    .cardp__list {
+      margin: 5px 0 0;
+      padding: 0;
+      list-style-type: none;
+      @include mq-lg {
+        margin-top: 10px;
+      }
+      .cardp__item {
+        font: 14px $cr;
+        line-height: 22px;
+        padding-left: 10px;
+        background: url('../images/cardp__item.png') left 10px no-repeat;
+        @include mq-lg {
+          font-size: 16px;
+          line-height: 26px;
+          background: url('../images/cardp__item.png') left 11px no-repeat;
+        }
+      }
+    }
   }
 }
+
+.cardp__photo--bg2 {
+  background: url('../images/cardp__photo--bg2.jpg') center top no-repeat;
+}
+
+.cardp__photo--bg3 {
+  background: url('../images/cardp__photo--bg3.jpg') center top no-repeat;
+}
+
+.cardp__photo--bg4 {
+  background: url('../images/cardp__photo--bg4.jpg') center top no-repeat;
+}
+
+.cardp__photo--bg5 {
+  background: url('../images/cardp__photo--bg5.jpg') center top no-repeat;
+}
+
+.cardh {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  @include mq-lg {
+    margin-top: 40px;
+  }
+  &__block {
+    flex: 1;
+    font: 14px $cr;
+    color: $grey5;
+    // border: 1px solid red;
+    text-align: center;
+    padding-top: 65px;
+  }
+  &__block1 {
+    background: url('../images/cardh__block1.png') center top no-repeat;
+  }
+  &__block2 {
+    background: url('../images/cardh__block2.png') center top no-repeat;
+  }
+  &__block3 {
+    background: url('../images/cardh__block3.png') center top no-repeat;
+  }
+  &__block4 {
+    background: url('../images/cardh__block4.png') center top no-repeat;
+  }
+  &__block5 {
+    background: url('../images/cardh__block5.png') center top no-repeat;
+  }
+  &__block6 {
+    background: url('../images/cardh__block6.png') center top no-repeat;
+  }
+  &__block7 {
+    background: url('../images/cardh__block7.png') center top no-repeat;
+  }
+  &__block8 {
+    background: url('../images/cardh__block8.png') center top no-repeat;
+  }
+  &__block9 {
+    background: url('../images/cardh__block9.png') center top no-repeat;
+  }
+  &__block10 {
+    background: url('../images/cardh__block10.png') center top no-repeat;
+  }
+  &__block11 {
+    background: url('../images/cardh__block11.png') center top no-repeat;
+  }
+  &__block12 {
+    background: url('../images/cardh__block12.png') center top no-repeat;
+  }
+  &__block13 {
+    background: url('../images/cardh__block13.png') center top no-repeat;
+  }
+}
+.cardp__cont {
+  margin: 15px 0;
+  font: 16px $cr;
+  line-height: 26px;
+}
+

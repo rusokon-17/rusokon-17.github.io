@@ -95,11 +95,13 @@ $(document).ready(function() {
         mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager8',
-        // adaptiveHeight: true,
-        // adaptiveHeightSpeed: 300,
+        adaptiveHeight: true,
+        adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         controls: false,
-                oneToOneTouch: false
+        touchEnabled: false,
+        preventDefaultSwipeX: true,
+        oneToOneTouch: false
     });
 
 

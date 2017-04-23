@@ -2115,27 +2115,123 @@ li.fancybox-thumbs-loading {
   @media (min-width: 768px) {
     .prod {
       padding: 40px; } }
+  @media (min-width: 1060px) {
+    .prod {
+      padding: 50px 55px; } }
   .prod__title {
     font: 18px "Calibri-Regular", sans-serif;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid #9f9f9f; }
+    @media (min-width: 1060px) {
+      .prod__title {
+        font-size: 26px; } }
+    .prod__title .prod__span {
+      font: 18px "Calibri-Bold", sans-serif; }
+      @media (min-width: 1060px) {
+        .prod__title .prod__span {
+          font-size: 26px; } }
 
-@media (min-width: 768px) {
-  .cardp {
-    display: flex; } }
-
-.cardp__photo {
-  border: 1px solid red; }
+.cardp {
+  margin-top: 30px; }
   @media (min-width: 768px) {
-    .cardp__photo {
-      flex: 1; } }
-
-.cardp__descr {
-  border: 1px solid red; }
+    .cardp {
+      margin-top: 30px;
+      display: flex; } }
+  .cardp__photo {
+    height: 150px; }
+    @media (min-width: 768px) {
+      .cardp__photo {
+        flex: 1;
+        /*  0 1 350px */
+        height: 350px;
+        margin-right: 30px; } }
   @media (min-width: 768px) {
     .cardp__descr {
       flex: 1; } }
+  .cardp__descr .cardp__title {
+    font: 16px "Calibri-Bold", sans-serif;
+    margin-top: 20px; }
+    @media (min-width: 768px) {
+      .cardp__descr .cardp__title {
+        margin-top: 0; } }
+    @media (min-width: 1060px) {
+      .cardp__descr .cardp__title {
+        font-size: 18px; } }
+  .cardp__descr .cardp__list {
+    margin: 5px 0 0;
+    padding: 0;
+    list-style-type: none; }
+    @media (min-width: 1060px) {
+      .cardp__descr .cardp__list {
+        margin-top: 10px; } }
+    .cardp__descr .cardp__list .cardp__item {
+      font: 14px "Calibri-Regular", sans-serif;
+      line-height: 22px;
+      padding-left: 10px;
+      background: url("../images/cardp__item.png") left 10px no-repeat; }
+      @media (min-width: 1060px) {
+        .cardp__descr .cardp__list .cardp__item {
+          font-size: 16px;
+          line-height: 26px;
+          background: url("../images/cardp__item.png") left 11px no-repeat; } }
+
+.cardp__photo--bg2 {
+  background: url("../images/cardp__photo--bg2.jpg") center top no-repeat; }
+
+.cardp__photo--bg3 {
+  background: url("../images/cardp__photo--bg3.jpg") center top no-repeat; }
+
+.cardp__photo--bg4 {
+  background: url("../images/cardp__photo--bg4.jpg") center top no-repeat; }
+
+.cardp__photo--bg5 {
+  background: url("../images/cardp__photo--bg5.jpg") center top no-repeat; }
+
+.cardh {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px; }
+  @media (min-width: 1060px) {
+    .cardh {
+      margin-top: 40px; } }
+  .cardh__block {
+    flex: 1;
+    font: 14px "Calibri-Regular", sans-serif;
+    color: #57595b;
+    text-align: center;
+    padding-top: 65px; }
+  .cardh__block1 {
+    background: url("../images/cardh__block1.png") center top no-repeat; }
+  .cardh__block2 {
+    background: url("../images/cardh__block2.png") center top no-repeat; }
+  .cardh__block3 {
+    background: url("../images/cardh__block3.png") center top no-repeat; }
+  .cardh__block4 {
+    background: url("../images/cardh__block4.png") center top no-repeat; }
+  .cardh__block5 {
+    background: url("../images/cardh__block5.png") center top no-repeat; }
+  .cardh__block6 {
+    background: url("../images/cardh__block6.png") center top no-repeat; }
+  .cardh__block7 {
+    background: url("../images/cardh__block7.png") center top no-repeat; }
+  .cardh__block8 {
+    background: url("../images/cardh__block8.png") center top no-repeat; }
+  .cardh__block9 {
+    background: url("../images/cardh__block9.png") center top no-repeat; }
+  .cardh__block10 {
+    background: url("../images/cardh__block10.png") center top no-repeat; }
+  .cardh__block11 {
+    background: url("../images/cardh__block11.png") center top no-repeat; }
+  .cardh__block12 {
+    background: url("../images/cardh__block12.png") center top no-repeat; }
+  .cardh__block13 {
+    background: url("../images/cardh__block13.png") center top no-repeat; }
+
+.cardp__cont {
+  margin: 15px 0;
+  font: 16px "Calibri-Regular", sans-serif;
+  line-height: 26px; }
 
 .innovations {
   padding: 60px 0; }
