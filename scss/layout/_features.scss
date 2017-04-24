@@ -1,6 +1,12 @@
 .features {
-  padding: 60px 0 40px;
-  // border: 1px solid red;
+  padding: 35px 0 10px;
+  @include mq-sm {
+     padding: 35px 0 35px;
+  }
+    @include mq-md {
+        padding: 60px 0 40px;
+    }
+
 }
 
 .headers {
@@ -61,18 +67,24 @@
     height: 225px;
     @include mq-md {
       background: url('../images/feat__numbers-768.jpg') center top no-repeat;
-      height: 270px;
+      background-size: cover;
+      height: 290px;
     }
     @include mq-lg {
       height: 380px;
       background-image: url('../images/feat__numbers-980.jpg');
+      // background-size: cover;
     }
   }
   &--pd {
     padding: 20px;
     background-color: $numb-bg;
+      @include mq-md {
+         height: 290px;
+      }
     @include mq-lg {
       padding: 60px;
+       height: 380px;
     }
   }
   &__title {
@@ -93,7 +105,8 @@
     font: 14px $cr;
     color: $numb-k;
     padding-left: 30px;
-    margin-top: 20px;
+    // margin-top: 20px;
+    margin: 20px 0;
   }
   &__key--bg1 {
     background: url('../images/numb__key.png') left 2px no-repeat;
@@ -173,6 +186,7 @@
     }
     &--bg1 {
       background: url('../images/key--bg1.png') left top no-repeat;
+
       @include mq-sm {
         background-position: center top;
       }

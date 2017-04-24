@@ -1,12 +1,12 @@
 .innovations {
-  padding: 60px 0;
-  // border: 1px solid red;
+  padding: 35px 0;
+  @include mq-md {
+    padding: 60px 0;
+  }
 }
 
 .innovations .headers {
   text-align: center;
-
-  // border: 1px solid red;
   padding-bottom: 50px;
   &__title {
     font: 24px $cb;
@@ -21,7 +21,6 @@
     text-transform: uppercase;
     margin: 10px 0 0 0;
     position: relative;
-
     &:after {
       content: url('../images/headers.png');
       position: absolute;
@@ -29,7 +28,6 @@
       left: 0;
       right: 0;
       text-align: center;
-
       @include mq-sm {
         top: 30px;
       }
@@ -75,7 +73,7 @@
     @include mq-md {
       background: url('../images/numb--bg.jpg') center top no-repeat;
       height: 270px;
-         background-size: cover;
+      background-size: cover;
     }
     @include mq-lg {
       height: 420px;
@@ -83,14 +81,11 @@
     }
   }
   &--pd {
-
     background: $innov-bg url('../images/numb--pd.png') center top no-repeat;
-      // background-size: cover;
-        @include mq-lg {
-           height: 420px;
+    // background-size: cover;
+    @include mq-lg {
+      height: 420px;
       background-image: url('../images/numb--pd-980.png');
-
-        }
+    }
   }
-
 }

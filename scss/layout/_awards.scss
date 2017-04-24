@@ -1,6 +1,8 @@
 .awards {
-  padding: 60px 0;
-  // border: 1px solid red;
+  padding: 35px 0;
+  @include mq-md {
+     padding: 60px 0;
+  }
 }
 
 .award {

@@ -1,6 +1,8 @@
 .installation {
-  padding: 60px 0 40px;
-  // border: 1px solid red;
+  padding: 35px 0 20px;
+  @include mq-md {
+     padding: 60px 0 40px;
+  }
     @include mq-lg {
       padding: 60px 0;
     }

@@ -95,7 +95,8 @@
 .bx-pager__link--bg1:before {
   content: url('../images/bx-pager__link--bg1.png');
   position: absolute;
-  left: 20px;
+
+    left: 20px;
   bottom: 7px;
 }
 
@@ -129,8 +130,11 @@
   font: 31px $cb;
   text-transform: uppercase;
   @include mq-md {
-    font-size: 54px;
+    font-size: 40px; /* 54px; */
   }
+    @include mq-lg {
+      font-size: 54px;
+    }
 }
 
 .bann__text1-head {
@@ -139,17 +143,21 @@
 
 .bann__text1-body {
   @include mq-md {
-    width: 340px;
+    width: 240px;
   }
+    @include mq-lg {
+      width: 340px;
+    }
+
 }
 
 .bann__text1-foot {
   font: 20px $cr;
   color: $grey3;
-  // margin-top: 5px;
-  @include mq-md {
-    font-size: 36px;
-  }
+
+    @include mq-lg {
+      font-size: 36px;
+    }
 }
 .bann__text1-foot2 {
   font: 16px $cr;
@@ -181,7 +189,11 @@
   padding: 60px 0 0 0;
   @include mq-md {
     text-align: left;
+    margin-left: 10px;
   }
+    @include mq-lg {
+       margin-left: 30px;
+    }
   &:first-child {
     margin-left: 0;
   }

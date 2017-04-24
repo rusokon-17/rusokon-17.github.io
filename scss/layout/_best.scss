@@ -9,8 +9,10 @@
 
 .best .headers {
   text-align: center;
-  // border: 1px solid red;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+    @include mq-md {
+        padding-bottom: 30px;
+    }
   &__title {
     font: 24px $cb;
     margin: 0;
@@ -297,7 +299,6 @@
 
 .cardh {
   display: flex;
-  align-items: flex-start;
   margin-top: 20px;
   @include mq-lg {
     margin-top: 40px;

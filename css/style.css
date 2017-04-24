@@ -1473,7 +1473,12 @@ body {
   margin-top: 15px; }
   @media (min-width: 768px) {
     .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
-      font-size: 20px; } }
+      font-size: 18px;
+      padding: 7px 20px 13px 20px; } }
+  @media (min-width: 1060px) {
+    .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+      font-size: 20px;
+      padding: 10px 20px 20px 20px; } }
 
 /* Active accordion anchor */
 .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
@@ -1754,6 +1759,11 @@ button {
   @media (min-width: 768px) {
     .bann__text1-head,
     .bann__text1-body {
+      font-size: 40px;
+      /* 54px; */ } }
+  @media (min-width: 1060px) {
+    .bann__text1-head,
+    .bann__text1-body {
       font-size: 54px; } }
 
 .bann__text1-head {
@@ -1761,12 +1771,16 @@ button {
 
 @media (min-width: 768px) {
   .bann__text1-body {
+    width: 240px; } }
+
+@media (min-width: 1060px) {
+  .bann__text1-body {
     width: 340px; } }
 
 .bann__text1-foot {
   font: 20px "Calibri-Regular", sans-serif;
   color: #1a1a1a; }
-  @media (min-width: 768px) {
+  @media (min-width: 1060px) {
     .bann__text1-foot {
       font-size: 36px; } }
 
@@ -1797,7 +1811,11 @@ button {
   padding: 60px 0 0 0; }
   @media (min-width: 768px) {
     .bann__text2-block {
-      text-align: left; } }
+      text-align: left;
+      margin-left: 10px; } }
+  @media (min-width: 1060px) {
+    .bann__text2-block {
+      margin-left: 30px; } }
   .bann__text2-block:first-child {
     margin-left: 0; }
 
@@ -1909,7 +1927,13 @@ button {
         font-size: 26px; } }
 
 .features {
-  padding: 60px 0 40px; }
+  padding: 35px 0 10px; }
+  @media (min-width: 576px) {
+    .features {
+      padding: 35px 0 35px; } }
+  @media (min-width: 768px) {
+    .features {
+      padding: 60px 0 40px; } }
 
 .headers {
   text-align: center;
@@ -1964,7 +1988,8 @@ button {
   @media (min-width: 768px) {
     .numb--bg {
       background: url("../images/feat__numbers-768.jpg") center top no-repeat;
-      height: 270px; } }
+      background-size: cover;
+      height: 290px; } }
   @media (min-width: 1060px) {
     .numb--bg {
       height: 380px;
@@ -1973,9 +1998,13 @@ button {
 .numb--pd {
   padding: 20px;
   background-color: #fdfdfd; }
+  @media (min-width: 768px) {
+    .numb--pd {
+      height: 290px; } }
   @media (min-width: 1060px) {
     .numb--pd {
-      padding: 60px; } }
+      padding: 60px;
+      height: 380px; } }
 
 .numb__title {
   font: 16px "Calibri-Bold", sans-serif; }
@@ -1995,7 +2024,7 @@ button {
   font: 14px "Calibri-Regular", sans-serif;
   color: #57595b;
   padding-left: 30px;
-  margin-top: 20px; }
+  margin: 20px 0; }
 
 .numb__key--bg1 {
   background: url("../images/numb__key.png") left 2px no-repeat; }
@@ -2102,7 +2131,10 @@ button {
 
 .best .headers {
   text-align: center;
-  padding-bottom: 50px; }
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    .best .headers {
+      padding-bottom: 30px; } }
   .best .headers__title {
     font: 24px "Calibri-Bold", sans-serif;
     margin: 0; }
@@ -2348,7 +2380,6 @@ button {
 
 .cardh {
   display: flex;
-  align-items: flex-start;
   margin-top: 20px; }
   @media (min-width: 1060px) {
     .cardh {
@@ -2392,7 +2423,10 @@ button {
   line-height: 26px; }
 
 .innovations {
-  padding: 60px 0; }
+  padding: 35px 0; }
+  @media (min-width: 768px) {
+    .innovations {
+      padding: 60px 0; } }
 
 .innovations .headers {
   text-align: center;
@@ -2617,7 +2651,10 @@ button {
   opacity: .8; }
 
 .feedback {
-  padding: 60px 0 20px; }
+  padding: 35px 0 10px; }
+  @media (min-width: 768px) {
+    .feedback {
+      padding: 60px 0 20px; } }
 
 .feedback .headers {
   text-align: center;
@@ -2700,8 +2737,11 @@ button {
         top: 52px; } }
 
 .slide__name-date {
-  margin-left: 20px;
+  margin-left: 5px;
   font-style: normal; }
+  @media (min-width: 576px) {
+    .slide__name-date {
+      margin-left: 20px; } }
   @media (min-width: 1060px) {
     .slide__name-date {
       display: block;
@@ -2852,7 +2892,10 @@ button {
     display: block; }
 
 .installation {
-  padding: 60px 0 40px; }
+  padding: 35px 0 20px; }
+  @media (min-width: 768px) {
+    .installation {
+      padding: 60px 0 40px; } }
   @media (min-width: 1060px) {
     .installation {
       padding: 60px 0; } }
@@ -3164,7 +3207,10 @@ button {
     display: block; }
 
 .awards {
-  padding: 60px 0; }
+  padding: 35px 0; }
+  @media (min-width: 768px) {
+    .awards {
+      padding: 60px 0; } }
 
 .award {
   bower: 1px solid red;
@@ -3192,8 +3238,11 @@ button {
       max-width: 100%; } }
 
 .faq {
-  padding: 60px 0;
+  padding: 35px 0;
   background-color: #ededed; }
+  @media (min-width: 768px) {
+    .faq {
+      padding: 60px 0; } }
 
 .faq .headers {
   text-align: center;
@@ -3240,11 +3289,17 @@ button {
   top: 4px; }
   @media (min-width: 768px) {
     .faq__i {
-      font-size: 42px;
+      font-size: 30px;
       margin-right: 30px; } }
+  @media (min-width: 1060px) {
+    .faq__i {
+      font-size: 42px; } }
 
 .contacts {
-  padding: 60px 0 0; }
+  padding: 35px 0 0; }
+  @media (min-width: 768px) {
+    .contacts {
+      padding: 60px 0 0; } }
 
 .consultation {
   font: 16px "Calibri-Bold", sans-serif;
@@ -3319,7 +3374,10 @@ button {
     text-align: center; }
 
 .cbot {
-  margin-top: 65px; }
+  margin-top: 35px; }
+  @media (min-width: 768px) {
+    .cbot {
+      margin-top: 60px; } }
   .cbot__title {
     font: 20px "Calibri-Bold", sans-serif;
     color: #1d1d1b;
@@ -3354,7 +3412,7 @@ button {
         display: table-cell;
         width: 30px; } }
   .bs4__info {
-    width: 290px;
+    width: 260px;
     margin: 0 auto; }
     @media (min-width: 768px) {
       .bs4__info {

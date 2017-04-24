@@ -1,6 +1,9 @@
 .contacts {
-  // border: 1px solid red;
-  padding: 60px 0 0;
+
+  padding: 35px 0 0;
+    @include mq-md {
+      padding: 60px 0 0;
+    }
 }
 
 .consultation {
@@ -87,7 +90,10 @@
 }
 
 .cbot {
-  margin-top: 65px;
+  margin-top: 35px;
+    @include mq-md {
+      margin-top: 60px;
+    }
   &__title {
     font: 20px $cb;
     color: $grey4;
@@ -132,9 +138,7 @@
 
   }
   &__info {
-    // height: 178px;
-    // border: 1px solid green;
-    width: 290px;
+    width: 260px;
     margin: 0 auto;
     @include mq-md {
       display: table-cell;

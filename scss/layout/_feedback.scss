@@ -1,6 +1,8 @@
 .feedback {
-  padding: 60px 0 20px;
-  // border: 1px solid red;
+  padding: 35px 0 10px;
+  @include mq-md {
+    padding: 60px 0 20px;
+  }
 }
 
 .feedback .headers {
@@ -97,8 +99,11 @@
 }
 
 .slide__name-date {
-  margin-left: 20px;
+  margin-left: 5px;
   font-style: normal;
+  @include mq-sm {
+    margin-left: 20px;
+  }
   @include mq-lg {
     display: block;
     margin-left: 0;
