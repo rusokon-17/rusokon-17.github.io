@@ -132,6 +132,12 @@ $(document).ready(function() {
         }
     });
 
+    // Вопрос-ответ. Faq
+    $('#responsiveTabsDemo').responsiveTabs({
+        startCollapsed: false,
+        active: 1,
+    });
+
 
 
     /*Настройки API Yandex.map*/

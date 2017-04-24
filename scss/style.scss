@@ -6,8 +6,9 @@
 
 @import 'vendor/jquery.bxslider';
 @import 'vendor/jquery.fancybox';
-// @import 'vendor/responsive-tabs/style';
-// @import 'vendor/responsive-tabs/responsive-tabs';
+
+@import 'vendor/responsive-tabs';
+@import 'vendor/stylle';
 
 // Блоки на главной
 
@@ -22,6 +23,7 @@
 @import 'layout/installation';
 @import 'layout/montage';
 @import 'layout/awards';
+@import 'layout/faq';
 @import 'layout/contacts';
 @import 'layout/measure';
 @import 'layout/foot';

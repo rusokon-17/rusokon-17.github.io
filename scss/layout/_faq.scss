@@ -1,0 +1,63 @@
+.faq {
+  padding: 60px 0;
+  background-color: $grey18;
+
+}
+
+.faq .headers {
+  text-align: center;
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
+    }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+    @include mq-lg {
+      font-size: 18px;
+    }
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+  }
+}
+
+// .respnum {
+
+//   font: 30px $ci;
+//   color: $grey5;
+//   margin-right: 10px;
+
+
+//     @include mq-lg {
+//       font-size: 44px;
+//     }
+
+// }
+.faq__content {
+  font-size: 13px;
+  line-height: 18px;
+    @include mq-md {
+      font-size: 16px;
+       line-height: 22px;
+    }
+
+}
+
+
