@@ -136,6 +136,8 @@ $(document).ready(function() {
     $('#responsiveTabsDemo').responsiveTabs({
         startCollapsed: false,
         active: 1,
+        // animation: 'slide',
+        // duration: 200,
     });
 
 
