@@ -551,16 +551,16 @@ ul.bxslider {
   background: #fff;
   border: none; }
 
-.feedback .bx-wrapper .bx-pager,
-.feedback .bx-wrapper .bx-controls-auto {
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
   position: absolute;
   bottom: -40px;
   width: 100%; }
 
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
+.feedback .bx-wrapper .bx-pager,
+.feedback .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   width: 100%; }
 
 /* LOADER */
@@ -1956,7 +1956,7 @@ button {
     .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center; }
@@ -2446,10 +2446,13 @@ button {
     .innovations .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 45px;
       left: 0;
       right: 0;
       text-align: center; }
+      @media (min-width: 382px) {
+        .innovations .headers__suptitle:after {
+          top: 27px; } }
       @media (min-width: 576px) {
         .innovations .headers__suptitle:after {
           top: 30px; } }
@@ -2529,7 +2532,7 @@ button {
     .tvshow .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center; }
@@ -2677,7 +2680,7 @@ button {
     .feedback .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center; }
@@ -2737,7 +2740,7 @@ button {
         top: 52px; } }
 
 .slide__name-date {
-  margin-left: 5px;
+  margin-left: 3px;
   font-style: normal; }
   @media (min-width: 576px) {
     .slide__name-date {
@@ -2805,7 +2808,7 @@ button {
   background-color: #eaeaea; }
 
 .comfort {
-  height: 490px;
+  height: 520px;
   background-color: #eaeaea; }
   @media (min-width: 768px) {
     .comfort {
@@ -2851,7 +2854,7 @@ button {
 .comfort .order {
   border: 8px solid #ff1a44;
   border-radius: 3px;
-  height: 263px;
+  height: 270px;
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
@@ -2892,7 +2895,7 @@ button {
     display: block; }
 
 .installation {
-  padding: 35px 0 20px; }
+  padding: 35px 0 15px; }
   @media (min-width: 768px) {
     .installation {
       padding: 60px 0 40px; } }
@@ -2921,7 +2924,7 @@ button {
     .installation .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center; }
@@ -2931,7 +2934,7 @@ button {
 
 .steps__text {
   background: url("../images/steps.jpg") center top no-repeat;
-  padding-top: 190px;
+  padding-top: 200px;
   max-width: 290px;
   margin: 0 auto; }
   @media (min-width: 576px) {
@@ -2939,6 +2942,9 @@ button {
       max-width: initial;
       display: flex;
       flex-flow: row wrap; } }
+  @media (min-width: 768px) {
+    .steps__text {
+      padding-top: 180px; } }
   @media (min-width: 1060px) {
     .steps__text {
       display: block;
@@ -2949,16 +2955,22 @@ button {
 
 .steps__item {
   padding-left: 50px;
-  margin-top: 20px; }
+  margin-top: 30px;
+  height: 26px; }
   @media (min-width: 576px) {
     .steps__item {
       flex: 1 1 200px; } }
+  @media (min-width: 768px) {
+    .steps__item {
+      padding: 0 20px 0 50px;
+      margin-top: 50px; } }
   @media (min-width: 1060px) {
     .steps__item {
       position: absolute;
       margin-top: 0;
-      padding: 20px 5px 20px 70px;
-      width: 360px; } }
+      padding: 20px 20px 20px 70px;
+      width: 360px;
+      height: 78px; } }
 
 .steps__item--bg1 {
   background: url("../images/steps__item--bg1.png") left center no-repeat; }
@@ -3034,7 +3046,7 @@ button {
 
 .installation .keyses {
   max-width: 290px;
-  margin: 60px auto 0;
+  margin: 40px auto 0;
   display: flex;
   flex-flow: row wrap; }
   @media (min-width: 576px) {
@@ -3047,7 +3059,7 @@ button {
   .installation .keyses .key {
     flex: 1 1 300px;
     padding-left: 120px;
-    height: 120px; }
+    height: 100px; }
     @media (min-width: 576px) {
       .installation .keyses .key {
         flex: 1 1 200px;
@@ -3120,7 +3132,7 @@ button {
           background-position: center top; } }
 
 .montage {
-  height: 490px;
+  height: 520px;
   background-color: #eaeaea; }
   @media (min-width: 768px) {
     .montage {
@@ -3166,7 +3178,7 @@ button {
 .montage .order {
   border: 8px solid #ff1a44;
   border-radius: 3px;
-  height: 263px;
+  height: 270px;
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
@@ -3246,7 +3258,7 @@ button {
 
 .faq .headers {
   text-align: center;
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
   .faq .headers__title {
     font: 24px "Calibri-Bold", sans-serif;
     margin: 0; }
@@ -3265,13 +3277,10 @@ button {
     .faq .headers__suptitle:after {
       content: url("../images/headers.png");
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center; }
-      @media (min-width: 576px) {
-        .faq .headers__suptitle:after {
-          top: 30px; } }
 
 .faq__content {
   font-size: 13px;
@@ -3300,6 +3309,35 @@ button {
   @media (min-width: 768px) {
     .contacts {
       padding: 60px 0 0; } }
+
+.contacts .headers {
+  text-align: center;
+  padding-bottom: 50px; }
+  .contacts .headers__title {
+    font: 24px "Calibri-Bold", sans-serif;
+    margin: 0; }
+    @media (min-width: 1060px) {
+      .contacts .headers__title {
+        font-size: 38px; } }
+  .contacts .headers__suptitle {
+    color: #666666;
+    font: 14px "Calibri-Regular", sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative; }
+    @media (min-width: 1060px) {
+      .contacts .headers__suptitle {
+        font-size: 18px; } }
+    .contacts .headers__suptitle:after {
+      content: url("../images/headers.png");
+      position: absolute;
+      top: 31px;
+      left: 0;
+      right: 0;
+      text-align: center; }
+      @media (min-width: 576px) {
+        .contacts .headers__suptitle:after {
+          top: 30px; } }
 
 .consultation {
   font: 16px "Calibri-Bold", sans-serif;
@@ -3488,7 +3526,7 @@ button {
       margin: 10px 0; } }
 
 .measure {
-  height: 490px;
+  height: 520px;
   background-color: #eaeaea; }
   @media (min-width: 768px) {
     .measure {
@@ -3534,7 +3572,7 @@ button {
 .order {
   border: 8px solid #ff1a44;
   border-radius: 3px;
-  height: 263px;
+  height: 270px;
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;

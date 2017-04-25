@@ -1,9 +1,41 @@
 .contacts {
-
   padding: 35px 0 0;
-    @include mq-md {
-      padding: 60px 0 0;
+  @include mq-md {
+    padding: 60px 0 0;
+  }
+}
+.contacts .headers {
+  text-align: center;
+  // border: 1px solid red;
+  padding-bottom: 50px;
+  &__title {
+    font: 24px $cb;
+    margin: 0;
+    @include mq-lg {
+      font-size: 38px;
     }
+  }
+  &__suptitle {
+    color: $headers-h3;
+    font: 14px $cr;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    position: relative;
+    @include mq-lg {
+      font-size: 18px;
+    }
+    &:after {
+      content: url('../images/headers.png');
+      position: absolute;
+      top: 31px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      @include mq-sm {
+        top: 30px;
+      }
+    }
+  }
 }
 
 .consultation {
@@ -70,7 +102,6 @@
 .bx-pager4__link.active {
   color: $rose-red;
   position: relative;
-
   @include mq-md {
     background-color: $banners-btn-hover;
     height: 70px;
@@ -85,15 +116,14 @@
     right: 0;
     left: 0;
     text-align: center;
-
   }
 }
 
 .cbot {
   margin-top: 35px;
-    @include mq-md {
-      margin-top: 60px;
-    }
+  @include mq-md {
+    margin-top: 60px;
+  }
   &__title {
     font: 20px $cb;
     color: $grey4;
@@ -135,7 +165,6 @@
       display: table-cell;
       width: 30px;
     }
-
   }
   &__info {
     width: 260px;
@@ -144,7 +173,7 @@
       display: table-cell;
       width: 290px;
     }
-        @include mq-lg {
+    @include mq-lg {
       width: 435px;
     }
   }
@@ -219,4 +248,3 @@
     margin: 10px 0;
   }
 }
-

@@ -24,10 +24,13 @@
     &:after {
       content: url('../images/headers.png');
       position: absolute;
-      top: 35px;
+      top: 45px;
       left: 0;
       right: 0;
       text-align: center;
+      @media (min-width: 382px) {
+        top: 27px;
+      }
       @include mq-sm {
         top: 30px;
       }

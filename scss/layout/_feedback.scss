@@ -28,7 +28,7 @@
     &:after {
       content: url('../images/headers.png');
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center;
@@ -99,7 +99,7 @@
 }
 
 .slide__name-date {
-  margin-left: 5px;
+  margin-left: 3px;
   font-style: normal;
   @include mq-sm {
     margin-left: 20px;

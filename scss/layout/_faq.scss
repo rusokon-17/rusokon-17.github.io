@@ -9,7 +9,7 @@
 .faq .headers {
   text-align: center;
   // border: 1px solid red;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   &__title {
     font: 24px $cb;
     margin: 0;
@@ -29,13 +29,11 @@
     &:after {
       content: url('../images/headers.png');
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center;
-      @include mq-sm {
-        top: 30px;
-      }
+
     }
   }
 }

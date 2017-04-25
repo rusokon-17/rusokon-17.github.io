@@ -1,11 +1,11 @@
 .installation {
-  padding: 35px 0 20px;
+  padding: 35px 0 15px;
   @include mq-md {
-     padding: 60px 0 40px;
+    padding: 60px 0 40px;
   }
-    @include mq-lg {
-      padding: 60px 0;
-    }
+  @include mq-lg {
+    padding: 60px 0;
+  }
 }
 
 .installation .headers {
@@ -31,7 +31,7 @@
     &:after {
       content: url('../images/headers.png');
       position: absolute;
-      top: 35px;
+      top: 27px;
       left: 0;
       right: 0;
       text-align: center;
@@ -45,7 +45,7 @@
 .steps {
   &__text {
     background: url('../images/steps.jpg') center top no-repeat;
-    padding-top: 190px;
+    padding-top: 200px;
     max-width: 290px;
     margin: 0 auto;
     // border: 1px solid red;
@@ -54,6 +54,9 @@
       display: flex;
       flex-flow: row wrap;
     }
+      @include mq-md {
+        padding-top: 180px;
+      }
     @include mq-lg {
       display: block;
       position: relative;
@@ -67,15 +70,21 @@
 .steps__item {
   padding-left: 50px;
   // border: 1px solid red;
-  margin-top: 20px;
+  margin-top: 30px;
+  height: 26px;
   @include mq-sm {
     flex: 1 1 200px;
+  }
+  @include mq-md {
+    padding: 0 20px 0 50px;
+    margin-top: 50px;
   }
   @include mq-lg {
     position: absolute;
     margin-top: 0;
-    padding: 20px 5px 20px 70px;
+    padding: 20px 20px 20px 70px;
     width: 360px;
+    height: 78px;
   }
 }
 
@@ -159,12 +168,12 @@
 
 .installation .keyses {
   max-width: 290px;
-  margin: 60px auto 0;
+  margin: 40px auto 0;
   display: flex;
   flex-flow: row wrap;
   @include mq-sm {
     max-width: initial;
-     margin: 40px initial;
+    margin: 40px initial;
   }
   @include mq-lg {
     flex-flow: row nowrap;
@@ -172,7 +181,7 @@
   .key {
     flex: 1 1 300px;
     padding-left: 120px;
-    height: 120px;
+    height: 100px;
     // border: 1px solid red;
     @include mq-sm {
       flex: 1 1 200px;
@@ -197,9 +206,9 @@
     }
     &:nth-of-type(1n+1) {
       margin-bottom: 20px;
-        @include mq-lg {
-          margin-bottom: 0;
-        }
+      @include mq-lg {
+        margin-bottom: 0;
+      }
     }
     &__title {
       font: 16px $cb;
