@@ -1538,6 +1538,13 @@ button {
 
 .head {
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .head {
+      box-shadow: 0px 20px 18px -20px rgba(0, 0, 0, 0.4);
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      top: 0; } }
 
 .header {
   padding: 15px 0; }
@@ -1654,14 +1661,16 @@ button {
 
 .banners {
   position: relative; }
+  @media (min-width: 768px) {
+    .banners {
+      margin-top: 95px; } }
 
 .bxslider3 {
   margin: 0;
   padding: 0; }
 
 .bxslider3-slide {
-  padding-top: 200px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset; }
+  padding-top: 200px; }
   @media (min-width: 768px) {
     .bxslider3-slide {
       height: 630px;

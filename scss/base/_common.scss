@@ -1,15 +1,13 @@
 * {
-    box-sizing: border-box;
-    font: 100% $cr;
-    color: $black;
-       
+  box-sizing: border-box;
+  font: 100% $cr;
+  color: $black;
 }
 
-
 img {
-    max-width: 100%;
-    display: block;
-    border: none;
+  max-width: 100%;
+  display: block;
+  border: none;
 }
 
 input,
@@ -18,8 +16,8 @@ input:focus,
 textarea,
 textarea:active,
 textarea:focus {
-    outline: none;
-    // border: 0;
+  outline: none;
+  // border: 0;
 }
 
 a,
@@ -27,46 +25,44 @@ a:visited,
 a:hover,
 a:active,
 a:focus {
-    outline: none;
-    text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
 
 // ==========================================
 // Контейнер.
 // ==========================================
 .inner {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-
-    @include mq-sm {
-        // 576px (540px)
-        max-width: 540px;
-    }
-    @include mq-md {
-        // 768px (720px)
-        max-width: 720px;
-    }
-    @include mq-lg {
-        // 1060px (980px)
-        max-width: 1010px;
-    }
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include mq-sm {
+    // 576px (540px)
+    max-width: 540px;
+  }
+  @include mq-md {
+    // 768px (720px)
+    max-width: 720px;
+  }
+  @include mq-lg {
+    // 1060px (980px)
+    max-width: 1010px;
+  }
 }
 
 // ==========================================
 // Вспомогательные классы
 // ==========================================
 .no-paddings {
-    padding: 0;
+  padding: 0;
 }
 
 // ==========================================
 // Сообщение об обновлении устаревшего браузера
 // ==========================================
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: $black;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: $black;
+  padding: 0.2em 0;
 }

@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-     $("#header").sticky({ 
-        topSpacing: 0,
-        zIndex: 9999, });
     // feedback slider
     $('.bxslider1').bxSlider({
         adaptiveHeight: true,
@@ -32,7 +29,7 @@ $(document).ready(function() {
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         controls: false,
-    
+
 
     });
 
