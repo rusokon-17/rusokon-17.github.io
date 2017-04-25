@@ -9,10 +9,10 @@
 
 .best .headers {
   text-align: center;
-  padding-bottom: 20px;
-    @include mq-md {
-        padding-bottom: 30px;
-    }
+  padding-bottom: 40px;
+  @include mq-md {
+    padding-bottom: 30px;
+  }
   &__title {
     font: 24px $cb;
     margin: 0;
@@ -281,6 +281,83 @@
   }
 }
 
+.cardp--order {
+  position: relative;
+
+  @include mq-md {
+     height: 330px;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+    @include mq-lg {
+       height: 360px;
+    }
+
+}
+
+.cardp--order .cardp__photo {
+  height: 230px;
+  @include mq-md {
+    padding-left: 180px;
+    font: 12px $cr;
+    line-height: 22px;
+    margin-right: 0;
+  }
+  @include mq-lg {
+    padding: 0 0 58px 280px;
+    font-size: 16px;
+    line-height: 23px;
+
+  }
+}
+
+.cardp--order .cardp__wr {
+  display: none;
+  @include mq-md {
+    display: initial;
+  }
+}
+
+.cardp--order .cardp__descr:before {
+  content: url('../images/prod__content-top--bg1.jpg');
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+    @include mq-lg {
+      content: url('../images/prod__content-top--bg11.jpg');
+    }
+}
+
+.cardp--order .cardp__descr:after {
+  content: url('../images/prod__content-top--icon.png');
+  position: absolute;
+  // top: -5px;
+  bottom: -90px;
+  left: 0;
+  right: 0;
+  text-align: center;
+    @include mq-md {
+        left: 368px;
+  bottom: -23px;
+    }
+      @include mq-lg {
+          content: url('../images/prod__content-top--icon980.png');
+          left: 533px;
+            bottom: -10px;
+        
+      }
+} 
+.cardp--order .cardh {
+  margin-bottom: 100px;
+    @include mq-md {
+      margin-bottom: 0;
+    }
+}
+
+
+
 .cardp__photo--bg2 {
   background: url('../images/cardp__photo--bg2.jpg') center top no-repeat;
 }
@@ -351,9 +428,13 @@
     background: url('../images/cardh__block13.png') center top no-repeat;
   }
 }
+
 .cardp__cont {
   margin: 15px 0;
-  font: 16px $cr;
-  line-height: 26px;
+  font: 14px $cr;
+  line-height: 22px;
+  @include mq-lg {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
-

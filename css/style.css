@@ -2140,7 +2140,7 @@ button {
 
 .best .headers {
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 40px; }
   @media (min-width: 768px) {
     .best .headers {
       padding-bottom: 30px; } }
@@ -2375,6 +2375,71 @@ button {
           line-height: 26px;
           background: url("../images/cardp__item.png") left 11px no-repeat; } }
 
+.cardp--order {
+  position: relative; }
+  @media (min-width: 768px) {
+    .cardp--order {
+      height: 330px;
+      display: flex;
+      flex-flow: row-reverse; } }
+  @media (min-width: 1060px) {
+    .cardp--order {
+      height: 360px; } }
+
+.cardp--order .cardp__photo {
+  height: 230px; }
+  @media (min-width: 768px) {
+    .cardp--order .cardp__photo {
+      padding-left: 180px;
+      font: 12px "Calibri-Regular", sans-serif;
+      line-height: 22px;
+      margin-right: 0; } }
+  @media (min-width: 1060px) {
+    .cardp--order .cardp__photo {
+      padding: 0 0 58px 280px;
+      font-size: 16px;
+      line-height: 23px; } }
+
+.cardp--order .cardp__wr {
+  display: none; }
+  @media (min-width: 768px) {
+    .cardp--order .cardp__wr {
+      display: initial; } }
+
+.cardp--order .cardp__descr:before {
+  content: url("../images/prod__content-top--bg1.jpg");
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  @media (min-width: 1060px) {
+    .cardp--order .cardp__descr:before {
+      content: url("../images/prod__content-top--bg11.jpg"); } }
+
+.cardp--order .cardp__descr:after {
+  content: url("../images/prod__content-top--icon.png");
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .cardp--order .cardp__descr:after {
+      left: 368px;
+      bottom: -23px; } }
+  @media (min-width: 1060px) {
+    .cardp--order .cardp__descr:after {
+      content: url("../images/prod__content-top--icon980.png");
+      left: 533px;
+      bottom: -10px; } }
+
+.cardp--order .cardh {
+  margin-bottom: 100px; }
+  @media (min-width: 768px) {
+    .cardp--order .cardh {
+      margin-bottom: 0; } }
+
 .cardp__photo--bg2 {
   background: url("../images/cardp__photo--bg2.jpg") center top no-repeat; }
 
@@ -2428,8 +2493,12 @@ button {
 
 .cardp__cont {
   margin: 15px 0;
-  font: 16px "Calibri-Regular", sans-serif;
-  line-height: 26px; }
+  font: 14px "Calibri-Regular", sans-serif;
+  line-height: 22px; }
+  @media (min-width: 1060px) {
+    .cardp__cont {
+      font-size: 16px;
+      line-height: 26px; } }
 
 .innovations {
   padding: 35px 0;
