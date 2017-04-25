@@ -1,12 +1,13 @@
 .features {
   padding: 35px 0 10px;
-  @include mq-sm {
-     padding: 35px 0 35px;
-  }
-    @include mq-md {
-        padding: 60px 0 40px;
-    }
+   background-color: $white;
 
+  @include mq-sm {
+    padding: 35px 0 35px;
+  }
+  @include mq-md {
+    padding: 60px 0 40px;
+  }
 }
 
 .headers {
@@ -79,12 +80,12 @@
   &--pd {
     padding: 20px;
     background-color: $numb-bg;
-      @include mq-md {
-         height: 290px;
-      }
+    @include mq-md {
+      height: 290px;
+    }
     @include mq-lg {
       padding: 60px;
-       height: 380px;
+      height: 380px;
     }
   }
   &__title {
@@ -186,7 +187,6 @@
     }
     &--bg1 {
       background: url('../images/key--bg1.png') left top no-repeat;
-
       @include mq-sm {
         background-position: center top;
       }

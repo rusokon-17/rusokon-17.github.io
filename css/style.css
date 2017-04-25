@@ -1536,97 +1536,104 @@ button {
   background-color: #fff;
   cursor: pointer; }
 
-@media (min-width: 768px) {
-  .header {
-    display: flex; } }
+.head {
+  background-color: #fff; }
 
-.logo {
+.header {
+  padding: 15px 0; }
+  @media (min-width: 768px) {
+    .header {
+      display: flex; } }
+
+.head .logo {
   width: 186px;
-  margin: 15px auto 0;
+  margin: 0 auto 0;
+  /* 15px auto 0; */
   background: url("../images/logo.png") left top no-repeat;
   padding-left: 50px;
   height: 70px; }
   @media (min-width: 768px) {
-    .logo {
+    .head .logo {
       flex: 0 0 200px;
       margin: 15px 0 0 0;
       padding-left: 50px;
       background-position: 0 0; } }
   @media (min-width: 1060px) {
-    .logo {
+    .head .logo {
       flex: 0 0 210px; } }
-  .logo__title {
-    margin: 6px 0 0 0;
+  .head .logo__title {
+    margin: 0;
+    padding-top: 5px;
     font: 32px "Calibri-Bold", sans-serif;
     color: #57595b;
     text-transform: uppercase;
     line-height: 1.1; }
-  .logo__text {
+  .head .logo__text {
     margin: 0 0 10px;
     color: #ed2347;
     font: 14px "Calibri-Regular", sans-serif; }
 
-.discount {
+.head .discount {
   text-align: center;
   margin-top: 5px; }
   @media (min-width: 768px) {
-    .discount {
+    .head .discount {
       flex: 0 0 200px;
       margin-top: 25px;
       padding: 0 20px 0 0;
       text-align: left; } }
   @media (min-width: 768px) and (min-width: 1060px) {
-    .discount {
+    .head .discount {
       flex: 0 0 300px; } }
-  .discount__text {
+  .head .discount__text {
     font: 14px "Calibri-Regular", sans-serif;
     margin: 0;
     color: #231f20; }
     @media (min-width: 1060px) {
-      .discount__text {
+      .head .discount__text {
         font-size: 16px; } }
 
-.phone-wrapper {
+.head .phone-wrapper {
   display: flex;
-  margin: 10px auto 20px;
+  margin: 10px auto 5px;
   max-width: 300px; }
   @media (min-width: 768px) {
-    .phone-wrapper {
+    .head .phone-wrapper {
       flex: 1 1 300px;
       margin-top: 23px; } }
   @media (min-width: 1060px) {
-    .phone-wrapper {
-      margin: 23px 0 20px auto;
+    .head .phone-wrapper {
+      margin: 18px 0 20px auto;
       max-width: 340px; } }
 
-.call {
+.head .call {
   margin-left: auto;
   margin-top: 6px; }
 
-.phone__number,
-.phone__span {
+.head .phone__number,
+.head .phone__span {
   font: 22px "Calibri-Light", sans-serif;
   color: #575756; }
   @media (min-width: 1060px) {
-    .phone__number,
-    .phone__span {
+    .head .phone__number,
+    .head .phone__span {
       font-size: 26px; } }
 
-.phone__span {
+.head .phone__span {
   font-family: "Calibri-Bold", sans-serif; }
 
-.phone__link {
+.head .phone__link {
   color: #575756;
   font-family: "Calibri-Light", sans-serif; }
 
-.phone__time {
+.head .phone__time {
   font: 12px "Calibri-Regular", sans-serif;
   color: #575756; }
   @media (min-width: 1060px) {
-    .phone__time {
+    .head .phone__time {
       font-size: 13px; } }
 
-.call {
+.head .call {
   width: 124px;
   height: 32px;
   background-color: #ff1a44;
@@ -1639,7 +1646,7 @@ button {
   justify-content: center;
   cursor: pointer; }
   @media (min-width: 1060px) {
-    .call {
+    .head .call {
       width: 138px;
       height: 36px;
       font-size: 15px; } }
@@ -1927,7 +1934,8 @@ button {
         font-size: 26px; } }
 
 .features {
-  padding: 35px 0 10px; }
+  padding: 35px 0 10px;
+  background-color: #fff; }
   @media (min-width: 576px) {
     .features {
       padding: 35px 0 35px; } }
@@ -2423,7 +2431,8 @@ button {
   line-height: 26px; }
 
 .innovations {
-  padding: 35px 0; }
+  padding: 35px 0;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .innovations {
       padding: 60px 0; } }
@@ -2654,7 +2663,8 @@ button {
   opacity: .8; }
 
 .feedback {
-  padding: 35px 0 10px; }
+  padding: 35px 0 10px;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .feedback {
       padding: 60px 0 20px; } }
@@ -2895,7 +2905,8 @@ button {
     display: block; }
 
 .installation {
-  padding: 35px 0 15px; }
+  padding: 35px 0 15px;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .installation {
       padding: 60px 0 40px; } }
@@ -3219,7 +3230,8 @@ button {
     display: block; }
 
 .awards {
-  padding: 35px 0; }
+  padding: 35px 0;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .awards {
       padding: 60px 0; } }
@@ -3305,7 +3317,8 @@ button {
       font-size: 42px; } }
 
 .contacts {
-  padding: 35px 0 0; }
+  padding: 35px 0;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .contacts {
       padding: 60px 0 0; } }
@@ -3420,7 +3433,8 @@ button {
     font: 20px "Calibri-Bold", sans-serif;
     color: #1d1d1b;
     text-align: center;
-    margin: 0 0 35px; }
+    margin: 0;
+    padding-bottom: 35px; }
   @media (min-width: 768px) {
     .cbot__map {
       height: 530px; } }

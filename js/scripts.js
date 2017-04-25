@@ -19,15 +19,17 @@ $(document).ready(function() {
         oneToOneTouch: false
     });
     // banner slider
-    $('.bxslider3').bxSlider({
+$('.bxslider3').bxSlider({
         mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
-        controls: false
+        controls: false,
+
     });
+
     // contacts slider
     $('.bxslider4').bxSlider({
         mode: 'fade',

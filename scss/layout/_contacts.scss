@@ -1,5 +1,6 @@
 .contacts {
-  padding: 35px 0 0;
+  padding: 35px 0;
+   background-color: $white;
   @include mq-md {
     padding: 60px 0 0;
   }
@@ -128,7 +129,8 @@
     font: 20px $cb;
     color: $grey4;
     text-align: center;
-    margin: 0 0 35px;
+    margin: 0;
+    padding-bottom: 35px;
   }
   &__map {
     @include mq-md {

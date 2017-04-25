@@ -2,7 +2,10 @@
     box-sizing: border-box;
     font: 100% $cr;
     color: $black;
+       
 }
+
+
 img {
     max-width: 100%;
     display: block;
@@ -35,6 +38,7 @@ a:focus {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
 
     @include mq-sm {
         // 576px (540px)

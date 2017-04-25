@@ -1,18 +1,18 @@
 .head {
-  // border: 1px solid red;
-  // background-color: $footer-bg;
+  background-color: $white;
 }
 
 .header {
+  padding: 15px 0;
   @include mq-md {
     display: flex;
   }
 }
 
-.logo {
+.head .logo {
   // border: 1px solid red;
   width: 186px;
-  margin: 15px auto 0;
+  margin: 0 auto 0; /* 15px auto 0; */
   background: url('../images/logo.png') left top no-repeat;
   padding-left: 50px;
   height: 70px;
@@ -26,7 +26,8 @@
     flex: 0 0 210px;
   }
   &__title {
-    margin: 6px 0 0 0;
+    margin: 0;
+    padding-top: 5px;
     font: 32px $cb;
     color: $logo;
     text-transform: uppercase;
@@ -39,7 +40,7 @@
   }
 }
 
-.discount {
+.head .discount {
   text-align: center;
   margin-top: 5px;
   @include mq-md {
@@ -61,28 +62,28 @@
   }
 }
 
-.phone-wrapper {
+.head .phone-wrapper {
   display: flex;
-  margin: 10px auto 20px;
+  margin: 10px auto 5px;
   max-width: 300px;
   @include mq-md {
     flex: 1 1 300px;
     margin-top: 23px;
   }
   @include mq-lg {
-    margin: 23px 0 20px auto;
+    margin: 18px 0 20px auto;
     // margin-left: auto;
     max-width: 340px;
   }
 }
 
-.call {
+.head .call {
   margin-left: auto;
   margin-top: 6px;
 }
 
-.phone__number,
-.phone__span {
+.head .phone__number,
+.head .phone__span {
   font: 22px $cl;
   color: $phone;
   @include mq-lg {
@@ -90,15 +91,16 @@
   }
 }
 
-.phone__span {
+.head .phone__span {
   font-family: $cb;
 }
-.phone__link {
-   color: $phone;
-   font-family: $cl;
+
+.head .phone__link {
+  color: $phone;
+  font-family: $cl;
 }
 
-.phone__time {
+.head .phone__time {
   font: 12px $cr;
   color: $phone;
   @include mq-lg {
@@ -106,7 +108,7 @@
   }
 }
 
-.call {
+.head .call {
   width: 124px;
   height: 32px;
   background-color: $head-btn;
