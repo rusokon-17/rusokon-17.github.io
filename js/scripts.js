@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+     $("#header").sticky({ 
+        topSpacing: 0,
+        zIndex: 9999, });
     // feedback slider
     $('.bxslider1').bxSlider({
         adaptiveHeight: true,
@@ -16,10 +20,11 @@ $(document).ready(function() {
         slideWidth: 180,
         slideMargin: 20,
         pager: false,
-        oneToOneTouch: false
+        oneToOneTouch: false,
+        infiniteLoop: false,
     });
     // banner slider
-$('.bxslider3').bxSlider({
+    $('.bxslider3').bxSlider({
         mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager',
@@ -27,6 +32,7 @@ $('.bxslider3').bxSlider({
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         controls: false,
+    
 
     });
 
@@ -51,9 +57,7 @@ $('.bxslider3').bxSlider({
         preloadImages: 'all',
         controls: false,
         touchEnabled: false,
-
-
-
+        infiniteLoop: false,
     });
 
 
@@ -66,8 +70,6 @@ $('.bxslider3').bxSlider({
         moveSlides: 1,
         preloadImages: 'all',
         oneToOneTouch: false
-
-
     });
 
     var slider7 = $('.bxslider7').bxSlider({
@@ -78,7 +80,6 @@ $('.bxslider3').bxSlider({
         moveSlides: 1,
         preloadImages: 'all',
         oneToOneTouch: false
-
     });
     /*
     Используется метод перегрузки слайдера,
@@ -103,7 +104,7 @@ $('.bxslider3').bxSlider({
         controls: false,
         touchEnabled: false,
         preventDefaultSwipeX: true,
-        oneToOneTouch: false
+        oneToOneTouch: false,
     });
 
 

@@ -21,6 +21,7 @@
     "bxslider-4": "^4.2.12",
     "magnific-popup": "^1.1.0",
     "responsive-tabs": "^1.6.2",
-    "fancybox": "^3.0.47"
+    "fancybox": "^3.0.47",
+    "jquery-sticky": "sticky#^1.0.4"
   }
 }

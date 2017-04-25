@@ -2,10 +2,12 @@
   background-color: $white;
 }
 
+
 .header {
   padding: 15px 0;
   @include mq-md {
     display: flex;
+    padding: 0 0 10px;
   }
 }
 

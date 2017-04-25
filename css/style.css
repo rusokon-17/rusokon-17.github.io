@@ -1543,7 +1543,8 @@ button {
   padding: 15px 0; }
   @media (min-width: 768px) {
     .header {
-      display: flex; } }
+      display: flex;
+      padding: 0 0 10px; } }
 
 .head .logo {
   width: 186px;
