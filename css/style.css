@@ -3817,4 +3817,11 @@ button {
       height: 36px;
       font-size: 15px; } }
 
+.footer .call a {
+  font: 13px "Calibri-Regular", sans-serif;
+  color: #fff; }
+  @media (min-width: 1060px) {
+    .footer .call a {
+      font-size: 15px; } }
+
 /*# sourceMappingURL=style.css.map */

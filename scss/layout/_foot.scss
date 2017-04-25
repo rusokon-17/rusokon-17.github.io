@@ -125,3 +125,11 @@
     font-size: 15px;
   }
 }
+.footer .call a {
+  font: 13px $cr;
+  color: $white;
+    @include mq-lg {
+   
+    font-size: 15px;
+  }
+}
