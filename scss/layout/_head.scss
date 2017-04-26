@@ -4,8 +4,9 @@
     box-shadow: 0px 20px 18px -20px rgba(0, 0, 0, 0.4);
     position: fixed;
     z-index: 9999;
-    width: 100%;
+   //width: calc(100vw - 17px); // убираем дергание фиксированного хедера при открытии модальног окна
     top: 0;
+    width: 100%;
   }
 }
 
@@ -132,6 +133,15 @@
   @include mq-lg {
     width: 138px;
     height: 36px;
+    font-size: 15px;
+  }
+}
+.head .call a {
+  font: 13px $cr;
+  color: $white;
+  padding: 10px 9px;
+    @include mq-lg {
+   
     font-size: 15px;
   }
 }

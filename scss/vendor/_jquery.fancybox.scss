@@ -132,14 +132,39 @@
 .fancybox-slide > * {
   display: inline-block;
   position: relative;
-  padding: 24px;
+  padding: 24px 10px; //24px;
   margin: 44px 0 44px;
   border-width: 0;
   vertical-align: middle;
   text-align: left;
   background-color: #fff;
   overflow: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  @include mq-md {
+    padding: 24px 45px;
+
+  }
+
+
+}
+
+// .modal .fancybox-slide > * {
+//   display: inline-block;
+//   position: relative;
+//   padding: 10px !important;
+//   margin: 44px 0 44px;
+//   border-width: 0;
+//   vertical-align: middle;
+//   text-align: left;
+//   background-color: #fff;
+//   overflow: auto;
+//   box-sizing: border-box; 
+//   @include mq-md {
+//     padding: 24px 45px;
+//   }
+
+
+// }
 
 .fancybox-slide--image {
   overflow: hidden; }

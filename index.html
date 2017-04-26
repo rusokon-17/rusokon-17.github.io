@@ -47,7 +47,7 @@
           </div>
           <!-- /.phone -->
           <div class="call">
-            Перезвоните мне
+            <a data-fancybox data-src="#hidden-content" href="javascript:;">Перезвоните мне</a>
           </div>
           <!-- /.call -->
         </div>
@@ -522,7 +522,7 @@
               <div class="slide__head">
                 <div class="slide__name"><span class="slide__name-span">Надежда</span> Договор 1961.09/13 <i class="slide__name-date">09.12.2013 в 11:00</i></div>
                 <div class="slide__product">2-створчатое окно на кухне 1140х1400 мм, <span class="slide__product-span">10345 руб.</span> под ключ</div>
-                <div class="slide__btn">Расчитать мне тоже</div>
+                <div class="slide__btn"><a data-fancybox data-src="#hidden-content2" href="javascript:;">Расчитать мне тоже</a></div>
               </div>
               <!-- /.slide__head -->
               <div class="slide__body">
@@ -538,7 +538,7 @@
               <div class="slide__head">
                 <div class="slide__name"><span class="slide__name-span">Надежда</span> Договор 1961.09/13 <i class="slide__name-date">09.12.2013 в 11:00</i></div>
                 <div class="slide__product">2-створчатое окно на кухне 1140х1400 мм, <span class="slide__product-span">10345 руб.</span> под ключ</div>
-                <div class="slide__btn">Расчитать мне тоже</div>
+                <div class="slide__btn"> <a data-fancybox data-src="#hidden-content2" href="javascript:;">Расчитать мне тоже</a></div>
               </div>
               <!-- /.slide__head -->
               <div class="slide__body">
@@ -764,7 +764,7 @@
                   <div class="bs4__info-pnone">8 495 320-08-26
                     <br> многоканальный</div>
                   <div class="bs4__info-time">с 9:00 до 21:00, без выходных</div>
-                  <div class="bs4__info-btn">Перезвоните мне</div>
+                  <div class="bs4__info-btn"><a data-fancybox data-src="#hidden-content" href="javascript:;">Перезвоните мне</a></div>
                 </div>
               </div>
               <!-- /.bs4 -->
@@ -781,7 +781,7 @@
                   <div class="bs4__info-pnone">8 495 320-08-26
                     <br> многоканальный</div>
                   <div class="bs4__info-time">с 9:00 до 21:00, без выходных</div>
-                  <div class="bs4__info-btn">Перезвоните мне</div>
+                  <div class="bs4__info-btn"><a data-fancybox data-src="#hidden-content" href="javascript:;">Перезвоните мне</a></div>
                 </div>
               </div>
               <!-- /.bs4 -->
@@ -798,7 +798,7 @@
                   <div class="bs4__info-pnone">8 495 320-08-26
                     <br> многоканальный</div>
                   <div class="bs4__info-time">с 9:00 до 21:00, без выходных</div>
-                  <div class="bs4__info-btn">Перезвоните мне</div>
+                  <div class="bs4__info-btn"><a data-fancybox data-src="#hidden-content" href="javascript:;">Перезвоните мне</a></div>
                 </div>
               </div>
               <!-- /.bs4 -->
@@ -859,7 +859,7 @@
           </div>
           <!-- /.phone -->
           <div class="call">
-            <a data-fancybox data-src="#hidden-content" href="javascript:;" >Перезвоните мне</a>
+            <a data-fancybox data-src="#hidden-content" href="javascript:;">Перезвоните мне</a>
           </div>
           <!-- /.call -->
         </div>
@@ -870,13 +870,31 @@
     <!-- /.inner -->
   </footer>
   <!-- /.foot -->
-
-  <!-- Форма заказа звонка, замерщика -->
-  <div style="display: none;" id="hidden-content">
-    <h2>Hello</h2>
-    <p>You are awesome.</p>
+  <!-- Форма заказа звонка, Перезвоните -->
+  <div class="modal" style="display: none;" id="hidden-content">
+    <div class="order">
+      <div class="order__title">Закажите бесплатный звонок</div>
+      <form action="" method="POST">
+        <input class="order__input order__input--name" type="text" name="" autocomplete="off" maxlength="60" placeholder="Ваше имя...">
+        <input class="order__input order__input--tel" type="text" name="" autocomplete="off" maxlength="20" placeholder="Ваш телефон...">
+        <input class="order__btn" type="submit" name="" value="Перезвоните мне">
+      </form>
+    </div>
+    <!-- /.order -->
   </div>
 
+  <!-- Форма заказа звонка, Расчитать мне тоже -->
+  <div class="modal" style="display: none;" id="hidden-content2">
+    <div class="order">
+      <div class="order__title">Закажите бесплатный звонок</div>
+      <form action="" method="POST">
+        <input class="order__input order__input--name" type="text" name="" autocomplete="off" maxlength="60" placeholder="Ваше имя...">
+        <input class="order__input order__input--tel" type="text" name="" autocomplete="off" maxlength="20" placeholder="Ваш телефон...">
+        <input class="order__btn" type="submit" name="" value="Рассчитать мне тоже">
+      </form>
+    </div>
+    <!-- /.order -->
+  </div>
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/jquery.bxslider.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

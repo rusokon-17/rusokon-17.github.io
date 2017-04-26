@@ -249,4 +249,10 @@
   @include mq-md {
     margin: 10px 0;
   }
+  a {
+    font: 15px $cb;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  }
 }

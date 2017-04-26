@@ -150,7 +150,7 @@ $(document).ready(function() {
         // Создаем карту.
         var myMap = new ymaps.Map("map", {
             center: [55.755814, 37.617635], // Координаты центра карты
-            zoom: 7, // Масштаб
+            zoom: 7.5, // Масштаб
             controls: [], // Отлкючены инструменты на карте
             suppressMapOpenBlock: true,
             drag: false
@@ -202,7 +202,7 @@ $(document).ready(function() {
                 // Свойства
                 // Текст метки
                 // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Москва' // То что написано над иконкой
+                iconCaption: 'Москва, офис' // То что написано над иконкой
             }, {
                 preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
                 iconColor: '#ff0000' // Цвет иконки
@@ -220,7 +220,7 @@ $(document).ready(function() {
                 // Свойства
                 // Текст метки
                 // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Клин' // То что написано над иконкой
+                iconCaption: 'Клин, офис' // То что написано над иконкой
             }, {
                 preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
                 iconColor: '#ff0000' // Цвет иконки
@@ -237,7 +237,7 @@ $(document).ready(function() {
                 // Свойства
                 // Текст метки
                 // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Солнечногорск' // То что написано над иконкой
+                iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
             }, {
                 preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
                 iconColor: '#ff0000' // Цвет иконки
