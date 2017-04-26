@@ -1657,7 +1657,7 @@ button {
 .head .call a {
   font: 13px "Calibri-Regular", sans-serif;
   color: #fff;
-  padding: 10px 9px; }
+  padding: 10px 5px; }
   @media (min-width: 1060px) {
     .head .call a {
       font-size: 15px; } }
@@ -2347,42 +2347,45 @@ button {
       margin-top: 30px;
       display: flex; } }
   .cardp__photo {
-    height: 150px; }
+    height: 350px; }
     @media (min-width: 768px) {
       .cardp__photo {
         flex: 1;
         /*  0 1 350px */
         height: 350px;
         margin-right: 30px; } }
-  @media (min-width: 768px) {
-    .cardp__descr {
-      flex: 1; } }
-  .cardp__descr .cardp__title {
-    font: 16px "Calibri-Bold", sans-serif;
-    margin-top: 20px; }
+  .cardp__descr {
+    max-width: 290px;
+    margin: 0 auto; }
     @media (min-width: 768px) {
-      .cardp__descr .cardp__title {
-        margin-top: 0; } }
-    @media (min-width: 1060px) {
-      .cardp__descr .cardp__title {
-        font-size: 18px; } }
-  .cardp__descr .cardp__list {
-    margin: 5px 0 0;
-    padding: 0;
-    list-style-type: none; }
-    @media (min-width: 1060px) {
-      .cardp__descr .cardp__list {
-        margin-top: 10px; } }
-    .cardp__descr .cardp__list .cardp__item {
-      font: 14px "Calibri-Regular", sans-serif;
-      line-height: 22px;
-      padding-left: 10px;
-      background: url("../images/cardp__item.png") left 10px no-repeat; }
+      .cardp__descr {
+        flex: 1; } }
+    .cardp__descr .cardp__title {
+      font: 16px "Calibri-Bold", sans-serif;
+      margin-top: 20px; }
+      @media (min-width: 768px) {
+        .cardp__descr .cardp__title {
+          margin-top: 0; } }
       @media (min-width: 1060px) {
-        .cardp__descr .cardp__list .cardp__item {
-          font-size: 16px;
-          line-height: 26px;
-          background: url("../images/cardp__item.png") left 11px no-repeat; } }
+        .cardp__descr .cardp__title {
+          font-size: 18px; } }
+    .cardp__descr .cardp__list {
+      margin: 5px 0 0;
+      padding: 0;
+      list-style-type: none; }
+      @media (min-width: 1060px) {
+        .cardp__descr .cardp__list {
+          margin-top: 10px; } }
+      .cardp__descr .cardp__list .cardp__item {
+        font: 14px "Calibri-Regular", sans-serif;
+        line-height: 22px;
+        padding-left: 10px;
+        background: url("../images/cardp__item.png") left 10px no-repeat; }
+        @media (min-width: 1060px) {
+          .cardp__descr .cardp__list .cardp__item {
+            font-size: 16px;
+            line-height: 26px;
+            background: url("../images/cardp__item.png") left 11px no-repeat; } }
 
 .cardp--order {
   position: relative; }
@@ -3830,7 +3833,7 @@ button {
 .footer .call a {
   font: 13px "Calibri-Regular", sans-serif;
   color: #fff;
-  padding: 10px 9px; }
+  padding: 10px 5px; }
   @media (min-width: 1060px) {
     .footer .call a {
       font-size: 15px; } }

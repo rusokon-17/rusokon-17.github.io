@@ -94,9 +94,10 @@
 .footer .phone__span {
   font-family: $cb;
 }
+
 .footer .phone__link {
-   color: $white;
-   font-family: $cl;
+  color: $white;
+  font-family: $cl;
 }
 
 .footer .phone__time {
@@ -125,12 +126,12 @@
     font-size: 15px;
   }
 }
+
 .footer .call a {
   font: 13px $cr;
   color: $white;
-  padding: 10px 9px;
-    @include mq-lg {
-   
+  padding: 10px 5px;
+  @include mq-lg {
     font-size: 15px;
   }
 }

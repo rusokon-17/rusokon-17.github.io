@@ -236,7 +236,7 @@
   }
   &__photo {
     // border: 1px solid red;
-    height: 150px;
+    height: 350px;
     @include mq-md {
       flex: 1;
       /*  0 1 350px */
@@ -246,6 +246,8 @@
   }
   &__descr {
     // border: 1px solid red;
+    max-width: 290px;
+    margin: 0 auto;
     @include mq-md {
       flex: 1;
     }
