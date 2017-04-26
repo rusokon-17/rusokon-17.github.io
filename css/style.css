@@ -2898,7 +2898,7 @@ button {
 .stars:after {
   content: url("../images/slide__body.png");
   position: relative;
-  top: 25px;
+  top: 16px;
   background-color: #eaeaea; }
 
 .comfort {
