@@ -83,6 +83,9 @@ module.exports = function(grunt) {
 
                     'build/js/scripts.js': [
                         'js/vendor/jquery.min.js',
+                        'js/vendor/jquery.bxslider.min.js',
+                        'js/vendor/jquery.fancybox.min.js',
+                        'js/vendor/jquery.responsiveTabs.min.js',
                         'js/scripts.js'
 
                     ]
