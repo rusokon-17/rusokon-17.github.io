@@ -1535,14 +1535,11 @@ button {
   cursor: pointer; }
 
 .head {
-  background-color: #fff; }
-  @media (min-width: 768px) {
-    .head {
-      box-shadow: 0px 20px 18px -20px rgba(0, 0, 0, 0.4);
-      position: fixed;
-      z-index: 9999;
-      top: 0;
-      width: 100%; } }
+  background-color: #fff;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0px 20px 18px -20px rgba(0, 0, 0, 0.4);
+  position: relative; }
 
 .header {
   padding: 15px 0; }
@@ -1667,9 +1664,6 @@ button {
 
 .banners {
   position: relative; }
-  @media (min-width: 768px) {
-    .banners {
-      margin-top: 95px; } }
 
 .bxslider3 {
   margin: 0;

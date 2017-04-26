@@ -140,6 +140,12 @@ $(document).ready(function() {
         // duration: 200,
     });
 
+    // FancyBox
+    $("[data-fancybox]").fancybox({
+
+        infobar: false,
+        buttons: false,
+    });
 
 
     /*Настройки API Yandex.map*/
