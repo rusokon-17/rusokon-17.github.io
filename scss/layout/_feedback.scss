@@ -1,6 +1,6 @@
 .feedback {
   padding: 35px 0 10px;
-   background-color: $white;
+  background-color: $white;
   @include mq-md {
     padding: 60px 0 20px;
   }
@@ -142,38 +142,34 @@
   padding: 10px 0;
   a {
     font: 15px $cb;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
   }
 }
 
 .slide__body {
   // background: $grey10 url('../images/slide__body.png') 30px 337px no-repeat;
   background-color: $grey10;
-  padding: 25px 30px 35px;
+  padding: 25px 30px 60px;
   font: 16px $cr;
   line-height: 23px;
   color: $black;
   position: relative;
-
   &:before {
     content: url('../images/slide__body-prev.png');
     position: absolute;
     top: 30px;
     left: 12px;
-      @include mq-lg {
-        top: 40px;
-      }
+    @include mq-lg {
+      top: 40px;
+    }
   }
   &:after {
     content: url('../images/slide__body-next.png');
     position: absolute;
-    bottom: 65px;
+    bottom: 87px;
     right: 15px;
-      @include mq-lg {
-        bottom: 60px;
-      }
   }
 }
 
@@ -181,7 +177,7 @@
   &:after {
     content: url('../images/slide__body.png');
     position: relative;
-    top: 15px;
+    top: 25px;
     background-color: $grey10;
   }
 }
