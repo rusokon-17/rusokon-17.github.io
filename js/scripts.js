@@ -18,11 +18,11 @@ $(document).ready(function() {
         slideMargin: 20,
         pager: false,
         oneToOneTouch: false,
-        infiniteLoop: false,
+        infiniteLoop: true
     });
     // banner slider
     $('.bxslider3').bxSlider({
-        mode: 'fade',
+        mode: 'horizontal',
         speed: 100,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
