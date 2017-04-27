@@ -23,14 +23,13 @@ $(document).ready(function() {
     // banner slider
     $('.bxslider3').bxSlider({
         mode: 'horizontal',
-        speed: 100,
+        speed: 150,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         controls: false,
-
-
+        oneToOneTouch: false,
     });
 
     // contacts slider
@@ -144,7 +143,7 @@ $(document).ready(function() {
         duration: 200,
         scrollToAccordion: true, // скрол до заголовка
         scrollToAccordionOnLoad: false, //отключаем скрол до аккорд при загрузки страницы
-     
+
         // event: 'mouseover',
         // animationQueue: 'accordion',
     });
@@ -160,7 +159,7 @@ $(document).ready(function() {
             css: {
                 width: '80%',
                 margin: '0'
-              
+
 
             }
         }
