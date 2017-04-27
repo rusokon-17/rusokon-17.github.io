@@ -142,7 +142,9 @@ $(document).ready(function() {
         active: 0,
         animation: 'slide',
         duration: 200,
-        scrollToAccordion: true,
+        scrollToAccordion: true, // скрол до заголовка
+        scrollToAccordionOnLoad: false, //отключаем скрол до аккорд при загрузки страницы
+     
         // event: 'mouseover',
         // animationQueue: 'accordion',
     });
