@@ -47,7 +47,7 @@ $(document).ready(function() {
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
         // mode: 'fade',
-        speed: 100,
+        speed: 1,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
@@ -60,6 +60,7 @@ $(document).ready(function() {
 
     var slider6 = $('.bxslider6').bxSlider({
         mode: 'horizontal',
+           speed: 100,
         slideWidth: 306.6666666666667,
         minSlides: 1,
         maxSlides: 3,
@@ -70,6 +71,7 @@ $(document).ready(function() {
     });
 
     var slider7 = $('.bxslider7').bxSlider({
+           speed: 100,
         slideWidth: 306.6666666666667,
         minSlides: 1,
         maxSlides: 3,
