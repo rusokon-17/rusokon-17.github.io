@@ -387,7 +387,10 @@
   pointer-events: none; }
 
 .fancybox-infobar__body, .fancybox-button {
-  background: rgba(30, 30, 30, 0.6); }
+  background: rgba(30, 30, 30, 0.6);
+
+   }
+
 
 .fancybox-button:hover {
   background: rgba(0, 0, 0, 0.8); }
@@ -639,3 +642,4 @@ li.fancybox-thumbs-loading {
   .fancybox-container--thumbs .fancybox-slider-wrap,
   .fancybox-container--thumbs .fancybox-caption-wrap {
     right: 0; } }
+

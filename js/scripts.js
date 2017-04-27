@@ -60,25 +60,27 @@ $(document).ready(function() {
 
     var slider6 = $('.bxslider6').bxSlider({
         mode: 'horizontal',
-           speed: 100,
+        speed: 100,
         slideWidth: 306.6666666666667,
         minSlides: 1,
         maxSlides: 3,
         slideMargin: 30,
-        moveSlides: 1,
+        moveSlides: 0,
         preloadImages: 'all',
-        oneToOneTouch: false
+        oneToOneTouch: false,
+        infiniteLoop: false
     });
 
     var slider7 = $('.bxslider7').bxSlider({
-           speed: 100,
+        speed: 100,
         slideWidth: 306.6666666666667,
         minSlides: 1,
         maxSlides: 3,
         slideMargin: 30,
         moveSlides: 1,
         preloadImages: 'all',
-        oneToOneTouch: false
+        oneToOneTouch: false,
+        infiniteLoop: false
     });
     /*
     Используется метод перегрузки слайдера,
@@ -144,10 +146,22 @@ $(document).ready(function() {
 
     // FancyBox
     $("[data-fancybox]").fancybox({
+        speed: 10,
+        infobar: true,
+        buttons: true,
+        loop: false,
+        autoplay: '1',
+        iframe: {
+            css: {
+                width: '80%',
+                margin: '0'
+              
 
-        infobar: false,
-        buttons: false,
+            }
+        }
     });
+
+
 
 
     /*Настройки API Yandex.map*/
