@@ -254,6 +254,9 @@
     @include mq-md {
       flex: 1;
     }
+      @include mq-lg {
+        max-width: 330px;
+      }
     .cardp__title {
       font: 16px $cb;
       margin-top: 20px;
@@ -367,6 +370,9 @@
   @include mq-md {
     background-size: contain;
   }
+    @include mq-lg {
+      background-position: left top;
+    }
 }
 
 .cardp__photo--bg3 {
@@ -378,6 +384,9 @@
   @include mq-md {
     background-size: contain;
   }
+   @include mq-lg {
+      background-position: left top;
+    }
 }
 
 .cardp__photo--bg4 {
@@ -389,6 +398,9 @@
   @include mq-md {
     background-size: contain;
   }
+   @include mq-lg {
+      background-position: left top;
+    }
 }
 
 .cardp__photo--bg5 {
@@ -400,6 +412,9 @@
   @include mq-md {
     background-size: contain;
   }
+   @include mq-lg {
+      background-position: left top;
+    }
 }
 
 .cardh {

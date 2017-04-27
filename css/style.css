@@ -2362,6 +2362,9 @@ button {
     @media (min-width: 768px) {
       .cardp__descr {
         flex: 1; } }
+    @media (min-width: 1060px) {
+      .cardp__descr {
+        max-width: 330px; } }
     .cardp__descr .cardp__title {
       font: 16px "Calibri-Bold", sans-serif;
       margin-top: 20px; }
@@ -2463,6 +2466,9 @@ button {
   @media (min-width: 768px) {
     .cardp__photo--bg2 {
       background-size: contain; } }
+  @media (min-width: 1060px) {
+    .cardp__photo--bg2 {
+      background-position: left top; } }
 
 .cardp__photo--bg3 {
   background: url("../images/cardp__photo--bg3-320.jpg") center top no-repeat;
@@ -2473,6 +2479,9 @@ button {
   @media (min-width: 768px) {
     .cardp__photo--bg3 {
       background-size: contain; } }
+  @media (min-width: 1060px) {
+    .cardp__photo--bg3 {
+      background-position: left top; } }
 
 .cardp__photo--bg4 {
   background: url("../images/cardp__photo--bg4-320.jpg") center top no-repeat;
@@ -2483,6 +2492,9 @@ button {
   @media (min-width: 768px) {
     .cardp__photo--bg4 {
       background-size: contain; } }
+  @media (min-width: 1060px) {
+    .cardp__photo--bg4 {
+      background-position: left top; } }
 
 .cardp__photo--bg5 {
   background: url("../images/cardp__photo--bg5-320.jpg") center top no-repeat;
@@ -2493,6 +2505,9 @@ button {
   @media (min-width: 768px) {
     .cardp__photo--bg5 {
       background-size: contain; } }
+  @media (min-width: 1060px) {
+    .cardp__photo--bg5 {
+      background-position: left top; } }
 
 .cardh {
   display: flex;

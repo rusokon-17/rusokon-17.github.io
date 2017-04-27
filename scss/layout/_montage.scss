@@ -1,10 +1,10 @@
 .montage {
   height: 520px;
   background-color: $grey10;
-    @include mq-md {
-           height: 370px;
-            background: $grey10 url('../images/montage-992.jpg') center top no-repeat;
-    }
+  @include mq-md {
+    height: 370px;
+    background: $grey10 url('../images/montage-992.jpg') center top no-repeat;
+  }
   @include mq-lg {
     background: $grey10 url('../images/montage.jpg') center top no-repeat;
   }
@@ -12,10 +12,10 @@
 
 .montage .measurement {
   padding-top: 105px;
-    @include mq-md {
-      display: flex;
-             padding-top: 60px;
-    }
+  @include mq-md {
+    display: flex;
+    padding-top: 60px;
+  }
   &__title {
     font: 18px $cb;
     text-align: center;
@@ -23,15 +23,15 @@
     max-width: 260px;
     margin: 0 auto 30px;
     position: relative;
-      @include mq-md {
-        text-align: left;
-         margin: 74px 0 0 0;
-      }
-        @include mq-lg {
-          font-size: 26px;
-          line-height: 36px;
-          max-width: 260px;
-        }
+    @include mq-md {
+      text-align: left;
+      margin: 74px 0 0 0;
+    }
+    @include mq-lg {
+      font-size: 26px;
+      line-height: 36px;
+      max-width: 260px;
+    }
     &:before {
       content: url('../images/montage__title-2.png');
       position: absolute;
@@ -39,9 +39,9 @@
       left: 0;
       right: 0;
       text-align: center;
-        @include mq-md {
-          right: initial;
-        }
+      @include mq-md {
+        right: initial;
+      }
     }
   }
 }
@@ -54,10 +54,10 @@
   background-color: $white;
   max-width: 400px;
   margin: 0 auto;
-    @include mq-md {
-      max-width: 306px;
-      margin: 0 0 0 auto;
-    }
+  @include mq-md {
+    max-width: 306px;
+    margin: 0 0 0 auto;
+  }
   &__title {
     font: 19px $cr;
     color: $black;
