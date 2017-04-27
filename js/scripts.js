@@ -139,9 +139,12 @@ $(document).ready(function() {
     // Вопрос-ответ. Faq
     $('#responsiveTabsDemo').responsiveTabs({
         startCollapsed: false,
-        active: 1,
-        // animation: 'slide',
-        // duration: 200,
+        active: 0,
+        animation: 'slide',
+        duration: 200,
+        scrollToAccordion: true,
+        // event: 'mouseover',
+        // animationQueue: 'accordion',
     });
 
     // FancyBox
