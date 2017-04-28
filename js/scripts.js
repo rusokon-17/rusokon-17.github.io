@@ -190,6 +190,9 @@ $(document).ready(function() {
     ymaps.ready(init);
 
     function init() {
+
+        map_load();
+
         // Создаем карту.
         var myMap = new ymaps.Map("map", {
             center: [55.755814, 37.617635], // Координаты центра карты
@@ -238,7 +241,7 @@ $(document).ready(function() {
         myMap.geoObjects.add(myCircle);
 
 
-
+/*
         // Создаем карту.
         var myMap2 = new ymaps.Map("map2", {
             center: [55.755814, 37.617635], // Координаты центра карты
@@ -358,6 +361,14 @@ $(document).ready(function() {
 
         // Добавление метки на карту
         // myMap.geoObjects.add(myPlacemark3);
+    */
     }
+
+
+
+
+
+
+
 
 });
