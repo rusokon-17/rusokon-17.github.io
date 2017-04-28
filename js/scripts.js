@@ -43,25 +43,31 @@ $(document).ready(function() {
         controls: false,
         touchEnabled: false,
     });
+    $('#reload-m').click(function(e) {
+        e.preventDefault();
+        myMap2.redraw();
+    });
+    
     $('#reload-k').click(function(e) {
         e.preventDefault();
         myMap3.redraw();
     });
 
-        $('#reload-s').click(function(e) {
+    $('#reload-s').click(function(e) {
         e.preventDefault();
         myMap4.redraw();
     });
 
 
+
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-        mode: 'fade',
+  
         speed: 1,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        // preloadImages: 'all',
+        preloadImages: 'all',
         controls: false,
         touchEnabled: false,
         infiniteLoop: false,
@@ -292,7 +298,7 @@ $(document).ready(function() {
 
 
 
-         // Создаем карту для Солнечногорска
+        // Создаем карту для Солнечногорска
         var myMap4 = new ymaps.Map("map4", {
             center: [56.196311, 36.955119], // Координаты центра карты
             zoom: 8, // Масштаб
