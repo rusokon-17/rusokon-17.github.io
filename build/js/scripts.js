@@ -228,6 +228,9 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
     ymaps.ready(init);
 
     function init() {
+
+        map_load();
+
         // Создаем карту.
         var myMap = new ymaps.Map("map", {
             center: [55.755814, 37.617635], // Координаты центра карты
@@ -276,7 +279,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         myMap.geoObjects.add(myCircle);
 
 
-
+/*
         // Создаем карту.
         var myMap2 = new ymaps.Map("map2", {
             center: [55.755814, 37.617635], // Координаты центра карты
@@ -396,6 +399,14 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
 
         // Добавление метки на карту
         // myMap.geoObjects.add(myPlacemark3);
+    */
     }
+
+
+
+
+
+
+
 
 });
