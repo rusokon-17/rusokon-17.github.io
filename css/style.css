@@ -3582,6 +3582,7 @@ button {
     @media (min-width: 768px) {
       .bs4__map {
         display: table-cell;
+        vertical-align: top;
         width: 290px; } }
     @media (min-width: 1060px) {
       .bs4__map {
@@ -3598,6 +3599,7 @@ button {
     @media (min-width: 768px) {
       .bs4__info {
         display: table-cell;
+        vertical-align: top;
         width: 290px; } }
     @media (min-width: 1060px) {
       .bs4__info {

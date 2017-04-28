@@ -145,6 +145,7 @@
   @include mq-md {
     // height: 380px;
     display: table;
+
     padding: 40px;
   }
   @include mq-lg {
@@ -155,6 +156,7 @@
     // border: 1px solid green;
     @include mq-md {
       display: table-cell;
+       vertical-align: top;
       width: 290px;
     }
     @include mq-lg {
@@ -173,6 +175,7 @@
     margin: 0 auto;
     @include mq-md {
       display: table-cell;
+       vertical-align: top;
       width: 290px;
     }
     @include mq-lg {

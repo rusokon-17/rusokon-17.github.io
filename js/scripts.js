@@ -33,24 +33,35 @@ $(document).ready(function() {
     });
 
     // contacts slider
-    $('.bxslider4').bxSlider({
+    var slider4 = $('.bxslider4').bxSlider({
         mode: 'fade',
         speed: 100,
         pagerCustom: '#bx-pager4',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
-        controls: false
+        controls: false,
+        touchEnabled: false,
     });
+    $('#reload-k').click(function(e) {
+        e.preventDefault();
+        myMap3.redraw();
+    });
+
+        $('#reload-s').click(function(e) {
+        e.preventDefault();
+        myMap4.redraw();
+    });
+
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-        // mode: 'fade',
+        mode: 'fade',
         speed: 1,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        // preloadImages: 'all',
         controls: false,
         touchEnabled: false,
         infiniteLoop: false,
@@ -187,7 +198,7 @@ $(document).ready(function() {
             // Координаты центра круга.
             [55.755814, 37.617635], // Центр круга
             // Радиус круга в метрах.
-            90000
+            80000
         ], {
             // Описываем свойства круга.
             // Содержимое балуна.
@@ -221,8 +232,18 @@ $(document).ready(function() {
         myMap.geoObjects.add(myCircle);
 
 
+
+        // Создаем карту.
+        var myMap2 = new ymaps.Map("map2", {
+            center: [55.755814, 37.617635], // Координаты центра карты
+            zoom: 8, // Масштаб
+            controls: [], // Отлкючены инструменты на карте
+            suppressMapOpenBlock: true,
+            drag: false
+        });
+
         // Создание метки Москва
-        var myPlacemark = new ymaps.Placemark(
+        var myPlacemark2 = new ymaps.Placemark(
             // Координаты метки
             [55.755814, 37.617635], {
                 // Свойства
@@ -236,13 +257,26 @@ $(document).ready(function() {
             });
 
         // Добавление метки на карту
-        myMap.geoObjects.add(myPlacemark);
+        myMap2.geoObjects.add(myPlacemark2);
 
 
-        // Создание метки г. Клин
-        var myPlacemark2 = new ymaps.Placemark(
+
+
+
+
+        // Создаем карту.
+        var myMap3 = new ymaps.Map("map3", {
+            center: [56.329796, 36.725024], // Координаты центра карты
+            zoom: 8, // Масштаб
+            controls: [], // Отлкючены инструменты на карте
+            suppressMapOpenBlock: true,
+            drag: false
+        });
+
+        // Создание метки Москва
+        var myPlacemark3 = new ymaps.Placemark(
             // Координаты метки
-            [56.331693, 36.728716], {
+            [56.329796, 36.725024], {
                 // Свойства
                 // Текст метки
                 // hintContent: 'Балтийская улица, 9',
@@ -254,12 +288,23 @@ $(document).ready(function() {
             });
 
         // Добавление метки на карту
-        myMap.geoObjects.add(myPlacemark2);
+        myMap3.geoObjects.add(myPlacemark3);
 
-        // Создание метки Солнечногорск
-        var myPlacemark3 = new ymaps.Placemark(
+
+
+         // Создаем карту для Солнечногорска
+        var myMap4 = new ymaps.Map("map4", {
+            center: [56.196311, 36.955119], // Координаты центра карты
+            zoom: 8, // Масштаб
+            controls: [], // Отлкючены инструменты на карте
+            suppressMapOpenBlock: true,
+            drag: false
+        });
+
+        // Создание метки Солнечногорска
+        var myPlacemark4 = new ymaps.Placemark(
             // Координаты метки
-            [56.185147, 36.976678], {
+            [56.196311, 36.955119], {
                 // Свойства
                 // Текст метки
                 // hintContent: 'Балтийская улица, 9',
@@ -270,8 +315,43 @@ $(document).ready(function() {
 
             });
 
+        // Добавление метки Солнечногорска на карту
+        myMap4.geoObjects.add(myPlacemark4);
+
+
+        // Создание метки г. Клин
+        // var myPlacemark2 = new ymaps.Placemark(
+        //     // Координаты метки
+        //     [56.331693, 36.728716], {
+        //         // Свойства
+        //         // Текст метки
+        //         // hintContent: 'Балтийская улица, 9',
+        //         iconCaption: 'Клин, офис' // То что написано над иконкой
+        //     }, {
+        //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+        //         iconColor: '#ff0000' // Цвет иконки
+
+        //     });
+
         // Добавление метки на карту
-        myMap.geoObjects.add(myPlacemark3);
+        // myMap.geoObjects.add(myPlacemark2);
+
+        // Создание метки Солнечногорск
+        // var myPlacemark3 = new ymaps.Placemark(
+        //     // Координаты метки
+        //     [56.185147, 36.976678], {
+        //         // Свойства
+        //         // Текст метки
+        //         // hintContent: 'Балтийская улица, 9',
+        //         iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
+        //     }, {
+        //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+        //         iconColor: '#ff0000' // Цвет иконки
+
+        //     });
+
+        // Добавление метки на карту
+        // myMap.geoObjects.add(myPlacemark3);
     }
 
 });
