@@ -63,7 +63,7 @@
     padding: 0 20px 0 0;
     text-align: left;
     @include mq-lg {
-      flex: 0 0 300px;
+      flex: 0 0 310px;/*  300 */
     }
   }
   &__text {

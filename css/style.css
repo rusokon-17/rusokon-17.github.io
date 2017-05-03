@@ -1587,7 +1587,8 @@ button {
       text-align: left; } }
   @media (min-width: 768px) and (min-width: 1060px) {
     .head .discount {
-      flex: 0 0 300px; } }
+      flex: 0 0 310px;
+      /*  300 */ } }
   .head .discount__text {
     font: 14px "Calibri-Regular", sans-serif;
     margin: 0;
