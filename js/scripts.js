@@ -27,7 +27,7 @@ $(document).ready(function() {
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        preloadImages: 'visible',
         controls: false,
         oneToOneTouch: false,
     });

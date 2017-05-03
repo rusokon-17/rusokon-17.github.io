@@ -65,7 +65,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        preloadImages: 'visible',
         controls: false,
         oneToOneTouch: false,
     });

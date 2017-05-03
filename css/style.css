@@ -3545,7 +3545,7 @@ button {
   background-color: initial;
   display: inline-block;
   text-align: center;
-  padding: 0 12px;
+  padding: 0 10px;
   font: 16px "Calibri-Regular", sans-serif;
   text-decoration: underline;
   cursor: pointer; }
