@@ -234,7 +234,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         // Создаем карту.
         var myMap = new ymaps.Map("map", {
             center: [55.755814, 37.617635], // Координаты центра карты
-            zoom: 7.5, // Масштаб
+            zoom: 8, // Масштаб
             controls: [], // Отлкючены инструменты на карте
             suppressMapOpenBlock: true,
             drag: false
