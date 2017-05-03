@@ -34,8 +34,8 @@ $(document).ready(function() {
 
     // contacts slider
     var slider4 = $('.bxslider4').bxSlider({
-        mode: 'fade',
-        speed: 100,
+        // mode: 'fade',
+        speed: 10,
         pagerCustom: '#bx-pager4',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
@@ -45,16 +45,19 @@ $(document).ready(function() {
     });
     $('#reload-m').click(function(e) {
         e.preventDefault();
+        slider4.reloadSlider();
         myMap2.redraw();
     });
     
     $('#reload-k').click(function(e) {
         e.preventDefault();
+         slider4.reloadSlider();
         myMap3.redraw();
     });
 
     $('#reload-s').click(function(e) {
         e.preventDefault();
+         slider4.reloadSlider();
         myMap4.redraw();
     });
 
