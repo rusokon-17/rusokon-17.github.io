@@ -51,13 +51,14 @@
     margin: 0 auto;
     // border: 1px solid red;
     @include mq-sm {
+       padding-top: 230px;
       max-width: initial;
       display: flex;
       flex-flow: row wrap;
     }
       @include mq-md {
          background: url('../images/steps-690.jpg') center top no-repeat;
-        padding-top: 370px;
+        padding-top: 420px;
       }
     @include mq-lg {
       display: block;
@@ -76,10 +77,14 @@
   height: 26px;
   @include mq-sm {
     flex: 1 1 200px;
+    margin-top: 0;
+      height: 80px;
   }
   @include mq-md {
     padding: 0 20px 0 50px;
-    margin-top: 50px;
+    // margin-top: 50px;
+    height: 100px;
+
   }
   @include mq-lg {
     position: absolute;
@@ -175,10 +180,14 @@
   flex-flow: row wrap;
   @include mq-sm {
     max-width: initial;
-    margin: 40px initial;
+    margin: initial;
   }
+    @include mq-md {
+       margin: 0 auto 0;
+    }
   @include mq-lg {
     flex-flow: row nowrap;
+     margin-top: 40px;
   }
   .key {
     flex: 1 1 300px;

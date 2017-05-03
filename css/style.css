@@ -3097,13 +3097,14 @@ button {
   margin: 0 auto; }
   @media (min-width: 576px) {
     .steps__text {
+      padding-top: 230px;
       max-width: initial;
       display: flex;
       flex-flow: row wrap; } }
   @media (min-width: 768px) {
     .steps__text {
       background: url("../images/steps-690.jpg") center top no-repeat;
-      padding-top: 370px; } }
+      padding-top: 420px; } }
   @media (min-width: 1060px) {
     .steps__text {
       display: block;
@@ -3118,11 +3119,13 @@ button {
   height: 26px; }
   @media (min-width: 576px) {
     .steps__item {
-      flex: 1 1 200px; } }
+      flex: 1 1 200px;
+      margin-top: 0;
+      height: 80px; } }
   @media (min-width: 768px) {
     .steps__item {
       padding: 0 20px 0 50px;
-      margin-top: 50px; } }
+      height: 100px; } }
   @media (min-width: 1060px) {
     .steps__item {
       position: absolute;
@@ -3211,10 +3214,14 @@ button {
   @media (min-width: 576px) {
     .installation .keyses {
       max-width: initial;
-      margin: 40px initial; } }
+      margin: initial; } }
+  @media (min-width: 768px) {
+    .installation .keyses {
+      margin: 0 auto 0; } }
   @media (min-width: 1060px) {
     .installation .keyses {
-      flex-flow: row nowrap; } }
+      flex-flow: row nowrap;
+      margin-top: 40px; } }
   .installation .keyses .key {
     flex: 1 1 300px;
     padding-left: 120px;
