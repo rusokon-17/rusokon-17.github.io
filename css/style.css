@@ -3469,26 +3469,85 @@ button {
     .faq__i {
       font-size: 42px; } }
 
-.fquest {
+.faq__main {
   position: relative;
   background-color: #fff;
-  padding: 162px 15px 15px 15px;
-  margin: 75px 0 0 0; }
-  .fquest:before {
+  padding: 153px 15px 15px 15px;
+  margin: 75px 0 0 0;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 768px) {
+    .faq__main {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      height: 257px; } }
+  @media (min-width: 1060px) {
+    .faq__main {
+      margin: 100px 0 0 0; } }
+  .faq__main:before {
     content: url("../images/fquest.png");
     position: absolute;
     top: -30px;
     left: 0;
     right: 0;
     text-align: center; }
+    @media (min-width: 768px) {
+      .faq__main:before {
+        top: -55px;
+        content: url("../images/fquest-980.png"); } }
 
-.fquest__t {
-  font: 14px "Calibri-Regular", sans-serif; }
+.faq__main1 {
+  font: 14px "Calibri-Regular", sans-serif;
+  padding: 10px;
+  max-width: 260px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .faq__main1 {
+      flex: 0 0 180px;
+      margin: initial; } }
+  @media (min-width: 1060px) {
+    .faq__main1 {
+      font-size: 20px;
+      flex: 0 0 340px; } }
 
-.fquest__t-span {
-  display: block;
+.faq__main1-span {
+  font: 18px "Calibri-Bold", sans-serif;
   color: #ff1a44;
-  font: 18px "Calibri-Bold", sans-serif; }
+  display: block;
+  margin: 4px 0; }
+  @media (min-width: 768px) {
+    .faq__main1-span {
+      margin: 20px 0; } }
+  @media (min-width: 1060px) {
+    .faq__main1-span {
+      font-size: 26px;
+      line-height: 36px; } }
+
+.faq__main1--mr {
+  margin-bottom: 0px; }
+  @media (min-width: 768px) {
+    .faq__main1--mr {
+      margin-right: auto;
+      text-align: right; } }
+
+.faq__main-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.faq__main-item {
+  font: 18px "Calibri-Bold", sans-serif;
+  padding-left: 15px;
+  background: url("../images/faq__main-item.png") left center no-repeat;
+  margin: 4px 0; }
+  @media (min-width: 768px) {
+    .faq__main-item {
+      margin: 10px 0; } }
+  @media (min-width: 1060px) {
+    .faq__main-item {
+      font-size: 24px;
+      margin: 10px 0;
+      background-position: left 15px; } }
 
 .contacts {
   padding: 35px 0;
