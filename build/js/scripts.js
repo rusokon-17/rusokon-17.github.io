@@ -81,22 +81,22 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         controls: false,
         touchEnabled: false,
     });
+
+
+
     $('#reload-m').click(function(e) {
         e.preventDefault();
-        slider4.reloadSlider();
         myMap2.redraw();
     });
     
     $('#reload-k').click(function(e) {
         e.preventDefault();
-         slider4.reloadSlider();
         myMap3.redraw();
     });
 
     $('#reload-s').click(function(e) {
         e.preventDefault();
-         slider4.reloadSlider();
-        myMap4.redraw();
+        myMap6.redraw();
     });
 
 
@@ -206,6 +206,10 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         // animationQueue: 'accordion',
     });
 
+
+
+
+
     // FancyBox
     $("[data-fancybox]").fancybox({
         speed: 10,
@@ -222,6 +226,11 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
             }
         }
     });
+
+
+
+
+
 
 
 

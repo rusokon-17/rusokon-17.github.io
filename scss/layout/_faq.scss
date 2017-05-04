@@ -33,7 +33,6 @@
       left: 0;
       right: 0;
       text-align: center;
-
     }
   }
 }
@@ -57,7 +56,33 @@
     font-size: 30px;
     margin-right: 30px;
   }
-    @include mq-lg {
-      font-size: 42px;
-    }
+  @include mq-lg {
+    font-size: 42px;
+  }
+}
+
+.fquest {
+  position: relative;
+  background-color: $white;
+  padding: 162px 15px 15px 15px;
+  margin: 75px 0 0 0;
+
+
+
+  &:before {
+    content: url('../images/fquest.png');
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+.fquest__t {
+  font: 14px $cr;
+}
+.fquest__t-span {
+  display: block;
+  color: $rose-red;
+  font: 18px $cb;
 }
