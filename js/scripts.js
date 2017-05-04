@@ -7,7 +7,8 @@ $(document).ready(function() {
         preloadImages: 'all',
         oneToOneTouch: false,
         mode: 'fade',
-        speed: 100
+        speed: 100,
+
 
     });
     // awards slider
@@ -23,6 +24,7 @@ $(document).ready(function() {
     // banner slider
     $('.bxslider3').bxSlider({
         mode: 'horizontal',
+        default: 3,
         speed: 150,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
@@ -30,6 +32,7 @@ $(document).ready(function() {
         preloadImages: 'visible',
         controls: false,
         oneToOneTouch: false,
+        infiniteLoop: false
     });
 
     // contacts slider
@@ -42,30 +45,31 @@ $(document).ready(function() {
         preloadImages: 'all',
         controls: false,
         touchEnabled: false,
+        infiniteLoop: false
     });
 
 
 
-    $('#reload-m').click(function(e) {
-        e.preventDefault();
-        myMap3.redraw();
-    });
-    
-    $('#reload-k').click(function(e) {
-        e.preventDefault();
-        myMap4.redraw();
-    });
+    // $('#reload-m').click(function(e) {
+    //     e.preventDefault();
+    //     myMap3.redraw();
+    // });
 
-    $('#reload-s').click(function(e) {
-        e.preventDefault();
-        myMap6.redraw();
-    });
+    // $('#reload-k').click(function(e) {
+    //     e.preventDefault();
+    //     myMap4.redraw();
+    // });
+
+    // $('#reload-s').click(function(e) {
+    //     e.preventDefault();
+    //     myMap6.redraw();
+    // });
 
 
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-  
+
         speed: 1,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
@@ -125,6 +129,7 @@ $(document).ready(function() {
         touchEnabled: false,
         preventDefaultSwipeX: true,
         oneToOneTouch: false,
+            infiniteLoop: false
     });
 
 
@@ -253,127 +258,127 @@ $(document).ready(function() {
         myMap.geoObjects.add(myCircle);
 
 
-/*
-        // Создаем карту.
-        var myMap2 = new ymaps.Map("map2", {
-            center: [55.755814, 37.617635], // Координаты центра карты
-            zoom: 8, // Масштаб
-            controls: [], // Отлкючены инструменты на карте
-            suppressMapOpenBlock: true,
-            drag: false
-        });
+        /*
+                // Создаем карту.
+                var myMap2 = new ymaps.Map("map2", {
+                    center: [55.755814, 37.617635], // Координаты центра карты
+                    zoom: 8, // Масштаб
+                    controls: [], // Отлкючены инструменты на карте
+                    suppressMapOpenBlock: true,
+                    drag: false
+                });
 
-        // Создание метки Москва
-        var myPlacemark2 = new ymaps.Placemark(
-            // Координаты метки
-            [55.755814, 37.617635], {
-                // Свойства
-                // Текст метки
-                // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Москва, офис' // То что написано над иконкой
-            }, {
-                preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
-                iconColor: '#ff0000' // Цвет иконки
+                // Создание метки Москва
+                var myPlacemark2 = new ymaps.Placemark(
+                    // Координаты метки
+                    [55.755814, 37.617635], {
+                        // Свойства
+                        // Текст метки
+                        // hintContent: 'Балтийская улица, 9',
+                        iconCaption: 'Москва, офис' // То что написано над иконкой
+                    }, {
+                        preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+                        iconColor: '#ff0000' // Цвет иконки
 
-            });
+                    });
 
-        // Добавление метки на карту
-        myMap2.geoObjects.add(myPlacemark2);
-
-
+                // Добавление метки на карту
+                myMap2.geoObjects.add(myPlacemark2);
 
 
 
 
-        // Создаем карту.
-        var myMap3 = new ymaps.Map("map3", {
-            center: [56.329796, 36.725024], // Координаты центра карты
-            zoom: 8, // Масштаб
-            controls: [], // Отлкючены инструменты на карте
-            suppressMapOpenBlock: true,
-            drag: false
-        });
-
-        // Создание метки Москва
-        var myPlacemark3 = new ymaps.Placemark(
-            // Координаты метки
-            [56.329796, 36.725024], {
-                // Свойства
-                // Текст метки
-                // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Клин, офис' // То что написано над иконкой
-            }, {
-                preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
-                iconColor: '#ff0000' // Цвет иконки
-
-            });
-
-        // Добавление метки на карту
-        myMap3.geoObjects.add(myPlacemark3);
 
 
+                // Создаем карту.
+                var myMap3 = new ymaps.Map("map3", {
+                    center: [56.329796, 36.725024], // Координаты центра карты
+                    zoom: 8, // Масштаб
+                    controls: [], // Отлкючены инструменты на карте
+                    suppressMapOpenBlock: true,
+                    drag: false
+                });
 
-        // Создаем карту для Солнечногорска
-        var myMap4 = new ymaps.Map("map4", {
-            center: [56.196311, 36.955119], // Координаты центра карты
-            zoom: 8, // Масштаб
-            controls: [], // Отлкючены инструменты на карте
-            suppressMapOpenBlock: true,
-            drag: false
-        });
+                // Создание метки Москва
+                var myPlacemark3 = new ymaps.Placemark(
+                    // Координаты метки
+                    [56.329796, 36.725024], {
+                        // Свойства
+                        // Текст метки
+                        // hintContent: 'Балтийская улица, 9',
+                        iconCaption: 'Клин, офис' // То что написано над иконкой
+                    }, {
+                        preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+                        iconColor: '#ff0000' // Цвет иконки
 
-        // Создание метки Солнечногорска
-        var myPlacemark4 = new ymaps.Placemark(
-            // Координаты метки
-            [56.196311, 36.955119], {
-                // Свойства
-                // Текст метки
-                // hintContent: 'Балтийская улица, 9',
-                iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
-            }, {
-                preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
-                iconColor: '#ff0000' // Цвет иконки
+                    });
 
-            });
-
-        // Добавление метки Солнечногорска на карту
-        myMap4.geoObjects.add(myPlacemark4);
+                // Добавление метки на карту
+                myMap3.geoObjects.add(myPlacemark3);
 
 
-        // Создание метки г. Клин
-        // var myPlacemark2 = new ymaps.Placemark(
-        //     // Координаты метки
-        //     [56.331693, 36.728716], {
-        //         // Свойства
-        //         // Текст метки
-        //         // hintContent: 'Балтийская улица, 9',
-        //         iconCaption: 'Клин, офис' // То что написано над иконкой
-        //     }, {
-        //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
-        //         iconColor: '#ff0000' // Цвет иконки
 
-        //     });
+                // Создаем карту для Солнечногорска
+                var myMap4 = new ymaps.Map("map4", {
+                    center: [56.196311, 36.955119], // Координаты центра карты
+                    zoom: 8, // Масштаб
+                    controls: [], // Отлкючены инструменты на карте
+                    suppressMapOpenBlock: true,
+                    drag: false
+                });
 
-        // Добавление метки на карту
-        // myMap.geoObjects.add(myPlacemark2);
+                // Создание метки Солнечногорска
+                var myPlacemark4 = new ymaps.Placemark(
+                    // Координаты метки
+                    [56.196311, 36.955119], {
+                        // Свойства
+                        // Текст метки
+                        // hintContent: 'Балтийская улица, 9',
+                        iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
+                    }, {
+                        preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+                        iconColor: '#ff0000' // Цвет иконки
 
-        // Создание метки Солнечногорск
-        // var myPlacemark3 = new ymaps.Placemark(
-        //     // Координаты метки
-        //     [56.185147, 36.976678], {
-        //         // Свойства
-        //         // Текст метки
-        //         // hintContent: 'Балтийская улица, 9',
-        //         iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
-        //     }, {
-        //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
-        //         iconColor: '#ff0000' // Цвет иконки
+                    });
 
-        //     });
+                // Добавление метки Солнечногорска на карту
+                myMap4.geoObjects.add(myPlacemark4);
 
-        // Добавление метки на карту
-        // myMap.geoObjects.add(myPlacemark3);
-    */
+
+                // Создание метки г. Клин
+                // var myPlacemark2 = new ymaps.Placemark(
+                //     // Координаты метки
+                //     [56.331693, 36.728716], {
+                //         // Свойства
+                //         // Текст метки
+                //         // hintContent: 'Балтийская улица, 9',
+                //         iconCaption: 'Клин, офис' // То что написано над иконкой
+                //     }, {
+                //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+                //         iconColor: '#ff0000' // Цвет иконки
+
+                //     });
+
+                // Добавление метки на карту
+                // myMap.geoObjects.add(myPlacemark2);
+
+                // Создание метки Солнечногорск
+                // var myPlacemark3 = new ymaps.Placemark(
+                //     // Координаты метки
+                //     [56.185147, 36.976678], {
+                //         // Свойства
+                //         // Текст метки
+                //         // hintContent: 'Балтийская улица, 9',
+                //         iconCaption: 'Солнечногорск, офис' // То что написано над иконкой
+                //     }, {
+                //         preset: 'islands#greenDotIconWithCaption', // Иконка с возможностью вставить текст
+                //         iconColor: '#ff0000' // Цвет иконки
+
+                //     });
+
+                // Добавление метки на карту
+                // myMap.geoObjects.add(myPlacemark3);
+            */
     }
 
 
