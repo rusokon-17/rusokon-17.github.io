@@ -48,12 +48,12 @@ $(document).ready(function() {
 
     $('#reload-m').click(function(e) {
         e.preventDefault();
-        myMap2.redraw();
+        myMap3.redraw();
     });
     
     $('#reload-k').click(function(e) {
         e.preventDefault();
-        myMap3.redraw();
+        myMap4.redraw();
     });
 
     $('#reload-s').click(function(e) {
