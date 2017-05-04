@@ -15,7 +15,8 @@
   // border: 1px solid red;
   padding-bottom: 50px;
   &__title {
-    font: 24px $cb;
+    font: 24px $cb; 
+    font-weight: 600;
     margin: 0;
     @include mq-lg {
       font-size: 38px;
@@ -96,7 +97,9 @@
     }
   }
   &__descr {
-    font: 14px $cr;
+    font: 14px $cr; 
+      -moz-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
     margin-top: 20px;
     @include mq-lg {
       font-size: 16px;
