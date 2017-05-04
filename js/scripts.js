@@ -24,12 +24,12 @@ $(document).ready(function() {
     // banner slider
     $('.bxslider3').bxSlider({
         mode: 'horizontal',
-        default: 3,
-        speed: 150,
+        // default: 3,
+        speed: 1,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
         adaptiveHeightSpeed: 300,
-        preloadImages: 'visible',
+        preloadImages: 'all',
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: false

@@ -1,6 +1,7 @@
 .banners {
   // border: 1px solid red;
   position: relative;
+
     // @include mq-md {
     //    margin-top: 95px; 
     // }
@@ -10,11 +11,13 @@
 .bxslider3 {
   margin: 0;
   padding: 0;
+
 }
 
 .bxslider3-slide {
   // height: 830px; //630
   padding-top: 200px;
+
   // box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset;
   @include mq-md {
     height: 630px; //630
