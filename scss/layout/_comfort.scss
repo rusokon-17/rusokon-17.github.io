@@ -7,6 +7,7 @@
   }
   @include mq-lg {
     background: $grey10 url('../images/comfort.jpg') center top no-repeat;
+    background-size: cover;
   }
 }
 

@@ -1722,6 +1722,9 @@ button {
   @media (min-width: 768px) {
     .banner-1 {
       background: url("../images/banner-1.jpg") center top no-repeat; } }
+  @media (min-width: 1060px) {
+    .banner-1 {
+      background-size: cover; } }
 
 .banner-2 {
   background: url("../images/banner-2-small.jpg") center top no-repeat;
@@ -1729,6 +1732,9 @@ button {
   @media (min-width: 768px) {
     .banner-2 {
       background: url("../images/banner-2.jpg") center top no-repeat; } }
+  @media (min-width: 1060px) {
+    .banner-2 {
+      background-size: cover; } }
 
 .banner-3 {
   background: url("../images/banner-3-small.jpg") center top no-repeat;
@@ -1736,6 +1742,9 @@ button {
   @media (min-width: 768px) {
     .banner-3 {
       background: url("../images/banner-3.jpg") center top no-repeat; } }
+  @media (min-width: 1060px) {
+    .banner-3 {
+      background-size: cover; } }
 
 .bx-pager__link--bg1:before {
   content: url("../images/bx-pager__link--bg1.png");
@@ -2971,7 +2980,8 @@ button {
       background: #eaeaea url("../images/comfort-992.jpg") center top no-repeat; } }
   @media (min-width: 1060px) {
     .comfort {
-      background: #eaeaea url("../images/comfort.jpg") center top no-repeat; } }
+      background: #eaeaea url("../images/comfort.jpg") center top no-repeat;
+      background-size: cover; } }
 
 .comfort .measurement {
   padding-top: 105px; }
@@ -3304,7 +3314,8 @@ button {
       background: #eaeaea url("../images/montage-992.jpg") center top no-repeat; } }
   @media (min-width: 1060px) {
     .montage {
-      background: #eaeaea url("../images/montage.jpg") center top no-repeat; } }
+      background: #eaeaea url("../images/montage.jpg") center top no-repeat;
+      background-size: cover; } }
 
 .montage .measurement {
   padding-top: 105px; }
@@ -3788,7 +3799,8 @@ button {
       background: #eaeaea url("../images/measure-992.jpg") center top no-repeat; } }
   @media (min-width: 1060px) {
     .measure {
-      background: #eaeaea url("../images/measure.jpg") center top no-repeat; } }
+      background: #eaeaea url("../images/measure.jpg") center top no-repeat;
+      background-size: cover; } }
 
 .measurement {
   padding-top: 105px; }

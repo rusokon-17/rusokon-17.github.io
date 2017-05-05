@@ -1,23 +1,19 @@
 .banners {
   // border: 1px solid red;
   position: relative;
-
-    // @include mq-md {
-    //    margin-top: 95px; 
-    // }
- 
+  // @include mq-md {
+  //    margin-top: 95px; 
+  // }
 }
 
 .bxslider3 {
   margin: 0;
   padding: 0;
-
 }
 
 .bxslider3-slide {
   // height: 830px; //630
   padding-top: 200px;
-
   // box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset;
   @include mq-md {
     height: 630px; //630
@@ -83,27 +79,37 @@
   @include mq-md {
     background: url('../images/banner-1.jpg') center top no-repeat;
   }
+    @include mq-lg {
+      background-size: cover;
+    }
 }
+
 .banner-2 {
   background: url('../images/banner-2-small.jpg') center top no-repeat;
   background-size: auto 180px;
   @include mq-md {
     background: url('../images/banner-2.jpg') center top no-repeat;
   }
+      @include mq-lg {
+      background-size: cover;
+    }
 }
+
 .banner-3 {
   background: url('../images/banner-3-small.jpg') center top no-repeat;
   background-size: auto 180px;
   @include mq-md {
     background: url('../images/banner-3.jpg') center top no-repeat;
   }
+      @include mq-lg {
+      background-size: cover;
+    }
 }
 
 .bx-pager__link--bg1:before {
   content: url('../images/bx-pager__link--bg1.png');
   position: absolute;
-
-    left: 20px;
+  left: 20px;
   bottom: 7px;
 }
 
@@ -137,11 +143,12 @@
   font: 31px $cb;
   text-transform: uppercase;
   @include mq-md {
-    font-size: 40px; /* 54px; */
+    font-size: 40px;
+    /* 54px; */
   }
-    @include mq-lg {
-      font-size: 54px;
-    }
+  @include mq-lg {
+    font-size: 54px;
+  }
 }
 
 .bann__text1-head {
@@ -152,20 +159,19 @@
   @include mq-md {
     width: 240px;
   }
-    @include mq-lg {
-      width: 340px;
-    }
-
+  @include mq-lg {
+    width: 340px;
+  }
 }
 
 .bann__text1-foot {
   font: 20px $cr;
   color: $grey3;
-
-    @include mq-lg {
-      font-size: 36px;
-    }
+  @include mq-lg {
+    font-size: 36px;
+  }
 }
+
 .bann__text1-foot2 {
   font: 16px $cr;
   color: $black;
@@ -198,9 +204,9 @@
     text-align: left;
     margin-left: 10px;
   }
-    @include mq-lg {
-       margin-left: 30px;
-    }
+  @include mq-lg {
+    margin-left: 30px;
+  }
   &:first-child {
     margin-left: 0;
   }
