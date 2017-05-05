@@ -44,7 +44,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         oneToOneTouch: false,
-        mode: 'fade',
+        mode: 'horizontal',
         speed: 100,
 
 

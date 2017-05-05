@@ -6,7 +6,7 @@ $(document).ready(function() {
         adaptiveHeightSpeed: 300,
         preloadImages: 'all',
         oneToOneTouch: false,
-        mode: 'fade',
+        mode: 'horizontal',
         speed: 100,
 
 
