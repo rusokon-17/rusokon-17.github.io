@@ -2796,6 +2796,10 @@ button {
   cursor: pointer;
   opacity: .8; }
 
+.fancybox-controls .fancybox-infobar .js-fancybox-index,
+.fancybox-controls .fancybox-infobar .js-fancybox-count {
+  color: #fff; }
+
 .feedback {
   padding: 35px 0 10px;
   background-color: #fff; }
