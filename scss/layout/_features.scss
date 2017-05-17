@@ -1,7 +1,6 @@
 .features {
   padding: 35px 0 10px;
-   background-color: $white;
-
+  background-color: $white;
   @include mq-sm {
     padding: 35px 0 35px;
   }
@@ -15,7 +14,7 @@
   // border: 1px solid red;
   padding-bottom: 50px;
   &__title {
-    font: 24px $cb; 
+    font: 24px $cb;
     font-weight: 600;
     margin: 0;
     @include mq-lg {
@@ -97,9 +96,9 @@
     }
   }
   &__descr {
-    font: 14px $cr; 
-      -moz-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
+    font: 14px $cr;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
     margin-top: 20px;
     @include mq-lg {
       font-size: 16px;
@@ -190,6 +189,7 @@
     }
     &--bg1 {
       background: url('../images/key--bg1.png') left top no-repeat;
+
       @include mq-sm {
         background-position: center top;
       }
