@@ -32,7 +32,7 @@ $(document).ready(function() {
         preloadImages: 'all',
         controls: false,
         oneToOneTouch: false,
-        infiniteLoop: false,
+        infiniteLoop: true,
         auto: true
     });
 

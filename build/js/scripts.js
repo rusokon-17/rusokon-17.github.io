@@ -70,7 +70,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
         preloadImages: 'all',
         controls: false,
         oneToOneTouch: false,
-        infiniteLoop: false,
+        infiniteLoop: true,
         auto: true
     });
 
