@@ -32,7 +32,8 @@ $(document).ready(function() {
         preloadImages: 'all',
         controls: false,
         oneToOneTouch: false,
-        infiniteLoop: false
+        infiniteLoop: false,
+        auto: true
     });
 
     // contacts slider
