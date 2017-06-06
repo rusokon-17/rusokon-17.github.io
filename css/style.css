@@ -3581,7 +3581,7 @@ button {
       background-position: left 15px; } }
 
 .contacts {
-  padding: 35px 0;
+  padding: 35px 0 0;
   background-color: #fff; }
   @media (min-width: 768px) {
     .contacts {
