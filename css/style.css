@@ -1848,6 +1848,9 @@ button {
     .bann__text2-block {
       font-size: 16px; } }
 
+.bann__text2-link {
+  text-decoration: underline; }
+
 .bann__text2-block span {
   font: 10px "Calibri-Regular", sans-serif;
   display: block;
@@ -2955,7 +2958,7 @@ button {
     right: 15px; }
 
 .stars {
-  width: 146px;
+  width: 149px;
   height: 30px;
   margin-top: 10px;
   background: url("../images/slide__body.png") left center no-repeat; }
