@@ -2707,7 +2707,7 @@ button {
       .quest__img {
         background-image: url("../images/quest__img-768.jpg");
         flex: 1;
-        height: 134px;
+        height: 192px;
         margin-right: 30px; } }
     @media (min-width: 1060px) {
       .quest__img {
@@ -2718,25 +2718,38 @@ button {
       flex: 1; } }
   @media (min-width: 1060px) {
     .quest__text {
-      padding: 15px 0; } }
+      padding: 0; } }
 
 .quest__title {
   font: 16px "Calibri-Bold", sans-serif;
-  margin-top: 20px; }
+  margin: 10px 0 4px 0;
+  text-align: center; }
   @media (min-width: 768px) {
     .quest__title {
-      margin-top: 0; } }
+      margin-top: 0;
+      text-align: left; } }
   @media (min-width: 1060px) {
     .quest__title {
-      font-size: 20px; } }
+      font-size: 20px;
+      margin: 0; } }
 
 .quest__descr {
+  text-align: center;
   font: 14px "Calibri-Regular", sans-serif; }
+  @media (min-width: 768px) {
+    .quest__descr {
+      text-align: left; } }
   @media (min-width: 1060px) {
     .quest__descr {
       font-size: 16px;
       line-height: 23px;
-      margin-top: 20px; } }
+      margin-top: 15px; } }
+
+.quest .slide__btn {
+  margin: 15px auto 0; }
+  @media (min-width: 768px) {
+    .quest .slide__btn {
+      margin: 15px 0 0 0; } }
 
 .bxslider5,
 .bxslider6,
