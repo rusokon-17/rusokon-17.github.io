@@ -33,7 +33,7 @@ $(document).ready(function() {
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: true,
-        auto: true
+       
     });
 
     // contacts slider
