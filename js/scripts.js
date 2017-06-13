@@ -33,6 +33,7 @@ $(document).ready(function() {
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: true,
+        autoHover: true,
        
     });
 

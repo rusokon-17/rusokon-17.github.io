@@ -280,7 +280,11 @@
     margin: 0 auto;
     height: 400px;
     padding: 60px 15px;
+    background: url("../images/bg-form-opacity.png");
   }
+    @include mq-lg {
+      background-color: $white;
+    }
   &__title {
     font: 19px $cr;
     color: $black;

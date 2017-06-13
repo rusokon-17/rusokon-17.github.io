@@ -1903,7 +1903,11 @@ button {
       max-width: 306px;
       margin: 0 auto;
       height: 400px;
-      padding: 60px 15px; } }
+      padding: 60px 15px;
+      background: url("../images/bg-form-opacity.png"); } }
+  @media (min-width: 1060px) {
+    .banners .order {
+      background-color: #fff; } }
   .banners .order__title {
     font: 19px "Calibri-Regular", sans-serif;
     color: #000;
