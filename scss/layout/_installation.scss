@@ -90,7 +90,7 @@
     position: absolute;
     margin-top: 0;
     padding: 20px 20px 20px 70px;
-    width: 360px;
+    width: 300px; //360
     height: 78px;
   }
 }
@@ -102,8 +102,8 @@
   }
   @include mq-lg {
     background: url('../images/steps__item--bg11.png') left 24px no-repeat;
-    top: -1px;
-    right: 33px;
+    top: 0px;
+    right: 91px;
   }
 }
 
@@ -115,7 +115,7 @@
   @include mq-lg {
     background: url('../images/steps__item--bg22.png') left 22px no-repeat;
     top: 208px;
-    right: -81px;
+    right: -19px;
   }
 }
 
@@ -126,8 +126,8 @@
   }
   @include mq-lg {
     background: url('../images/steps__item--bg33.png') left center no-repeat;
-    top: 415px;
-    right: 33px;
+    top: 414px;
+    right: 90px;
   }
 }
 
@@ -140,7 +140,7 @@
     background: url('../images/steps__item--bg44.png') right 14px no-repeat;
     padding: 20px 70px 20px 5px;
     top: 417px;
-    left: 33px;
+    left: 92px;
     text-align: right;
   }
 }
@@ -154,7 +154,7 @@
     background: url('../images/steps__item--bg55.png') right 14px no-repeat;
     padding: 20px 70px 20px 5px;
     top: 217px;
-    left: -83px;
+    left: -19px;
     text-align: right;
   }
 }
@@ -167,8 +167,8 @@
   @include mq-lg {
     background: url('../images/steps__item--bg66.png') right 14px no-repeat;
     padding: 20px 70px 20px 5px;
-    top: 9px;
-    left: 34px;
+    top: 11px;
+    left: 94px;
     text-align: right;
   }
 }
