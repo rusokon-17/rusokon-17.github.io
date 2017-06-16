@@ -1880,7 +1880,7 @@ button {
 .banners .order {
   border: 8px solid #ff1a44;
   border-radius: 3px;
-  height: 330px;
+  height: 380px;
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
@@ -1902,7 +1902,7 @@ button {
     .banners .order {
       max-width: 306px;
       margin: 0 auto;
-      height: 400px;
+      height: 420px;
       padding: 60px 15px;
       background: url("../images/bg-form-opacity.png"); } }
   @media (min-width: 1060px) {
@@ -1922,9 +1922,9 @@ button {
     color: #808080;
     font: 13px "Calibri-Regular", sans-serif; }
   .banners .order__input--name {
-    background: url("../images/order__input--name.png") 10px center no-repeat; }
+    background: #fff url("../images/order__input--name.png") 10px center no-repeat; }
   .banners .order__input--tel {
-    background: url("../images/order__input--tel.png") 10px center no-repeat; }
+    background: #fff url("../images/order__input--tel.png") 10px center no-repeat; }
   .banners .order__btn {
     font: 15px "Calibri-Bold", sans-serif;
     text-transform: uppercase;

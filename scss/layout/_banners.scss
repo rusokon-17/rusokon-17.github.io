@@ -256,7 +256,7 @@
 .banners .order {
   border: 8px solid $order-border;
   border-radius: 3px;
-  height: 330px;
+  height: 380px; //330
   padding: 30px 15px;
   background-color: $white;
   max-width: 400px;
@@ -278,7 +278,7 @@
   @include mq-md {
     max-width: 306px;
     margin: 0 auto;
-    height: 400px;
+    height: 420px;
     padding: 60px 15px;
     background: url("../images/bg-form-opacity.png");
   }
@@ -301,10 +301,10 @@
     font: 13px $cr;
   }
   &__input--name {
-    background: url('../images/order__input--name.png') 10px center no-repeat;
+    background: #fff url('../images/order__input--name.png') 10px center no-repeat;
   }
   &__input--tel {
-    background: url('../images/order__input--tel.png') 10px center no-repeat;
+    background: #fff url('../images/order__input--tel.png') 10px center no-repeat;
   }
   &__btn {
     font: 15px $cb;
