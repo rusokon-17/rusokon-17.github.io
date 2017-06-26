@@ -465,6 +465,9 @@ a:focus {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
 
+.bxslider9-wr .bx-wrapper {
+  margin-bottom: 20px; }
+
 .banners .bx-wrapper {
   margin-bottom: 0; }
 
@@ -2571,6 +2574,123 @@ button {
     .cardp__cont {
       font-size: 16px;
       line-height: 26px; } }
+
+.bxslider9 {
+  margin: 0;
+  padding: 0; }
+
+#bx-pager9 {
+  display: none;
+  width: 554px;
+  margin: 10px auto 30px; }
+  @media (min-width: 768px) {
+    #bx-pager9 {
+      display: flex;
+      border: 3px solid #b4b4b4;
+      border-radius: 30px;
+      background-color: #fff; } }
+
+.bx-pager9__link {
+  flex: 1;
+  font: 16px "Calibri-Bold", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 45px 15px;
+  border-radius: 30px; }
+
+.bx-pager9__link:hover {
+  text-decoration: none; }
+
+.bx-pager9__link.active {
+  background-color: #ff1a44;
+  color: #fff;
+  text-decoration: none; }
+
+.bx-controls9 {
+  width: 250px;
+  margin: 0 auto 30px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .bx-controls9 {
+      display: none; } }
+
+.bxslider9__slide {
+  padding: 25px 15px; }
+  @media (min-width: 768px) {
+    .bxslider9__slide {
+      padding: 30px; } }
+
+.bx-controls9 .bx-prev,
+.bx-controls9 .bx-next {
+  color: #fff;
+  background-color: #3f3f3f;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 12px 26px;
+  display: inline-block;
+  border-radius: 20px;
+  font: 12px "Calibri-Bold", sans-serif; }
+
+.bx-controls9 .bx-prev:hover {
+  background: #ff1a43 url("../images/bx-controls9-2.png") 14px center no-repeat; }
+
+.bx-controls9 .bx-next:hover {
+  background: #ff1a43 url("../images/bx-controls9.png") 106px center no-repeat; }
+
+.bx-controls9 .bx-prev {
+  margin-right: 4px; }
+
+.bx9s-1__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cdcdcd; }
+
+.bx9s-1__wr {
+  display: flex;
+  font: 18px "Calibri-Bold", sans-serif;
+  border-bottom: 2px solid #cdcdcd;
+  align-items: center;
+  height: 42px;
+  padding-left: 20px; }
+
+.bx9s-1__pr {
+  flex: 2; }
+
+.bx9s-1__pay {
+  flex: 1; }
+
+.bx9s-1__pr i {
+  font: 24px "Calibri-Bold", sans-serif; }
+
+.bx9s-2 {
+  height: 225px;
+  background: url("../images/bx9s-2.jpg") center top no-repeat;
+  background-size: cover; }
+
+.bx9s-3 {
+  margin-top: 20px;
+  font: 14px "Calibri-Regular", sans-serif;
+  line-height: 19px; }
+
+.bx9s-4__btn {
+  background-color: #ff1a44;
+  color: #fff;
+  text-align: center;
+  font: 15px "Calibri-Bold", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block; }
+
+.bx9s-4__text {
+  color: #57595b;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-align: center; }
 
 .innovations {
   padding: 35px 0;

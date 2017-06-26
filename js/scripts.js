@@ -176,6 +176,18 @@ $(document).ready(function() {
     });
 
 
+    $('.bxslider9').bxSlider({
+        pagerCustom: '#bx-pager9',
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: 'Эффективнее',
+        prevText: 'Доступнее',
+        infiniteLoop: false,
+        mode: 'fade',
+        speed: 10,
+        preventDefaultSwipeX: true,
+        adaptiveHeight: true,
+    });
 
 
 
