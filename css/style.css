@@ -3186,7 +3186,7 @@ button {
       position: relative;
       padding-top: 0;
       height: 500px;
-      background: url("../images/steps-980.png") center center no-repeat; } }
+      background: url("../images/steps-980-1.png") center center no-repeat; } }
 
 .steps__item {
   padding-left: 50px;
@@ -3217,7 +3217,7 @@ button {
   @media (min-width: 1060px) {
     .steps__item--bg1 {
       background: url("../images/steps__item--bg11.png") left 24px no-repeat;
-      top: 0px;
+      top: -5px;
       right: 91px; } }
 
 .steps__item--bg2 {
@@ -3228,8 +3228,8 @@ button {
   @media (min-width: 1060px) {
     .steps__item--bg2 {
       background: url("../images/steps__item--bg22.png") left 22px no-repeat;
-      top: 208px;
-      right: -19px; } }
+      top: 201px;
+      right: -17px; } }
 
 .steps__item--bg3 {
   background: url("../images/steps__item--bg3.png") left center no-repeat; }
@@ -3239,8 +3239,8 @@ button {
   @media (min-width: 1060px) {
     .steps__item--bg3 {
       background: url("../images/steps__item--bg33.png") left center no-repeat;
-      top: 414px;
-      right: 90px; } }
+      top: 403px;
+      right: 94px; } }
 
 .steps__item--bg4 {
   background: url("../images/steps__item--bg4.png") left center no-repeat; }
@@ -3251,7 +3251,7 @@ button {
     .steps__item--bg4 {
       background: url("../images/steps__item--bg44.png") right 14px no-repeat;
       padding: 20px 70px 20px 5px;
-      top: 417px;
+      top: 407px;
       left: 92px;
       text-align: right; } }
 
@@ -3264,8 +3264,8 @@ button {
     .steps__item--bg5 {
       background: url("../images/steps__item--bg55.png") right 14px no-repeat;
       padding: 20px 70px 20px 5px;
-      top: 217px;
-      left: -19px;
+      top: 210px;
+      left: -16px;
       text-align: right; } }
 
 .steps__item--bg6 {
@@ -3277,7 +3277,7 @@ button {
     .steps__item--bg6 {
       background: url("../images/steps__item--bg66.png") right 14px no-repeat;
       padding: 20px 70px 20px 5px;
-      top: 11px;
+      top: 4px;
       left: 94px;
       text-align: right; } }
 
@@ -3459,37 +3459,6 @@ button {
     margin: 20px auto;
     text-align: center;
     display: block; }
-
-.awards {
-  padding: 35px 0;
-  background-color: #fff; }
-  @media (min-width: 768px) {
-    .awards {
-      padding: 60px 0; } }
-
-.award {
-  margin: 0 auto; }
-  .award__title {
-    font: 16px "Calibri-Bold", sans-serif;
-    text-align: center;
-    color: #1d1d1b;
-    margin-bottom: 40px; }
-    @media (min-width: 1060px) {
-      .award__title {
-        font-size: 20px;
-        max-width: 630px;
-        margin: 0 auto 40px; } }
-
-.bxslider2 {
-  margin: 0;
-  padding: 0; }
-
-.bxslider2-wrapper {
-  max-width: 63%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .bxslider2-wrapper {
-      max-width: 100%; } }
 
 .faq {
   padding: 35px 0;
