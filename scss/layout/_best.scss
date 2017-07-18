@@ -344,12 +344,12 @@
   text-align: center;
   @include mq-md {
     left: 368px;
-    bottom: -23px;
+    bottom: 50px;
   }
   @include mq-lg {
     content: url('../images/prod__content-top--icon980.png');
     left: 533px;
-    bottom: -10px;
+    bottom: 35px;
   }
 }
 

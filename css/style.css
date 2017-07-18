@@ -2654,12 +2654,12 @@ button {
   @media (min-width: 768px) {
     .cardp--order .cardp__descr:after {
       left: 368px;
-      bottom: -23px; } }
+      bottom: 50px; } }
   @media (min-width: 1060px) {
     .cardp--order .cardp__descr:after {
       content: url("../images/prod__content-top--icon980.png");
       left: 533px;
-      bottom: -10px; } }
+      bottom: 35px; } }
 
 .cardp--order .cardh {
   margin-bottom: 100px; }
