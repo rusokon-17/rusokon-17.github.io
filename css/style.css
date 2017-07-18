@@ -1732,7 +1732,7 @@ button {
   padding: 31px 0 18px 60px; }
 
 .bx-pager__link--1.bx-pager__link.active {
-  padding: 16px 0 18px 60px; }
+  padding: 21px 0 18px 60px; }
 
 .banner-1 {
   background: url("../images/banner-11-small.jpg") center top no-repeat;
@@ -3498,6 +3498,9 @@ button {
       @media (min-width: 576px) {
         .installation .keyses .key__title {
           text-align: center; } }
+      @media (min-width: 768px) {
+        .installation .keyses .key__title {
+          font-size: 20px; } }
     .installation .keyses .key__text {
       margin-top: 10px;
       position: relative; }
@@ -3723,7 +3726,8 @@ button {
   @media (min-width: 1060px) {
     .faq__main1 {
       font-size: 20px;
-      flex: 0 0 340px; } }
+      flex: 0 0 340px;
+      max-width: 300px; } }
 
 .faq__main1-span {
   font: 18px "Calibri-Regular", sans-serif;
