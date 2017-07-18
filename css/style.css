@@ -2237,7 +2237,7 @@ button {
       padding: 40px 75px;
       height: 205px; } }
   .best .order__title {
-    font: 19px "Calibri-Bold", sans-serif;
+    font: 19px "Calibri-Regular", sans-serif;
     color: #000;
     text-align: center;
     max-width: 270px;
@@ -2758,8 +2758,8 @@ button {
       padding: 0; } }
 
 .quest__title {
-  font: 16px "Calibri-Bold", sans-serif;
-  margin: 10px 0 4px 0;
+  font: 18px "Calibri-Regular", sans-serif;
+  margin: 10px 0 10px 0;
   text-align: center; }
   @media (min-width: 768px) {
     .quest__title {
@@ -2767,7 +2767,7 @@ button {
       text-align: left; } }
   @media (min-width: 1060px) {
     .quest__title {
-      font-size: 20px;
+      font-size: 26px;
       margin: 0; } }
 
 .quest__descr {
@@ -2780,13 +2780,16 @@ button {
     .quest__descr {
       font-size: 16px;
       line-height: 23px;
-      margin-top: 15px; } }
+      margin-top: 10px; } }
 
 .quest .slide__btn {
   margin: 15px auto 0; }
   @media (min-width: 768px) {
     .quest .slide__btn {
-      margin: 15px 0 0 0; } }
+      margin: 17px 0 0 0; } }
+  @media (min-width: 1060px) {
+    .quest .slide__btn {
+      margin: 11px 0 0 0; } }
 
 .bxslider5,
 .bxslider6,

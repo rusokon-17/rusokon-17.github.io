@@ -82,16 +82,15 @@
 }
 
 .quest__title {
-  font: 16px $cb;
-  margin: 10px 0 4px 0;
+  font: 18px $cr;
+  margin: 10px 0 10px 0;
   text-align: center;
   @include mq-md {
     margin-top: 0;
     text-align: left;
   }
   @include mq-lg {
-    // max-width: 180px;
-    font-size: 20px;
+    font-size: 26px;
     margin: 0;
   }
 }
@@ -105,25 +104,17 @@
   @include mq-lg {
     font-size: 16px;
     line-height: 23px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 
 .quest .slide__btn {
-  // font: 15px "Calibri-Bold", sans-serif;
-  // text-transform: uppercase;
-  // color: #fff;
-  // width: 188px;
-  // height: 39px;
-  // background-color: #ff1a44;
-  // border: none;
-  // border-radius: 3px;
-  // cursor: pointer;
-  margin: 15px auto 0; // text-align: center;
-  // display: block;
-  // padding: 10px 0;
+  margin: 15px auto 0;
   @include mq-md {
-    margin: 15px 0 0 0;
+    margin: 17px 0 0 0;
+  }
+  @include mq-lg {
+    margin: 11px 0 0 0;
   }
 }
 
