@@ -16,6 +16,7 @@
 .bxslider9-wr .bx-wrapper {
     margin-bottom: 20px;
 }
+
 .banners .bx-wrapper {
   margin-bottom: 0;
 }
@@ -83,6 +84,15 @@ ul.bxslider {
   box-shadow: none;
   border: 0;
   background: #fff;
+}
+.features .bx-wrapper {
+  box-shadow: none;
+border: none;
+  background: #fff;
+  margin-bottom: 30px;
+    @include mq-md {
+      margin-bottom: 0px;
+    }
 }
 
 .feedback .bx-wrapper {

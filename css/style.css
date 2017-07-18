@@ -523,6 +523,15 @@ ul.bxslider {
   border: 0;
   background: #fff; }
 
+.features .bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: #fff;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .features .bx-wrapper {
+      margin-bottom: 0px; } }
+
 .feedback .bx-wrapper {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -2019,75 +2028,231 @@ button {
       .headers__suptitle:after {
         top: 30px; } }
 
-.numbers {
+.bx9 {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 25px 15px; }
   @media (min-width: 768px) {
-    .numbers {
-      display: flex; } }
+    .bx9 {
+      display: flex;
+      padding: 40px; } }
+  @media (min-width: 1060px) {
+    .bx9 {
+      padding: 50px 55px; } }
+
+.bx91 {
+  position: relative; }
+  @media (min-width: 768px) {
+    .bx91 {
+      display: block;
+      flex: 1;
+      margin-right: 30px; } }
+
+.bxslider11 {
+  padding: 0; }
+
+.bxslider11__img {
+  height: 300px;
+  padding-left: 0; }
+  @media (min-width: 768px) {
+    .bxslider11__img {
+      height: 364px; } }
+
+#bx-pager11 {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 260px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    #bx-pager11 {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px; } }
+
+.bx-pager__link11 {
+  flex: 0 0 86px;
+  margin-bottom: 10px; }
+
+.bx-pager__link11 img {
+  margin: 0 auto; }
+
+.bxslider11-1 {
+  background: url("../images/col-11.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-1 {
+      background: url("../images/col-111.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-1 {
+      background: url("../images/col-11.png") 86px top no-repeat; } }
+
+.bxslider11-2 {
+  background: url("../images/col-22.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-2 {
+      background: url("../images/col-222.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-2 {
+      background: url("../images/col-22.png") 86px top no-repeat; } }
+
+.bxslider11-3 {
+  background: url("../images/col-33.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-3 {
+      background: url("../images/col-333.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-3 {
+      background: url("../images/col-33.png") 86px top no-repeat; } }
+
+.bxslider11-4 {
+  background: url("../images/col-44.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-4 {
+      background: url("../images/col-444.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-4 {
+      background: url("../images/col-44.png") 86px top no-repeat; } }
+
+.bxslider11-5 {
+  background: url("../images/col-55.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-5 {
+      background: url("../images/col-555.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-5 {
+      background: url("../images/col-55.png") 86px top no-repeat; } }
+
+.bxslider11-6 {
+  background: url("../images/col-666.png") center top no-repeat;
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .bxslider11-6 {
+      background: url("../images/col-666.png") 73px top no-repeat;
+      background-size: initial; } }
+  @media (min-width: 1060px) {
+    .bxslider11-6 {
+      background: url("../images/col-66.png") 86px top no-repeat; } }
 
 @media (min-width: 768px) {
-  .numb {
-    height: 270px;
-    flex: 1 1 345px; } }
+  .bx92 {
+    flex: 1; } }
 
-@media (min-width: 1060px) {
-  .numb {
-    height: 380px; } }
+.bx92__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cdcdcd; }
+  @media (min-width: 768px) {
+    .bx92__title {
+      text-align: left; } }
+  @media (min-width: 1060px) {
+    .bx92__title {
+      font-size: 38px; } }
 
-.numb--bg {
-  background: url("../images/feat__numbers.jpg") center top no-repeat;
-  background-size: cover;
+.bx92__price,
+.bx92__price span {
+  font: 18px "Calibri-Bold", sans-serif; }
+  @media (min-width: 1060px) {
+    .bx92__price,
+    .bx92__price span {
+      font-size: 26px; } }
+
+.bx92__price span {
+  font: 24px "Calibri-Bold", sans-serif; }
+  @media (min-width: 1060px) {
+    .bx92__price span {
+      font-size: 38px; } }
+
+.bx92__price {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  border-bottom: 2px solid #cdcdcd; }
+  @media (min-width: 1060px) {
+    .bx92__price {
+      height: 72px; } }
+
+.bx92__price-numb {
+  flex: 2;
+  padding-left: 20px; }
+  @media (min-width: 768px) {
+    .bx92__price-numb {
+      padding-left: 0; } }
+
+.bx92__price-icon {
+  flex: 1; }
+
+.bx92__img {
   height: 225px; }
   @media (min-width: 768px) {
-    .numb--bg {
-      background: url("../images/feat__numbers-768.jpg") center top no-repeat;
-      background-size: cover;
-      height: 290px; } }
-  @media (min-width: 1060px) {
-    .numb--bg {
-      height: 380px;
-      background-image: url("../images/feat__numbers-980.jpg"); } }
+    .bx92__img {
+      display: none; } }
 
-.numb--pd {
-  padding: 20px;
-  background-color: #fdfdfd; }
-  @media (min-width: 768px) {
-    .numb--pd {
-      height: 290px; } }
-  @media (min-width: 1060px) {
-    .numb--pd {
-      padding: 60px;
-      height: 380px; } }
+.bx92__img--60 {
+  background: url("../images/bx9s-2-60.jpg") center top no-repeat;
+  background-size: cover; }
 
-.numb__title {
-  font: 16px "Calibri-Bold", sans-serif; }
+.bx92__text {
+  margin-top: 20px;
+  font: 14px "Calibri-Light", sans-serif;
+  line-height: 19px; }
   @media (min-width: 1060px) {
-    .numb__title {
-      font-size: 20px;
-      padding: 0 60px 0 0; } }
+    .bx92__text {
+      font-size: 16px;
+      line-height: 23px; } }
 
-.numb__descr {
-  font: 14px "Calibri-Regular", sans-serif;
-  -moz-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
+.bx92__buy {
   margin-top: 20px; }
   @media (min-width: 1060px) {
-    .numb__descr {
-      font-size: 16px; } }
+    .bx92__buy {
+      display: flex; } }
 
-.numb__key {
+.bx92__buy-btn {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .bx92__buy-btn {
+      text-align: left; } }
+  @media (min-width: 1060px) {
+    .bx92__buy-btn {
+      flex: 2; } }
+
+.bx92__buy-btn a {
+  font: 15px "Calibri-Bold", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #ff1a44;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center; }
+
+.bx92__buy-note {
   font: 14px "Calibri-Regular", sans-serif;
   color: #57595b;
-  padding-left: 30px;
-  margin: 20px 0; }
-
-.numb__key--bg1 {
-  background: url("../images/numb__key.png") left 2px no-repeat; }
-
-.numb__key--bg2 {
-  background: url("../images/numb__key.png") left -28px no-repeat; }
+  text-align: center;
+  margin-top: 15px; }
+  @media (min-width: 768px) {
+    .bx92__buy-note {
+      text-align: left; } }
+  @media (min-width: 1060px) {
+    .bx92__buy-note {
+      flex: 1;
+      margin-top: 0; } }
 
 .keyses {
   max-width: 290px;
@@ -2100,7 +2265,8 @@ button {
       margin: 40px initial; } }
   @media (min-width: 1060px) {
     .keyses {
-      flex-flow: row nowrap; } }
+      flex-flow: row nowrap;
+      margin: 60px auto 0; } }
   .keyses .key {
     flex: 1 1 300px;
     padding-left: 120px;
@@ -2125,15 +2291,18 @@ button {
     .keyses .key:nth-of-type(1n+1) {
       margin-bottom: 20px; }
     .keyses .key__title {
-      font: 16px "Calibri-Bold", sans-serif;
+      font: 16px "Calibri-Regular", sans-serif;
       color: #000; }
       @media (min-width: 576px) {
         .keyses .key__title {
           text-align: center; } }
+      @media (min-width: 768px) {
+        .keyses .key__title {
+          font-size: 20px; } }
     .keyses .key__text {
       margin-top: 10px;
       position: relative;
-      font: 14px "Calibri-Regular", sans-serif; }
+      font: 14px "Calibri-Light", sans-serif; }
       @media (min-width: 576px) {
         .keyses .key__text {
           text-align: center;
@@ -2147,7 +2316,7 @@ button {
           .keyses .key__text:before {
             right: 0;
             text-align: center;
-            top: -23px; } }
+            top: -21px; } }
     .keyses .key--bg1 {
       background: url("../images/key--bg1.png") left top no-repeat; }
       @media (min-width: 576px) {

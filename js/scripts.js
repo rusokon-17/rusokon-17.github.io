@@ -189,7 +189,15 @@ $(document).ready(function() {
         adaptiveHeight: true,
     });
 
-
+    $('.bxslider11').bxSlider({
+        pagerCustom: '#bx-pager11',
+        infiniteLoop: false,
+        mode: 'fade',
+        speed: 1,
+        preventDefaultSwipeX: true,
+        adaptiveHeight: true,
+        controls: false,
+    });
 
     // FancyBox
     $("[data-fancybox]").fancybox({

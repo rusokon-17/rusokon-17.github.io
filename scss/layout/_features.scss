@@ -44,76 +44,262 @@
   }
 }
 
-.numbers {
+// Начало нового блока
+.bx9 {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 25px 15px;
+
   @include mq-md {
+    display: flex;
+    padding: 40px;
+  }
+  @include mq-lg {
+    padding: 50px 55px;
+  }
+}
+
+.bx91 {
+  position: relative; // border: 1px solid red;
+  @include mq-md {
+    display: block;
+    flex: 1;
+    margin-right: 30px;
+  }
+}
+
+.bxslider11 {
+  // margin: 0 0 0 30px;
+  padding: 0;
+}
+
+.bxslider11__img {
+  height: 300px;
+  padding-left: 0;
+  @include mq-md {
+    height: 364px;
+  }
+}
+
+#bx-pager11 {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 260px;
+  margin: 0 auto;
+  @include mq-md {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.bx-pager__link11 {
+  flex: 0 0 86px;
+  margin-bottom: 10px;
+}
+
+.bx-pager__link11 img {
+  margin: 0 auto;
+}
+
+
+
+.bxslider11-1 {
+  background: url('../images/col-11.png') center top no-repeat;
+  background-size: contain;
+    @include mq-md {
+      background: url('../images/col-111.png') 73px top no-repeat;
+    background-size: initial;
+  }
+      @include mq-lg {
+          background: url('../images/col-11.png') 86px top no-repeat;
+    }
+}
+
+.bxslider11-2 {
+  background: url('../images/col-22.png') center top no-repeat;
+  background-size: contain;
+    @include mq-md {
+      background: url('../images/col-222.png') 73px top no-repeat;
+    background-size: initial;
+  }
+      @include mq-lg {
+          background: url('../images/col-22.png') 86px top no-repeat;
+    }
+}
+
+.bxslider11-3 {
+  background: url('../images/col-33.png') center top no-repeat;
+  background-size: contain;
+    @include mq-md {
+      background: url('../images/col-333.png') 73px top no-repeat;
+    background-size: initial;
+  }
+      @include mq-lg {
+          background: url('../images/col-33.png') 86px top no-repeat;
+    }
+}
+
+.bxslider11-4 {
+  background: url('../images/col-44.png') center top no-repeat;
+  background-size: contain;
+    @include mq-md {
+      background: url('../images/col-444.png') 73px top no-repeat;
+    background-size: initial;
+  }
+      @include mq-lg {
+          background: url('../images/col-44.png') 86px top no-repeat;
+    }
+}
+
+.bxslider11-5 {
+  background: url('../images/col-55.png') center top no-repeat;
+  background-size: contain;
+    @include mq-md {
+      background: url('../images/col-555.png') 73px top no-repeat;
+    background-size: initial;
+  }
+      @include mq-lg {
+          background: url('../images/col-55.png') 86px top no-repeat;
+    }
+}
+
+.bxslider11-6 {
+  background: url('../images/col-666.png') center top no-repeat;
+  background-size: contain;
+  @include mq-md {
+      background: url('../images/col-666.png') 73px top no-repeat;
+    background-size: initial;
+  }
+    @include mq-lg {
+          background: url('../images/col-66.png') 86px top no-repeat;
+    }
+}
+
+
+.bx92 {
+  @include mq-md {
+    flex: 1;
+  }
+}
+
+.bx92__title {
+  font: 24px $cr;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #cdcdcd;
+  @include mq-md {
+    text-align: left;
+  }
+  @include mq-lg {
+    font-size: 38px;
+  }
+}
+
+.bx92__price,
+.bx92__price span {
+  font: 18px $cb; // line-height: 42px;
+  @include mq-lg {
+    font-size: 26px;
+  }
+}
+
+.bx92__price span {
+  font: 24px $cb;
+  @include mq-lg {
+    font-size: 38px;
+  }
+}
+
+.bx92__price {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  border-bottom: 2px solid #cdcdcd;
+  @include mq-lg {
+    height: 72px;
+  }
+}
+
+.bx92__price-numb {
+  flex: 2;
+  padding-left: 20px;
+  @include mq-md {
+    padding-left: 0;
+  }
+}
+
+.bx92__price-icon {
+  flex: 1;
+}
+
+.bx92__img {
+  height: 225px;
+  @include mq-md {
+    display: none;
+  }
+}
+
+.bx92__img--60 {
+  background: url('../images/bx9s-2-60.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.bx92__text {
+  margin-top: 20px;
+  font: 14px $cl;
+  line-height: 19px;
+  @include mq-lg {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+.bx92__buy {
+  margin-top: 20px;
+  @include mq-lg {
     display: flex;
   }
 }
 
-.numb {
-  // border: 1px solid red;
+.bx92__buy-btn {
+  text-align: center;
   @include mq-md {
-    height: 270px;
-    flex: 1 1 345px;
+    text-align: left;
   }
   @include mq-lg {
-    height: 380px;
+    flex: 2;
   }
-  &--bg {
-    background: url('../images/feat__numbers.jpg') center top no-repeat;
-    background-size: cover;
-    height: 225px;
-    @include mq-md {
-      background: url('../images/feat__numbers-768.jpg') center top no-repeat;
-      background-size: cover;
-      height: 290px;
-    }
-    @include mq-lg {
-      height: 380px;
-      background-image: url('../images/feat__numbers-980.jpg'); // background-size: cover;
-    }
+}
+
+.bx92__buy-btn a {
+  font: 15px "Calibri-Bold", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #ff1a44;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bx92__buy-note {
+  font: 14px $cr;
+  color: #57595b;
+  text-align: center;
+  margin-top: 15px;
+  @include mq-md {
+    text-align: left;
   }
-  &--pd {
-    padding: 20px;
-    background-color: $numb-bg;
-    @include mq-md {
-      height: 290px;
-    }
-    @include mq-lg {
-      padding: 60px;
-      height: 380px;
-    }
-  }
-  &__title {
-    font: 16px $cb;
-    @include mq-lg {
-      font-size: 20px;
-      padding: 0 60px 0 0;
-    }
-  }
-  &__descr {
-    font: 14px $cr;
-    -moz-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    margin-top: 20px;
-    @include mq-lg {
-      font-size: 16px;
-    }
-  }
-  &__key {
-    font: 14px $cr;
-    color: $numb-k;
-    padding-left: 30px; // margin-top: 20px;
-    margin: 20px 0;
-  }
-  &__key--bg1 {
-    background: url('../images/numb__key.png') left 2px no-repeat;
-  }
-  &__key--bg2 {
-    background: url('../images/numb__key.png') left -28px no-repeat;
+  @include mq-lg {
+    flex: 1;
+    margin-top: 0;
   }
 }
 
@@ -128,6 +314,7 @@
   }
   @include mq-lg {
     flex-flow: row nowrap;
+    margin: 60px auto 0;
   }
   .key {
     flex: 1 1 300px;
@@ -158,16 +345,19 @@
       margin-bottom: 20px;
     }
     &__title {
-      font: 16px $cb;
+      font: 16px $cr;
       color: $black;
       @include mq-sm {
         text-align: center;
+      }
+      @include mq-md {
+        font-size: 20px;
       }
     }
     &__text {
       margin-top: 10px;
       position: relative;
-      font: 14px $cr;
+      font: 14px $cl;
       @include mq-sm {
         text-align: center;
         margin-top: 20px;
@@ -180,7 +370,7 @@
         @include mq-sm {
           right: 0;
           text-align: center;
-          top: -23px;
+          top: -21px;
         }
       }
     }
