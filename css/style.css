@@ -2772,7 +2772,7 @@ button {
 
 .quest__descr {
   text-align: center;
-  font: 14px "Calibri-Regular", sans-serif; }
+  font: 14px "Calibri-Light", sans-serif; }
   @media (min-width: 768px) {
     .quest__descr {
       text-align: left; } }
@@ -2789,7 +2789,7 @@ button {
       margin: 17px 0 0 0; } }
   @media (min-width: 1060px) {
     .quest .slide__btn {
-      margin: 11px 0 0 0; } }
+      margin: 16px 0 0 0; } }
 
 .bxslider5,
 .bxslider6,
@@ -2994,7 +2994,7 @@ button {
 .slide__body {
   background-color: #eaeaea;
   padding: 25px 30px 60px;
-  font: 16px "Calibri-Regular", sans-serif;
+  font: 16px "Calibri-Light", sans-serif;
   line-height: 23px;
   color: #000;
   position: relative; }
@@ -3324,7 +3324,7 @@ button {
         .installation .keyses .key:nth-of-type(1n+1) {
           margin-bottom: 0; } }
     .installation .keyses .key__title {
-      font: 16px "Calibri-Bold", sans-serif;
+      font: 16px "Calibri-Regular", sans-serif;
       color: #000; }
       @media (min-width: 576px) {
         .installation .keyses .key__title {
