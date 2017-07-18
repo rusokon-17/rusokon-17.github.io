@@ -66,17 +66,16 @@
   position: relative;
   background-color: $white;
   padding: 153px 15px 15px 15px;
-  margin: 75px 0 0 0;
+  margin: 50px 0 30px 0;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   @include mq-md {
     display: flex;
     align-items: center;
+    margin: 75px 0 40px 0;
     padding: 15px;
     height: 257px;
   }
-  @include mq-lg {
-    margin: 100px 0 0 0;
-  }
+
   &:before {
     content: url('../images/fquest.png');
     position: absolute;
@@ -108,7 +107,7 @@
 }
 
 .faq__main1-span {
-  font: 18px $cb;
+  font: 18px $cr;
   color: $rose-red;
   display: block;
   margin: 4px 0;
@@ -136,7 +135,7 @@
 }
 
 .faq__main-item {
-  font: 18px $cb;
+  font: 18px $cr;
   padding-left: 15px;
   background: url('../images/faq__main-item.png') left center no-repeat;
   margin: 4px 0;
