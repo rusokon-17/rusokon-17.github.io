@@ -1991,32 +1991,33 @@ button {
 .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    font-weight: 600;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .headers__title {
-        font-size: 38px; } }
-  .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .headers__suptitle {
-        font-size: 18px; } }
-    .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .headers__suptitle:after {
-          top: 30px; } }
+
+.headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .headers__title {
+      font-size: 38px; } }
+
+.headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .headers__suptitle {
+      font-size: 18px; } }
+  .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .headers__suptitle:after {
+        top: 30px; } }
 
 .numbers {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -2191,31 +2192,33 @@ button {
   @media (min-width: 768px) {
     .best .headers {
       padding-bottom: 30px; } }
-  .best .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .best .headers__title {
-        font-size: 38px; } }
-  .best .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .best .headers__suptitle {
-        font-size: 18px; } }
-    .best .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .best .headers__suptitle:after {
-          top: 0; } }
+
+.best .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .best .headers__title {
+      font-size: 38px; } }
+
+.best .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .best .headers__suptitle {
+      font-size: 18px; } }
+  .best .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .best .headers__suptitle:after {
+        top: 0; } }
 
 .best .order {
   border: 8px solid #ff1a44;
@@ -2605,34 +2608,36 @@ button {
 .innovations .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .innovations .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .innovations .headers__title {
-        font-size: 38px; } }
-  .innovations .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    .innovations .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 45px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 382px) {
-        .innovations .headers__suptitle:after {
-          top: 27px; } }
-      @media (min-width: 576px) {
-        .innovations .headers__suptitle:after {
-          top: 30px; } }
-    @media (min-width: 1060px) {
-      .innovations .headers__suptitle {
-        font-size: 18px; } }
+
+.innovations .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .innovations .headers__title {
+      font-size: 38px; } }
+
+.innovations .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  .innovations .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 382px) {
+      .innovations .headers__suptitle:after {
+        top: 27px; } }
+    @media (min-width: 576px) {
+      .innovations .headers__suptitle:after {
+        top: 30px; } }
+  @media (min-width: 1060px) {
+    .innovations .headers__suptitle {
+      font-size: 18px; } }
 
 .innovations .numbers {
   -webkit-box-shadow: none;
@@ -2688,31 +2693,36 @@ button {
 .tvshow .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .tvshow .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .tvshow .headers__title {
-        font-size: 38px; } }
-  .tvshow .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .tvshow .headers__suptitle {
-        font-size: 18px; } }
-    .tvshow .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .tvshow .headers__suptitle:after {
-          top: 30px; } }
+
+.tvshow .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .tvshow .headers__title {
+      font-size: 38px; } }
+
+.tvshow .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .tvshow .headers__suptitle {
+      font-size: 18px; } }
+  .tvshow .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .tvshow .headers__suptitle:after {
+        top: 8px; } }
+    @media (min-width: 768px) {
+      .tvshow .headers__suptitle:after {
+        top: 4px; } }
 
 .quest {
   padding: 15px;
@@ -2853,31 +2863,36 @@ button {
 .feedback .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .feedback .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .feedback .headers__title {
-        font-size: 38px; } }
-  .feedback .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .feedback .headers__suptitle {
-        font-size: 18px; } }
-    .feedback .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .feedback .headers__suptitle:after {
-          top: 30px; } }
+
+.feedback .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .feedback .headers__title {
+      font-size: 38px; } }
+
+.feedback .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .feedback .headers__suptitle {
+      font-size: 18px; } }
+  .feedback .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .feedback .headers__suptitle:after {
+        top: 8px; } }
+    @media (min-width: 768px) {
+      .feedback .headers__suptitle:after {
+        top: 4px; } }
 
 .bxslider1 {
   margin: 0;
@@ -3119,31 +3134,33 @@ button {
 .installation .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .installation .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .installation .headers__title {
-        font-size: 38px; } }
-  .installation .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .installation .headers__suptitle {
-        font-size: 18px; } }
-    .installation .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .installation .headers__suptitle:after {
-          top: 30px; } }
+
+.installation .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .installation .headers__title {
+      font-size: 38px; } }
+
+.installation .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .installation .headers__suptitle {
+      font-size: 18px; } }
+  .installation .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .installation .headers__suptitle:after {
+        top: 30px; } }
 
 .steps__text {
   background: url("../images/steps.jpg") center top no-repeat;
@@ -3481,28 +3498,30 @@ button {
 .faq .headers {
   text-align: center;
   padding-bottom: 30px; }
-  .faq .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .faq .headers__title {
-        font-size: 38px; } }
-  .faq .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .faq .headers__suptitle {
-        font-size: 18px; } }
-    .faq .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center; }
+
+.faq .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .faq .headers__title {
+      font-size: 38px; } }
+
+.faq .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .faq .headers__suptitle {
+      font-size: 18px; } }
+  .faq .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    text-align: center; }
 
 .faq__content {
   font-size: 13px;
@@ -3616,34 +3635,36 @@ button {
 .contacts .headers {
   text-align: center;
   padding-bottom: 50px; }
-  .contacts .headers__title {
-    font: 24px "Calibri-Bold", sans-serif;
-    margin: 0; }
-    @media (min-width: 1060px) {
-      .contacts .headers__title {
-        font-size: 38px; } }
-  .contacts .headers__suptitle {
-    color: #666666;
-    font: 14px "Calibri-Regular", sans-serif;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative; }
-    @media (min-width: 1060px) {
-      .contacts .headers__suptitle {
-        font-size: 18px; } }
-    .contacts .headers__suptitle:after {
-      content: url("../images/headers.png");
-      position: absolute;
-      top: 31px;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      @media (min-width: 576px) {
-        .contacts .headers__suptitle:after {
-          top: 30px; } }
+
+.contacts .headers__title {
+  font: 24px "Calibri-Regular", sans-serif;
+  margin: 0; }
+  @media (min-width: 1060px) {
+    .contacts .headers__title {
+      font-size: 38px; } }
+
+.contacts .headers__suptitle {
+  color: #666666;
+  font: 14px "Calibri-Regular", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative; }
+  @media (min-width: 1060px) {
+    .contacts .headers__suptitle {
+      font-size: 18px; } }
+  .contacts .headers__suptitle:after {
+    content: url("../images/headers.png");
+    position: absolute;
+    top: 31px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .contacts .headers__suptitle:after {
+        top: 30px; } }
 
 .consultation {
-  font: 16px "Calibri-Bold", sans-serif;
+  font: 16px "Calibri-Regular", sans-serif;
   color: #1d1d1b;
   text-align: center;
   margin-bottom: 40px;
@@ -3719,15 +3740,18 @@ button {
   @media (min-width: 768px) {
     .cbot {
       margin-top: 60px; } }
-  .cbot__title {
-    font: 20px "Calibri-Bold", sans-serif;
-    color: #1d1d1b;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 35px; }
-  @media (min-width: 768px) {
-    .cbot__map {
-      height: 530px; } }
+
+.cbot__title {
+  font: 20px "Calibri-Regular", sans-serif;
+  color: #1d1d1b;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 35px;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .cbot__map {
+    height: 530px; } }
 
 .bs4 {
   padding: 15px; }

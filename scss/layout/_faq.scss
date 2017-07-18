@@ -8,32 +8,33 @@
 
 .faq .headers {
   text-align: center;
-  // border: 1px solid red;
   padding-bottom: 30px;
-  &__title {
-    font: 24px $cb;
-    margin: 0;
-    @include mq-lg {
-      font-size: 38px;
-    }
+}
+
+.faq .headers__title {
+  font: 24px $cr;
+  margin: 0;
+  @include mq-lg {
+    font-size: 38px;
   }
-  &__suptitle {
-    color: $headers-h3;
-    font: 14px $cr;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative;
-    @include mq-lg {
-      font-size: 18px;
-    }
-    &:after {
-      content: url('../images/headers.png');
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
+}
+
+.faq .headers__suptitle {
+  color: $headers-h3;
+  font: 14px $cr;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative;
+  @include mq-lg {
+    font-size: 18px;
+  }
+  &:after {
+    content: url('../images/headers.png');
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
 
@@ -73,9 +74,9 @@
     padding: 15px;
     height: 257px;
   }
-    @include mq-lg {
-       margin: 100px 0 0 0;
-    }
+  @include mq-lg {
+    margin: 100px 0 0 0;
+  }
   &:before {
     content: url('../images/fquest.png');
     position: absolute;
@@ -102,7 +103,7 @@
   }
   @include mq-lg {
     font-size: 20px;
-     flex: 0 0 340px;
+    flex: 0 0 340px;
   }
 }
 
@@ -114,10 +115,10 @@
   @include mq-md {
     margin: 20px 0;
   }
-    @include mq-lg {
-      font-size: 26px;
-      line-height: 36px;
-    }
+  @include mq-lg {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 
 .faq__main1--mr {
@@ -142,10 +143,9 @@
   @include mq-md {
     margin: 10px 0;
   }
-    @include mq-lg {
-       font-size: 24px;
-      // line-height: 36px;
-        margin: 10px 0;
-        background-position: left 15px;
-    }
+  @include mq-lg {
+    font-size: 24px; // line-height: 36px;
+    margin: 10px 0;
+    background-position: left 15px;
+  }
 }

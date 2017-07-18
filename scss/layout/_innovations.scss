@@ -1,6 +1,6 @@
 .innovations {
   padding: 35px 0;
-   background-color: $white;
+  background-color: $white;
   @include mq-md {
     padding: 60px 0;
   }
@@ -9,36 +9,38 @@
 .innovations .headers {
   text-align: center;
   padding-bottom: 50px;
-  &__title {
-    font: 24px $cb;
-    margin: 0;
-    @include mq-lg {
-      font-size: 38px;
+}
+
+.innovations .headers__title {
+  font: 24px $cr;
+  margin: 0;
+  @include mq-lg {
+    font-size: 38px;
+  }
+}
+
+.innovations .headers__suptitle {
+  color: $headers-h3;
+  font: 14px $cr;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative;
+  &:after {
+    content: url('../images/headers.png');
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @media (min-width: 382px) {
+      top: 27px;
+    }
+    @include mq-sm {
+      top: 30px;
     }
   }
-  &__suptitle {
-    color: $headers-h3;
-    font: 14px $cr;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative;
-    &:after {
-      content: url('../images/headers.png');
-      position: absolute;
-      top: 45px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      @media (min-width: 382px) {
-        top: 27px;
-      }
-      @include mq-sm {
-        top: 30px;
-      }
-    }
-    @include mq-lg {
-      font-size: 18px;
-    }
+  @include mq-lg {
+    font-size: 18px;
   }
 }
 
@@ -85,8 +87,7 @@
     }
   }
   &--pd {
-    background: $innov-bg url('../images/numb--pd.png') center top no-repeat;
-    // background-size: cover;
+    background: $innov-bg url('../images/numb--pd.png') center top no-repeat; // background-size: cover;
     @include mq-lg {
       height: 420px;
       background-image: url('../images/numb--pd-980.png');

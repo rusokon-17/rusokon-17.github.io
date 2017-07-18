@@ -13,32 +13,34 @@
   @include mq-md {
     padding-bottom: 30px;
   }
-  &__title {
-    font: 24px $cb;
-    margin: 0;
-    @include mq-lg {
-      font-size: 38px;
-    }
+}
+
+.best .headers__title {
+  font: 24px $cr;
+  margin: 0;
+  @include mq-lg {
+    font-size: 38px;
   }
-  &__suptitle {
-    color: $headers-h3;
-    font: 14px $cr;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative;
-    @include mq-lg {
-      font-size: 18px;
-    }
-    &:after {
-      content: url('../images/headers.png');
-      position: absolute;
+}
+
+.best .headers__suptitle {
+  color: $headers-h3;
+  font: 14px $cr;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative;
+  @include mq-lg {
+    font-size: 18px;
+  }
+  &:after {
+    content: url('../images/headers.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include mq-sm {
       top: 0;
-      left: 0;
-      right: 0;
-      text-align: center;
-      @include mq-sm {
-        top: 0;
-      }
     }
   }
 }
@@ -53,8 +55,7 @@
   margin: 0 auto;
   @include mq-md {
     max-width: 100%;
-    height: 165px;
-    // margin: 0 0 0 auto;
+    height: 165px; // margin: 0 0 0 auto;
   }
   @include mq-lg {
     padding: 40px 75px;
@@ -143,8 +144,7 @@
 }
 
 .bxslider8__slide {
-  list-style-type: none;
-  // border: 1px solid red;
+  list-style-type: none; // border: 1px solid red;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -337,8 +337,7 @@
 
 .cardp--order .cardp__descr:after {
   content: url('../images/prod__content-top--icon.png');
-  position: absolute;
-  // top: -5px;
+  position: absolute; // top: -5px;
   bottom: -90px;
   left: 0;
   right: 0;
@@ -426,8 +425,7 @@
   &__block {
     flex: 1;
     font: 14px $cr;
-    color: $grey5;
-    // border: 1px solid red;
+    color: $grey5; // border: 1px solid red;
     text-align: center;
     padding-top: 65px;
   }

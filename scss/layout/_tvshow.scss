@@ -1,6 +1,5 @@
 .tvshow {
-  padding: 35px 0 0;
-  // border: 1px solid red;
+  padding: 35px 0 0; // border: 1px solid red;
   background-color: $tvshow-b;
   @include mq-md {
     padding: 60px 0 0;
@@ -9,34 +8,38 @@
 
 .tvshow .headers {
   text-align: center;
-  // border: 1px solid red;
   padding-bottom: 50px;
-  &__title {
-    font: 24px $cb;
-    margin: 0;
-    @include mq-lg {
-      font-size: 38px;
-    }
+}
+
+.tvshow .headers__title {
+  font: 24px $cr;
+  margin: 0;
+  @include mq-lg {
+    font-size: 38px;
   }
-  &__suptitle {
-    color: $headers-h3;
-    font: 14px $cr;
-    text-transform: uppercase;
-    margin: 10px 0 0 0;
-    position: relative;
-    @include mq-lg {
-      font-size: 18px;
+}
+
+.tvshow .headers__suptitle {
+  color: $headers-h3;
+  font: 14px $cr;
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  position: relative;
+  @include mq-lg {
+    font-size: 18px;
+  }
+  &:after {
+    content: url('../images/headers.png');
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include mq-sm {
+      top: 8px;
     }
-    &:after {
-      content: url('../images/headers.png');
-      position: absolute;
-      top: 27px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      @include mq-sm {
-        top: 30px;
-      }
+    @include mq-md {
+      top: 4px;
     }
   }
 }
@@ -84,7 +87,7 @@
   text-align: center;
   @include mq-md {
     margin-top: 0;
-      text-align: left;
+    text-align: left;
   }
   @include mq-lg {
     // max-width: 180px;
@@ -96,32 +99,32 @@
 .quest__descr {
   text-align: center;
   font: 14px $cr;
-    @include mq-md {
-       text-align: left;
-    }
+  @include mq-md {
+    text-align: left;
+  }
   @include mq-lg {
     font-size: 16px;
     line-height: 23px;
     margin-top: 15px;
   }
 }
+
 .quest .slide__btn {
-    // font: 15px "Calibri-Bold", sans-serif;
-    // text-transform: uppercase;
-    // color: #fff;
-    // width: 188px;
-    // height: 39px;
-    // background-color: #ff1a44;
-    // border: none;
-    // border-radius: 3px;
-    // cursor: pointer;
-    margin: 15px auto 0;
-    // text-align: center;
-    // display: block;
-    // padding: 10px 0;
-      @include mq-md {
-           margin: 15px 0 0 0;
-      }
+  // font: 15px "Calibri-Bold", sans-serif;
+  // text-transform: uppercase;
+  // color: #fff;
+  // width: 188px;
+  // height: 39px;
+  // background-color: #ff1a44;
+  // border: none;
+  // border-radius: 3px;
+  // cursor: pointer;
+  margin: 15px auto 0; // text-align: center;
+  // display: block;
+  // padding: 10px 0;
+  @include mq-md {
+    margin: 15px 0 0 0;
+  }
 }
 
 .bxslider5,
@@ -180,8 +183,7 @@
 }
 
 .bxslider5__slide {
-  height: 275px;
-  // border: 1px solid red;
+  height: 275px; // border: 1px solid red;
   @include mq-md {
     height: 315px;
   }
