@@ -3055,10 +3055,10 @@ button {
       display: flex;
       padding-top: 60px; } }
   .comfort .measurement__title {
-    font: 18px "Calibri-Bold", sans-serif;
+    font: 18px "Calibri-Regular", sans-serif;
     text-align: center;
     color: #231f20;
-    max-width: 220px;
+    max-width: 240px;
     margin: 0 auto 30px;
     position: relative; }
     @media (min-width: 768px) {
@@ -3069,7 +3069,7 @@ button {
       .comfort .measurement__title {
         font-size: 26px;
         line-height: 36px;
-        max-width: 260px; } }
+        max-width: 360px; } }
     .comfort .measurement__title:before {
       content: url("../images/comfort__title-3.png");
       position: absolute;
@@ -3391,10 +3391,10 @@ button {
       display: flex;
       padding-top: 60px; } }
   .montage .measurement__title {
-    font: 18px "Calibri-Bold", sans-serif;
+    font: 18px "Calibri-Regular", sans-serif;
     text-align: center;
     color: #231f20;
-    max-width: 260px;
+    max-width: 240px;
     margin: 0 auto 30px;
     position: relative; }
     @media (min-width: 768px) {
@@ -3405,7 +3405,7 @@ button {
       .montage .measurement__title {
         font-size: 26px;
         line-height: 36px;
-        max-width: 260px; } }
+        max-width: 360px; } }
     .montage .measurement__title:before {
       content: url("../images/montage__title-2.png");
       position: absolute;
@@ -3882,10 +3882,10 @@ button {
       display: flex;
       padding-top: 60px; } }
   .measurement__title {
-    font: 18px "Calibri-Bold", sans-serif;
+    font: 18px "Calibri-Regular", sans-serif;
     text-align: center;
     color: #231f20;
-    max-width: 220px;
+    max-width: 240px;
     margin: 0 auto 30px;
     position: relative; }
     @media (min-width: 768px) {
@@ -3896,7 +3896,7 @@ button {
       .measurement__title {
         font-size: 26px;
         line-height: 36px;
-        max-width: 260px; } }
+        max-width: 360px; } }
     .measurement__title:before {
       content: url("../images/measurement__title-1.png");
       position: absolute;

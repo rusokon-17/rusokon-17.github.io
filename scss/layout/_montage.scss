@@ -18,10 +18,10 @@
     padding-top: 60px;
   }
   &__title {
-    font: 18px $cb;
+    font: 18px $cr;
     text-align: center;
     color: $measure-t;
-    max-width: 260px;
+    max-width: 240px;
     margin: 0 auto 30px;
     position: relative;
     @include mq-md {
@@ -31,7 +31,7 @@
     @include mq-lg {
       font-size: 26px;
       line-height: 36px;
-      max-width: 260px;
+      max-width: 360px;
     }
     &:before {
       content: url('../images/montage__title-2.png');
