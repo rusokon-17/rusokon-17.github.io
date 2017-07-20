@@ -318,6 +318,7 @@
 
 .cardp--order .cardp__wr {
   display: none;
+  font-family: $cl;
   @include mq-md {
     display: initial;
   }

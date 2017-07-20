@@ -2628,7 +2628,8 @@ button {
       line-height: 23px; } }
 
 .cardp--order .cardp__wr {
-  display: none; }
+  display: none;
+  font-family: "Calibri-Light", sans-serif; }
   @media (min-width: 768px) {
     .cardp--order .cardp__wr {
       display: initial; } }
@@ -3668,7 +3669,7 @@ button {
     text-align: center; }
 
 .faq__content {
-  font-size: 13px;
+  font: 13px "Calibri-Light", sans-serif;
   line-height: 18px; }
   @media (min-width: 768px) {
     .faq__content {
