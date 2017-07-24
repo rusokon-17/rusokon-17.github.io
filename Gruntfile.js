@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         },
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', '> 1%', 'ie 9', 'ie 10', 'ie 11'],
+                browsers: ['last 2 versions', '> 1%', 'ie 10', 'ie 11'],
                 cascade: true,
                 remove: true
             },
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
-    // grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -146,5 +146,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['clean', 'sass', 'browserSync', 'watch']);
 
     // define build task
-    grunt.registerTask('build', ['clean', 'sass', 'copy', 'cssmin', 'concat', 'replace']);
+    grunt.registerTask('build', ['clean', 'sass', 'copy', 'autoprefixer', 'cssmin', 'concat', 'replace']);
 };

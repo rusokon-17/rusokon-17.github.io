@@ -512,8 +512,6 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: 5px solid #fff;
   background: #fff; }
@@ -533,8 +531,6 @@ ul.bxslider {
       margin-bottom: 0px; } }
 
 .feedback .bx-wrapper {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
   border: none; }
@@ -550,15 +546,11 @@ ul.bxslider {
   background-color: #eaeaea; }
 
 .contacts .bx-wrapper {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   border: none;
   background: #fff; }
 
 .best .bx-wrapper {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
   border: none; }
@@ -602,8 +594,6 @@ ul.bxslider {
   height: 10px;
   margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px; }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -959,7 +949,6 @@ ul.bxslider {
   cursor: default;
   overflow: visible;
   -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
   transform-origin: top left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -982,19 +971,15 @@ ul.bxslider {
   background-size: 100% 100%; }
 
 .fancybox-controls--canzoomOut .fancybox-placeholder {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 .fancybox-controls--canzoomIn .fancybox-placeholder {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in; }
 
 .fancybox-controls--canGrab .fancybox-placeholder {
-  cursor: -webkit-grab;
   cursor: grab; }
 
 .fancybox-controls--isGrabbing .fancybox-placeholder {
-  cursor: -webkit-grabbing;
   cursor: grabbing; }
 
 .fancybox-spaceball {
@@ -1015,7 +1000,6 @@ ul.bxslider {
   width: 380px;
   max-width: 100%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #fff;
   cursor: default; }
@@ -1160,7 +1144,6 @@ ul.bxslider {
   border-top: solid 2px currentColor;
   border-right: solid 2px currentColor;
   -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg); }
 
 .fancybox-button--right::after {
@@ -1172,7 +1155,6 @@ ul.bxslider {
   border-top: solid 2px currentColor;
   border-right: solid 2px currentColor;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .fancybox-button--left {
@@ -1195,12 +1177,10 @@ ul.bxslider {
 
 .fancybox-button--close::before {
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .fancybox-button--close::after {
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 /* Loading spinner */
@@ -1516,8 +1496,6 @@ button {
   vertical-align: middle;
   font-weight: bold;
   border: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 0px 3px 0px 0px #fff;
@@ -1535,8 +1513,6 @@ button {
   font-size: 14px;
   color: #00c5ad;
   border: 2px solid #00ab94;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fff;
   cursor: pointer; }
@@ -1552,6 +1528,8 @@ button {
   padding: 15px 0; }
   @media (min-width: 768px) {
     .header {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 0 0 10px; } }
 
@@ -1564,13 +1542,17 @@ button {
   height: 70px; }
   @media (min-width: 768px) {
     .head .logo {
-      flex: 0 0 200px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 200px;
+              flex: 0 0 200px;
       margin: 15px 0 0 0;
       padding-left: 50px;
       background-position: 0 0; } }
   @media (min-width: 1060px) {
     .head .logo {
-      flex: 0 0 210px; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 210px;
+              flex: 0 0 210px; } }
   .head .logo__title {
     margin: 0;
     padding-top: 5px;
@@ -1588,13 +1570,17 @@ button {
   margin-top: 5px; }
   @media (min-width: 768px) {
     .head .discount {
-      flex: 0 0 200px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 200px;
+              flex: 0 0 200px;
       margin-top: 25px;
       padding: 0 20px 0 0;
       text-align: left; } }
   @media (min-width: 768px) and (min-width: 1060px) {
     .head .discount {
-      flex: 0 0 310px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 310px;
+              flex: 0 0 310px;
       /*  300 */ } }
   .head .discount__text {
     font: 14px "Calibri-Regular", sans-serif;
@@ -1605,12 +1591,16 @@ button {
         font-size: 16px; } }
 
 .head .phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px auto 5px;
   max-width: 300px; }
   @media (min-width: 768px) {
     .head .phone-wrapper {
-      flex: 1 1 300px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 300px;
+              flex: 1 1 300px;
       margin-top: 23px; } }
   @media (min-width: 1060px) {
     .head .phone-wrapper {
@@ -1652,9 +1642,15 @@ button {
   font: 13px "Calibri-Regular", sans-serif;
   color: #fff;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer; }
   @media (min-width: 1060px) {
     .head .call {
@@ -2029,13 +2025,13 @@ button {
         top: 30px; } }
 
 .bx9 {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
   padding: 25px 15px; }
   @media (min-width: 768px) {
     .bx9 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 40px; } }
   @media (min-width: 1060px) {
@@ -2047,7 +2043,9 @@ button {
   @media (min-width: 768px) {
     .bx91 {
       display: block;
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       margin-right: 30px; } }
 
 .bxslider11 {
@@ -2061,8 +2059,11 @@ button {
       height: 364px; } }
 
 #bx-pager11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   max-width: 260px;
   margin: 0 auto; }
   @media (min-width: 768px) {
@@ -2073,7 +2074,9 @@ button {
       left: 0px; } }
 
 .bx-pager__link11 {
-  flex: 0 0 86px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 86px;
+          flex: 0 0 86px;
   margin-bottom: 10px; }
 
 .bx-pager__link11 img {
@@ -2147,7 +2150,9 @@ button {
 
 @media (min-width: 768px) {
   .bx92 {
-    flex: 1; } }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; } }
 
 .bx92__title {
   font: 24px "Calibri-Regular", sans-serif;
@@ -2177,8 +2182,12 @@ button {
       font-size: 38px; } }
 
 .bx92__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 42px;
   border-bottom: 2px solid #cdcdcd; }
   @media (min-width: 1060px) {
@@ -2186,14 +2195,18 @@ button {
       height: 72px; } }
 
 .bx92__price-numb {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   padding-left: 20px; }
   @media (min-width: 768px) {
     .bx92__price-numb {
       padding-left: 0; } }
 
 .bx92__price-icon {
-  flex: 1; }
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .bx92__img {
   height: 225px; }
@@ -2218,6 +2231,8 @@ button {
   margin-top: 20px; }
   @media (min-width: 1060px) {
     .bx92__buy {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
 
 .bx92__buy-btn {
@@ -2227,7 +2242,9 @@ button {
       text-align: left; } }
   @media (min-width: 1060px) {
     .bx92__buy-btn {
-      flex: 2; } }
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2; } }
 
 .bx92__buy-btn a {
   font: 15px "Calibri-Bold", sans-serif;
@@ -2251,29 +2268,39 @@ button {
       text-align: left; } }
   @media (min-width: 1060px) {
     .bx92__buy-note {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       margin-top: 0; } }
 
 .keyses {
   max-width: 290px;
   margin: 40px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
   @media (min-width: 576px) {
     .keyses {
       max-width: initial;
       margin: 40px initial; } }
   @media (min-width: 1060px) {
     .keyses {
-      flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
       margin: 60px auto 0; } }
   .keyses .key {
-    flex: 1 1 300px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
     padding-left: 120px;
     height: 120px; }
     @media (min-width: 576px) {
       .keyses .key {
-        flex: 1 1 200px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 200px;
+                flex: 1 1 200px;
         padding: 120px 0 0 0;
         height: initial; }
         .keyses .key:nth-of-type(odd) {
@@ -2281,7 +2308,9 @@ button {
           margin-right: 20px; } }
     @media (min-width: 768px) {
       .keyses .key {
-        flex: 1 1 210px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 210px;
+                flex: 1 1 210px;
         margin-right: 20px; }
         .keyses .key:nth-of-type(3n+3) {
           margin-right: 0; } }
@@ -2479,8 +2508,6 @@ button {
 
 .bxslider8__slide {
   list-style-type: none;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff; }
   .bxslider8__slide:nth-of-type(1n+2) {
@@ -2496,14 +2523,20 @@ button {
   display: none; }
   @media (min-width: 768px) {
     .bx-pager8 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: relative;
       top: 8px;
       z-index: 22; } }
   @media (min-width: 768px) {
     .bx-pager8__link {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       padding: 18px 0 18px;
       color: #fff;
       background-color: #57595b;
@@ -2555,6 +2588,8 @@ button {
   @media (min-width: 768px) {
     .cardp {
       margin-top: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
   .cardp__photo {
     height: 180px; }
@@ -2563,7 +2598,9 @@ button {
         height: 350px; } }
     @media (min-width: 768px) {
       .cardp__photo {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         /*  0 1 350px */
         margin-right: 30px; } }
   .cardp__descr {
@@ -2571,7 +2608,9 @@ button {
     margin: 0 auto; }
     @media (min-width: 768px) {
       .cardp__descr {
-        flex: 1; } }
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; } }
     @media (min-width: 1060px) {
       .cardp__descr {
         max-width: 330px; } }
@@ -2607,8 +2646,11 @@ button {
   @media (min-width: 768px) {
     .cardp--order {
       height: 330px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row-reverse; } }
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse; } }
   @media (min-width: 1060px) {
     .cardp--order {
       height: 360px; } }
@@ -2721,13 +2763,17 @@ button {
       background-position: left top; } }
 
 .cardh {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px; }
   @media (min-width: 1060px) {
     .cardh {
       margin-top: 40px; } }
   .cardh__block {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     font: 14px "Calibri-Regular", sans-serif;
     color: #57595b;
     text-align: center;
@@ -2810,11 +2856,11 @@ button {
       font-size: 18px; } }
 
 .innovations .numbers {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none; }
   @media (min-width: 768px) {
     .innovations .numbers {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
 
 .innovations .numb {
@@ -2827,7 +2873,9 @@ button {
   @media (min-width: 768px) {
     .innovations .numb {
       height: 270px;
-      flex: 1 1 345px; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 345px;
+              flex: 1 1 345px; }
       .innovations .numb:nth-of-type(even) {
         margin-right: 30px; } }
   @media (min-width: 1060px) {
@@ -2836,7 +2884,9 @@ button {
   .innovations .numb--bg {
     background: url("../images/numb--bg.jpg") center top no-repeat;
     background-size: cover;
-    order: 2; }
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
     @media (min-width: 768px) {
       .innovations .numb--bg {
         background: url("../images/numb--bg.jpg") center top no-repeat;
@@ -2896,13 +2946,13 @@ button {
 
 .quest {
   padding: 15px;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 3px; }
   @media (min-width: 768px) {
     .quest {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
   @media (min-width: 1060px) {
     .quest {
@@ -2913,7 +2963,9 @@ button {
     @media (min-width: 768px) {
       .quest__img {
         background-image: url("../images/quest__img-768.jpg");
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         height: 192px;
         margin-right: 30px; } }
     @media (min-width: 1060px) {
@@ -2922,7 +2974,9 @@ button {
         height: 189px; } }
   @media (min-width: 768px) {
     .quest__text {
-      flex: 1; } }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; } }
   @media (min-width: 1060px) {
     .quest__text {
       padding: 0; } }
@@ -3099,7 +3153,8 @@ button {
 @media (min-width: 1060px) {
   .slide {
     display: table;
-    flex-flow: row nowrap; } }
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap; } }
 
 .slide__name,
 .slide__name-date,
@@ -3222,6 +3277,8 @@ button {
   padding-top: 105px; }
   @media (min-width: 768px) {
     .comfort .measurement {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding-top: 60px; } }
   .comfort .measurement__title {
@@ -3344,8 +3401,11 @@ button {
     .steps__text {
       padding-top: 230px;
       max-width: initial;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; } }
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
   @media (min-width: 768px) {
     .steps__text {
       background: url("../images/steps-690.jpg") center top no-repeat;
@@ -3364,7 +3424,9 @@ button {
   height: 26px; }
   @media (min-width: 576px) {
     .steps__item {
-      flex: 1 1 200px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 200px;
+              flex: 1 1 200px;
       margin-top: 0;
       height: 80px; } }
   @media (min-width: 768px) {
@@ -3454,8 +3516,11 @@ button {
 .installation .keyses {
   max-width: 290px;
   margin: 40px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
   @media (min-width: 576px) {
     .installation .keyses {
       max-width: initial;
@@ -3465,15 +3530,20 @@ button {
       margin: 0 auto 0; } }
   @media (min-width: 1060px) {
     .installation .keyses {
-      flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
       margin-top: 40px; } }
   .installation .keyses .key {
-    flex: 1 1 300px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
     padding-left: 120px;
     height: 100px; }
     @media (min-width: 576px) {
       .installation .keyses .key {
-        flex: 1 1 200px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 200px;
+                flex: 1 1 200px;
         padding: 120px 0 0 0;
         height: initial; }
         .installation .keyses .key:nth-of-type(odd) {
@@ -3481,7 +3551,9 @@ button {
           margin-right: 20px; } }
     @media (min-width: 768px) {
       .installation .keyses .key {
-        flex: 1 1 210px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 210px;
+                flex: 1 1 210px;
         margin-right: 20px; }
         .installation .keyses .key:nth-of-type(3n+3) {
           margin-right: 0; } }
@@ -3561,6 +3633,8 @@ button {
   padding-top: 105px; }
   @media (min-width: 768px) {
     .montage .measurement {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding-top: 60px; } }
   .montage .measurement__title {
@@ -3698,8 +3772,12 @@ button {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
   @media (min-width: 768px) {
     .faq__main {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: 75px 0 40px 0;
       padding: 15px;
       height: 257px; } }
@@ -3722,12 +3800,16 @@ button {
   margin: 0 auto; }
   @media (min-width: 768px) {
     .faq__main1 {
-      flex: 0 0 180px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 180px;
+              flex: 0 0 180px;
       margin: initial; } }
   @media (min-width: 1060px) {
     .faq__main1 {
       font-size: 20px;
-      flex: 0 0 340px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 340px;
+              flex: 0 0 340px;
       max-width: 300px; } }
 
 .faq__main1-span {
@@ -4020,6 +4102,8 @@ button {
   padding-top: 105px; }
   @media (min-width: 768px) {
     .measurement {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding-top: 60px; } }
   .measurement__title {
@@ -4098,6 +4182,8 @@ button {
 
 @media (min-width: 768px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; } }
 
 .footer .logo {
@@ -4108,13 +4194,17 @@ button {
   height: 70px; }
   @media (min-width: 768px) {
     .footer .logo {
-      flex: 0 0 200px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 200px;
+              flex: 0 0 200px;
       margin: 15px 0 0 0;
       padding-left: 50px;
       background-position: 0 0; } }
   @media (min-width: 1060px) {
     .footer .logo {
-      flex: 0 0 210px; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 210px;
+              flex: 0 0 210px; } }
   .footer .logo__title {
     margin: 6px 0 0 0;
     font: 32px "Calibri-Bold", sans-serif;
@@ -4131,13 +4221,17 @@ button {
   margin-top: 5px; }
   @media (min-width: 768px) {
     .footer .discount {
-      flex: 0 0 200px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 200px;
+              flex: 0 0 200px;
       margin-top: 25px;
       padding: 0 20px 0 0;
       text-align: left; } }
   @media (min-width: 768px) and (min-width: 1060px) {
     .footer .discount {
-      flex: 0 0 300px; } }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 300px;
+              flex: 0 0 300px; } }
   .footer .discount__text {
     font: 14px "Calibri-Regular", sans-serif;
     margin: 0;
@@ -4147,12 +4241,16 @@ button {
         font-size: 16px; } }
 
 .footer .phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px auto 20px;
   max-width: 300px; }
   @media (min-width: 768px) {
     .footer .phone-wrapper {
-      flex: 1 1 300px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 300px;
+              flex: 1 1 300px;
       margin-top: 23px; } }
   @media (min-width: 1060px) {
     .footer .phone-wrapper {
@@ -4194,9 +4292,15 @@ button {
   font: 13px "Calibri-Regular", sans-serif;
   color: #fff;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer; }
   @media (min-width: 1060px) {
     .footer .call {
@@ -4266,5 +4370,3 @@ button {
     margin: 20px auto;
     text-align: center;
     display: block; }
-
-/*# sourceMappingURL=style.css.map */
