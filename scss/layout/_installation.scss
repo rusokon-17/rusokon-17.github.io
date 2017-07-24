@@ -44,15 +44,14 @@
   }
 }
 
-.steps {
-  &__text {
+.steps__text {
     background: url('../images/steps.jpg') center top no-repeat;
     padding-top: 200px;
     max-width: 290px;
-    margin: 0 auto; // border: 1px solid red;
+    margin: 0 auto;
     @include mq-sm {
       padding-top: 230px;
-      max-width: initial;
+      max-width: none;
       display: flex;
       flex-flow: row wrap;
     }
@@ -68,10 +67,11 @@
       background: url('../images/steps-980-1.png') center center no-repeat;
     }
   }
-}
+  
+
 
 .steps__item {
-  padding-left: 50px; // border: 1px solid red;
+  padding-left: 50px; 
   margin-top: 30px;
   height: 26px;
   @include mq-sm {
@@ -80,14 +80,14 @@
     height: 80px;
   }
   @include mq-md {
-    padding: 0 20px 0 50px; // margin-top: 50px;
+    padding: 0 20px 0 50px; 
     height: 100px;
   }
   @include mq-lg {
     position: absolute;
     margin-top: 0;
     padding: 20px 20px 20px 70px;
-    width: 300px; //360
+    width: 300px; 
     height: 78px;
   }
 }
@@ -171,13 +171,14 @@
 }
 
 .installation .keyses {
-  max-width: 290px;
+  width: 290px;
   margin: 40px auto 0;
-  display: flex;
-  flex-flow: row wrap;
+
   @include mq-sm {
-    max-width: initial;
-    margin: initial;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
   }
   @include mq-md {
     margin: 0 auto 0;
@@ -186,95 +187,96 @@
     flex-flow: row nowrap;
     margin-top: 40px;
   }
-  .key {
-    flex: 1 1 300px;
-    padding-left: 120px;
-    height: 100px; // border: 1px solid red;
-    @include mq-sm {
-      flex: 1 1 200px;
-      padding: 120px 0 0 0;
-      height: initial;
-      &:nth-of-type(odd) {
-        margin-bottom: 20px;
-        margin-right: 20px;
-      }
-    }
-    @include mq-md {
-      flex: 1 1 210px;
-      margin-right: 20px;
-      &:nth-of-type(3n+3) {
-        margin-right: 0;
-      }
-    }
+}
+
+.installation .key {
+  padding-left: 120px;
+  height: 100px;
+  &:nth-of-type(1n+1) {
+    margin-bottom: 20px;
     @include mq-lg {
-      &:nth-of-type(odd) {
-        margin-right: 20px;
-      }
+      margin-bottom: 0;
     }
-    &:nth-of-type(1n+1) {
+  }
+  @include mq-sm {
+    flex: 0 0 200px;
+    padding: 120px 0 0 0;
+    height: 250px;
+    &:nth-of-type(odd) {
       margin-bottom: 20px;
-      @include mq-lg {
-        margin-bottom: 0;
-      }
+      margin-right: 20px;
     }
-    &__title {
-      font: 16px $cr;
-      color: $black;
-      @include mq-sm {
-        text-align: center;
-      }
-        @include mq-md {
-          font-size: 20px;
-        }
+  }
+  @include mq-md {
+    margin-right: 20px;
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
     }
-    &__text {
-      margin-top: 10px;
-      position: relative;
-      @include mq-sm {
-        text-align: center;
-        margin-top: 20px;
-      }
-      &:before {
-        content: url('../images/key__title-icon.png');
-        position: absolute;
-        top: -18px;
-        left: 0;
-        @include mq-sm {
-          right: 0;
-          text-align: center;
-          top: -23px;
-        }
-      }
-    }
-    &--bg11 {
-      background: url('../images/key--bg11.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg22 {
-      background: url('../images/key--bg22.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg33 {
-      background: url('../images/key--bg33.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg44 {
-      background: url('../images/key--bg44.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg55 {
-      background: url('../images/key--bg55.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
+  }
+  @include mq-lg {
+    flex: 1;
+    &:nth-of-type(odd) {
+      margin-right: 20px;
     }
   }
 }
+
+  .installation .key__title {
+    font: 16px $cr;
+    color: $black;
+    @include mq-sm {
+      text-align: center;
+    }
+    @include mq-md {
+      font-size: 20px;
+    }
+  }
+  .installation .key__text {
+    margin-top: 10px;
+    position: relative;
+    @include mq-sm {
+      text-align: center;
+      margin-top: 20px;
+    }
+    &:before {
+      content: url('../images/key__title-icon.png');
+      position: absolute;
+      top: -18px;
+      left: 0;
+      @include mq-sm {
+        right: 0;
+        text-align: center;
+        top: -23px;
+      }
+    }
+  }
+  .installation .key--bg11 {
+    background: url('../images/key--bg11.png') left top no-repeat;
+    @include mq-sm {
+      background-position: center top;
+    }
+  }
+  .installation .key--bg22 {
+    background: url('../images/key--bg22.png') left top no-repeat;
+    @include mq-sm {
+      background-position: center top;
+    }
+  }
+  .installation .key--bg33 {
+    background: url('../images/key--bg33.png') left top no-repeat;
+    @include mq-sm {
+      background-position: center top;
+    }
+  }
+  .installation .key--bg44 {
+    background: url('../images/key--bg44.png') left top no-repeat;
+    @include mq-sm {
+      background-position: center top;
+    }
+  }
+  .installation .key--bg55 {
+    background: url('../images/key--bg55.png') left top no-repeat;
+    @include mq-sm {
+      background-position: center top;
+    }
+  }

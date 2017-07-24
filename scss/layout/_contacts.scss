@@ -62,15 +62,14 @@
 
 .bxslider4 {
   padding: 0;
-  margin: 0; // border: 1px solid red;
+  margin: 0; 
 }
 
 .bx-pager4--banners {
   max-width: 290px;
   margin: 0 auto 15px;
   @include mq-md {
-    max-width: 730px; // border: 1px solid red;
-    // display: block;
+    max-width: 730px; 
     position: relative;
     top: 10px;
     z-index: 10;
@@ -111,9 +110,9 @@
     position: relative;
   }
   &:after {
-    content: url('../images/arrow-down.svg');
+    content: url('../images/arrow-down.png');
     position: absolute;
-    top: 66px;
+    top: 64px;
     right: 0;
     left: 0;
     text-align: center;

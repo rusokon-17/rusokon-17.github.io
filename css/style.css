@@ -3442,7 +3442,7 @@ button {
   @media (min-width: 576px) {
     .steps__text {
       padding-top: 230px;
-      max-width: initial;
+      max-width: none;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -3556,17 +3556,19 @@ button {
       text-align: right; } }
 
 .installation .keyses {
-  max-width: 290px;
-  margin: 40px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  width: 290px;
+  margin: 40px auto 0; }
   @media (min-width: 576px) {
     .installation .keyses {
-      max-width: initial;
-      margin: initial; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   @media (min-width: 768px) {
     .installation .keyses {
       margin: 0 auto 0; } }
@@ -3575,89 +3577,95 @@ button {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
       margin-top: 40px; } }
-  .installation .keyses .key {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 300px;
-            flex: 1 1 300px;
-    padding-left: 120px;
-    height: 100px; }
-    @media (min-width: 576px) {
-      .installation .keyses .key {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 200px;
-                flex: 1 1 200px;
-        padding: 120px 0 0 0;
-        height: initial; }
-        .installation .keyses .key:nth-of-type(odd) {
-          margin-bottom: 20px;
-          margin-right: 20px; } }
-    @media (min-width: 768px) {
-      .installation .keyses .key {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 210px;
-                flex: 1 1 210px;
-        margin-right: 20px; }
-        .installation .keyses .key:nth-of-type(3n+3) {
-          margin-right: 0; } }
+
+.installation .key {
+  padding-left: 120px;
+  height: 100px; }
+  .installation .key:nth-of-type(1n+1) {
+    margin-bottom: 20px; }
     @media (min-width: 1060px) {
-      .installation .keyses .key:nth-of-type(odd) {
+      .installation .key:nth-of-type(1n+1) {
+        margin-bottom: 0; } }
+  @media (min-width: 576px) {
+    .installation .key {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 200px;
+              flex: 0 0 200px;
+      padding: 120px 0 0 0;
+      height: 250px; }
+      .installation .key:nth-of-type(odd) {
+        margin-bottom: 20px;
         margin-right: 20px; } }
-    .installation .keyses .key:nth-of-type(1n+1) {
-      margin-bottom: 20px; }
-      @media (min-width: 1060px) {
-        .installation .keyses .key:nth-of-type(1n+1) {
-          margin-bottom: 0; } }
-    .installation .keyses .key__title {
-      font: 16px "Calibri-Regular", sans-serif;
-      color: #000; }
-      @media (min-width: 576px) {
-        .installation .keyses .key__title {
-          text-align: center; } }
-      @media (min-width: 768px) {
-        .installation .keyses .key__title {
-          font-size: 20px; } }
-    .installation .keyses .key__text {
-      margin-top: 10px;
-      position: relative; }
-      @media (min-width: 576px) {
-        .installation .keyses .key__text {
-          text-align: center;
-          margin-top: 20px; } }
-      .installation .keyses .key__text:before {
-        content: url("../images/key__title-icon.png");
-        position: absolute;
-        top: -18px;
-        left: 0; }
-        @media (min-width: 576px) {
-          .installation .keyses .key__text:before {
-            right: 0;
-            text-align: center;
-            top: -23px; } }
-    .installation .keyses .key--bg11 {
-      background: url("../images/key--bg11.png") left top no-repeat; }
-      @media (min-width: 576px) {
-        .installation .keyses .key--bg11 {
-          background-position: center top; } }
-    .installation .keyses .key--bg22 {
-      background: url("../images/key--bg22.png") left top no-repeat; }
-      @media (min-width: 576px) {
-        .installation .keyses .key--bg22 {
-          background-position: center top; } }
-    .installation .keyses .key--bg33 {
-      background: url("../images/key--bg33.png") left top no-repeat; }
-      @media (min-width: 576px) {
-        .installation .keyses .key--bg33 {
-          background-position: center top; } }
-    .installation .keyses .key--bg44 {
-      background: url("../images/key--bg44.png") left top no-repeat; }
-      @media (min-width: 576px) {
-        .installation .keyses .key--bg44 {
-          background-position: center top; } }
-    .installation .keyses .key--bg55 {
-      background: url("../images/key--bg55.png") left top no-repeat; }
-      @media (min-width: 576px) {
-        .installation .keyses .key--bg55 {
-          background-position: center top; } }
+  @media (min-width: 768px) {
+    .installation .key {
+      margin-right: 20px; }
+      .installation .key:nth-of-type(3n+3) {
+        margin-right: 0; } }
+  @media (min-width: 1060px) {
+    .installation .key {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .installation .key:nth-of-type(odd) {
+        margin-right: 20px; } }
+
+.installation .key__title {
+  font: 16px "Calibri-Regular", sans-serif;
+  color: #000; }
+  @media (min-width: 576px) {
+    .installation .key__title {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .installation .key__title {
+      font-size: 20px; } }
+
+.installation .key__text {
+  margin-top: 10px;
+  position: relative; }
+  @media (min-width: 576px) {
+    .installation .key__text {
+      text-align: center;
+      margin-top: 20px; } }
+  .installation .key__text:before {
+    content: url("../images/key__title-icon.png");
+    position: absolute;
+    top: -18px;
+    left: 0; }
+    @media (min-width: 576px) {
+      .installation .key__text:before {
+        right: 0;
+        text-align: center;
+        top: -23px; } }
+
+.installation .key--bg11 {
+  background: url("../images/key--bg11.png") left top no-repeat; }
+  @media (min-width: 576px) {
+    .installation .key--bg11 {
+      background-position: center top; } }
+
+.installation .key--bg22 {
+  background: url("../images/key--bg22.png") left top no-repeat; }
+  @media (min-width: 576px) {
+    .installation .key--bg22 {
+      background-position: center top; } }
+
+.installation .key--bg33 {
+  background: url("../images/key--bg33.png") left top no-repeat; }
+  @media (min-width: 576px) {
+    .installation .key--bg33 {
+      background-position: center top; } }
+
+.installation .key--bg44 {
+  background: url("../images/key--bg44.png") left top no-repeat; }
+  @media (min-width: 576px) {
+    .installation .key--bg44 {
+      background-position: center top; } }
+
+.installation .key--bg55 {
+  background: url("../images/key--bg55.png") left top no-repeat; }
+  @media (min-width: 576px) {
+    .installation .key--bg55 {
+      background-position: center top; } }
 
 .montage {
   height: 520px;
@@ -3845,7 +3853,7 @@ button {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 180px;
               flex: 0 0 180px;
-      margin: initial; } }
+      margin: none; } }
   @media (min-width: 1060px) {
     .faq__main1 {
       font-size: 20px;
@@ -3996,9 +4004,9 @@ button {
       padding: 26px 0 26px 0;
       position: relative; } }
   .bx-pager4__link.active:after {
-    content: url("../images/arrow-down.svg");
+    content: url("../images/arrow-down.png");
     position: absolute;
-    top: 66px;
+    top: 64px;
     right: 0;
     left: 0;
     text-align: center; }

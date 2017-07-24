@@ -91,14 +91,13 @@
 }
 
 .faq__main1 {
-  // border: 1px solid red;
   font: 14px $cr;
   padding: 10px;
   max-width: 260px;
   margin: 0 auto;
   @include mq-md {
     flex: 0 0 180px;
-    margin: initial;
+   margin: none;
   }
   @include mq-lg {
     font-size: 20px;
