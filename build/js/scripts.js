@@ -41,8 +41,7 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
     // feedback slider
     $('.bxslider1').bxSlider({
         adaptiveHeight: true,
-        adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        adaptiveHeightSpeed: 100,
         oneToOneTouch: false,
         mode: 'horizontal',
         speed: 100,
@@ -61,13 +60,11 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
     });
     // banner slider
     $('.bxslider3').bxSlider({
-        mode: 'horizontal',
-        // default: 3,
-        speed: 1,
+        mode: 'fade',
+        speed: 10,
         pagerCustom: '#bx-pager',
         adaptiveHeight: true,
-        adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        adaptiveHeightSpeed: 10,
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: true,
@@ -109,12 +106,11 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
 
     // TVshow slider Main
     var slider5 = $('.bxslider5').bxSlider({
-
-        speed: 1,
+        mode: 'horizontal',
+        speed: 10,
         pagerCustom: '#bx-pager5',
         adaptiveHeight: true,
-        adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        adaptiveHeightSpeed: 10,
         controls: false,
         touchEnabled: false,
         infiniteLoop: false,
@@ -159,19 +155,18 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
 
     // best slider
     var slider8 = $('.bxslider8').bxSlider({
-        mode: 'fade',
-        speed: 100,
+        mode: 'horizontal',
+        speed: 10,
         pagerCustom: '#bx-pager8',
         adaptiveHeight: true,
-        adaptiveHeightSpeed: 300,
-        preloadImages: 'all',
+        adaptiveHeightSpeed: 10,
+
         controls: false,
         touchEnabled: false,
         preventDefaultSwipeX: true,
         oneToOneTouch: false,
             infiniteLoop: false
     });
-
 
     // Блок best
     /*    Суть: при разрешении окна меньше чем 768px

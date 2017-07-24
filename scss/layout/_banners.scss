@@ -1,8 +1,5 @@
 .banners {
-  // border: 1px solid red;
-  position: relative; // @include mq-md {
-  //    margin-top: 95px; 
-  // }
+  position: relative;
 }
 
 .bxslider3 {
@@ -11,10 +8,10 @@
 }
 
 .bxslider3-slide {
-  // height: 830px; //630
-  padding-top: 200px; // box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2) inset;
+
+  padding-top: 200px;
   @include mq-md {
-    height: 630px; //630
+    height: 630px;
     padding-top: 0;
   }
 }
@@ -23,18 +20,20 @@
   @include mq-md {
     overflow: auto;
   }
-  &__text {
-    @include mq-md {
-      float: left;
-      margin-top: 70px;
-    }
+}
+
+.bann__text {
+  @include mq-md {
+    float: left;
+    margin-top: 70px;
   }
-  &__form {
-    @include mq-md {
-      float: right;
-      position: relative;
-      margin-top: 85px;
-    }
+}
+
+.bann__form {
+  @include mq-md {
+    float: right;
+    position: relative;
+    margin-top: 85px;
   }
 }
 
@@ -47,7 +46,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0; // text-align: center;
+    right: 0;
+    z-index: 99;
   }
 }
 
@@ -206,8 +206,7 @@
 
 .bann__text2 {
   max-width: 290px;
-  margin: 20px auto 0;
-  // overflow: auto;
+  margin: 20px auto 0; // overflow: auto;
   @include mq-md {
     margin: initial;
     margin-top: 30px;

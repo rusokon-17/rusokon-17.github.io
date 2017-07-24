@@ -1709,7 +1709,8 @@ button {
       position: absolute;
       bottom: 0;
       left: 0;
-      right: 0; } }
+      right: 0;
+      z-index: 99; } }
 
 .bx-pager__link {
   width: 240px;
@@ -2508,7 +2509,7 @@ button {
       display: inline-block;
       height: 37px;
       width: 201.3333333333333px;
-      margin: initial; } }
+      margin: 0; } }
   @media (min-width: 1060px) {
     .best .order__btn {
       width: 251.3333333333333px; } }
@@ -3825,12 +3826,12 @@ button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       margin: 75px 0 40px 0;
       padding: 15px;
       height: 257px; } }
+  @media (min-width: 1060px) {
+    .faq__main {
+      padding: 15px 40px 15px 40px; } }
   .faq__main:before {
     content: url("../images/fquest.png");
     position: absolute;
@@ -3851,16 +3852,15 @@ button {
   @media (min-width: 768px) {
     .faq__main1 {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 180px;
-              flex: 0 0 180px;
-      margin: none; } }
+          -ms-flex: 0 0 170px;
+              flex: 0 0 170px;
+      margin: 0; } }
   @media (min-width: 1060px) {
     .faq__main1 {
       font-size: 20px;
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 340px;
-              flex: 0 0 340px;
-      max-width: 300px; } }
+          -ms-flex: 0 0 360px;
+              flex: 0 0 360px; } }
 
 .faq__main1-span {
   font: 18px "Calibri-Regular", sans-serif;
