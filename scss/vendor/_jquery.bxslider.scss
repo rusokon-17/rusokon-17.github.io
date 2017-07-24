@@ -300,7 +300,7 @@ border: none;
 .feedback .bx-wrapper .bx-controls-direction a {
   display: none;
   @include mq-md {
-    display: initial;
+    display: block;
     position: absolute;
     top: 50%;
     margin-top: -16px;
@@ -308,7 +308,7 @@ border: none;
     width: 23px;
     height: 41px;
     text-indent: -9999px;
-    z-index: 999;
+    z-index: 99;
   }
 }
 

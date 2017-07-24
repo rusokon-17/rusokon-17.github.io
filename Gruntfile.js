@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         watch: {
             files: 'scss/**/*.scss',
-            tasks: ['sass']
+            tasks: ['sass','autoprefixer']
         },
         sass: {
             options: {
@@ -143,7 +143,7 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-combine-media-queries');
 
     // define default task
-    grunt.registerTask('default', ['clean', 'sass', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['clean', 'sass', 'autoprefixer','browserSync', 'watch']);
 
     // define build task
     grunt.registerTask('build', ['clean', 'sass', 'copy', 'autoprefixer', 'cssmin', 'concat', 'replace']);

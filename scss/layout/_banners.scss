@@ -42,7 +42,7 @@
   display: none;
   @include mq-md {
     display: block;
-    max-width: 730px;
+    width: 730px;
     margin: 0 auto;
     position: absolute;
     bottom: 0;
@@ -207,7 +207,7 @@
 .bann__text2 {
   max-width: 290px;
   margin: 20px auto 0;
-  overflow: auto; // border: 1px solid red;
+  // overflow: auto;
   @include mq-md {
     margin: initial;
     margin-top: 30px;

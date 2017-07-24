@@ -110,73 +110,73 @@
 .bxslider11-1 {
   background: url('../images/col-11.png') center top no-repeat;
   background-size: contain;
-    @include mq-md {
-      background: url('../images/col-111.png') 73px top no-repeat;
+  @include mq-md {
+    background: url('../images/col-111.png') 73px top no-repeat;
     background-size: initial;
   }
-      @include mq-lg {
-          background: url('../images/col-11.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-11.png') 86px top no-repeat;
+  }
 }
 
 .bxslider11-2 {
   background: url('../images/col-22.png') center top no-repeat;
   background-size: contain;
-    @include mq-md {
-      background: url('../images/col-222.png') 73px top no-repeat;
+  @include mq-md {
+    background: url('../images/col-222.png') 73px top no-repeat;
     background-size: initial;
   }
-      @include mq-lg {
-          background: url('../images/col-22.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-22.png') 86px top no-repeat;
+  }
 }
 
 .bxslider11-3 {
   background: url('../images/col-33.png') center top no-repeat;
   background-size: contain;
-    @include mq-md {
-      background: url('../images/col-333.png') 73px top no-repeat;
+  @include mq-md {
+    background: url('../images/col-333.png') 73px top no-repeat;
     background-size: initial;
   }
-      @include mq-lg {
-          background: url('../images/col-33.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-33.png') 86px top no-repeat;
+  }
 }
 
 .bxslider11-4 {
   background: url('../images/col-44.png') center top no-repeat;
   background-size: contain;
-    @include mq-md {
-      background: url('../images/col-444.png') 73px top no-repeat;
+  @include mq-md {
+    background: url('../images/col-444.png') 73px top no-repeat;
     background-size: initial;
   }
-      @include mq-lg {
-          background: url('../images/col-44.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-44.png') 86px top no-repeat;
+  }
 }
 
 .bxslider11-5 {
   background: url('../images/col-55.png') center top no-repeat;
   background-size: contain;
-    @include mq-md {
-      background: url('../images/col-555.png') 73px top no-repeat;
+  @include mq-md {
+    background: url('../images/col-555.png') 73px top no-repeat;
     background-size: initial;
   }
-      @include mq-lg {
-          background: url('../images/col-55.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-55.png') 86px top no-repeat;
+  }
 }
 
 .bxslider11-6 {
   background: url('../images/col-666.png') center top no-repeat;
   background-size: contain;
   @include mq-md {
-      background: url('../images/col-666.png') 73px top no-repeat;
+    background: url('../images/col-666.png') 73px top no-repeat;
     background-size: initial;
   }
-    @include mq-lg {
-          background: url('../images/col-66.png') 86px top no-repeat;
-    }
+  @include mq-lg {
+    background: url('../images/col-66.png') 86px top no-repeat;
+  }
 }
 
 
@@ -304,112 +304,124 @@
 }
 
 .keyses {
-  max-width: 290px;
+
+  width: 290px;
   margin: 40px auto 0;
-  display: flex;
-  flex-flow: row wrap;
+
   @include mq-sm {
-    max-width: initial;
-    margin: 40px initial;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
   }
   @include mq-lg {
-    flex-flow: row nowrap;
-    margin: 60px auto 0;
+    flex-flow: row nowrap; // margin: 60px auto 0;
   }
-  .key {
-    flex: 1 1 300px;
-    padding-left: 120px;
-    height: 120px; // border: 1px solid red;
-    @include mq-sm {
-      flex: 1 1 200px;
-      padding: 120px 0 0 0;
-      height: initial;
-      &:nth-of-type(odd) {
-        margin-bottom: 20px;
-        margin-right: 20px;
-      }
-    }
-    @include mq-md {
-      flex: 1 1 210px;
-      margin-right: 20px;
-      &:nth-of-type(3n+3) {
-        margin-right: 0;
-      }
-    }
-    @include mq-lg {
-      &:nth-of-type(odd) {
-        margin-right: 20px;
-      }
-    }
-    &:nth-of-type(1n+1) {
-      margin-bottom: 20px;
-    }
-    &__title {
-      font: 16px $cr;
-      color: $black;
-      @include mq-sm {
-        text-align: center;
-      }
-      @include mq-md {
-        font-size: 20px;
-      }
-    }
-    &__text {
-      margin-top: 10px;
-      position: relative;
-      font: 14px $cl;
-      @include mq-sm {
-        text-align: center;
-        margin-top: 20px;
-      }
-      &:before {
-        content: url('../images/key__title-icon.png');
-        position: absolute;
-        top: -18px;
-        left: 0;
-        @include mq-sm {
-          right: 0;
-          text-align: center;
-          top: -21px;
-        }
-      }
-    }
-    &--bg1 {
-      background: url('../images/key--bg1.png') left top no-repeat;
+}
 
-      @include mq-sm {
-        background-position: center top;
-      }
+.key {
+  padding-left: 120px;
+  height: 120px;
+  &:nth-of-type(1n+1) {
+    margin-bottom: 20px;
+  }
+  @include mq-sm {
+    flex: 0 0 200px;
+    padding: 120px 0 0 0;
+
+    height: 250px;
+    height: initial;
+    &:nth-of-type(odd) {
+      margin-bottom: 20px;
+      margin-right: 20px;
     }
-    &--bg2 {
-      background: url('../images/key--bg2.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
+  }
+  @include mq-md {
+    margin-right: 20px;
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
     }
-    &--bg3 {
-      background: url('../images/key--bg3.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
+  }
+  @include mq-lg {
+    flex: 1;
+    &:nth-of-type(odd) {
+      margin-right: 20px;
+      margin-bottom: 0;
     }
-    &--bg4 {
-      background: url('../images/key--bg4.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg5 {
-      background: url('../images/key--bg5.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
-    }
-    &--bg6 {
-      background: url('../images/key--bg6.png') left top no-repeat;
-      @include mq-sm {
-        background-position: center top;
-      }
+  }
+}
+
+.key--bg1 {
+  background: url('../images/key--bg1.png') left top no-repeat;
+
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key--bg2 {
+  background: url('../images/key--bg2.png') left top no-repeat;
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key--bg3 {
+  background: url('../images/key--bg3.png') left top no-repeat;
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key--bg4 {
+  background: url('../images/key--bg4.png') left top no-repeat;
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key--bg5 {
+  background: url('../images/key--bg5.png') left top no-repeat;
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key--bg6 {
+  background: url('../images/key--bg6.png') left top no-repeat;
+  @include mq-sm {
+    background-position: center top;
+  }
+}
+
+.key__title {
+  font: 16px $cr;
+  color: $black;
+  @include mq-sm {
+    text-align: center;
+  }
+  @include mq-md {
+    font-size: 20px;
+  }
+}
+
+.key__text {
+  margin-top: 10px;
+  position: relative;
+  font: 14px $cl;
+  @include mq-sm {
+    text-align: center;
+    margin-top: 20px;
+  }
+  &:before {
+    content: url('../images/key__title-icon.png');
+    position: absolute;
+    top: -18px;
+    left: 0;
+    @include mq-sm {
+      right: 0;
+      text-align: center;
+      top: -21px;
     }
   }
 }

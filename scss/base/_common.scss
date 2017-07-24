@@ -67,3 +67,10 @@ a:focus {
   color: $black;
   padding: 0.2em 0;
 }
+// клирфикс
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
