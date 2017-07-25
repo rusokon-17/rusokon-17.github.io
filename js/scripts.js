@@ -193,7 +193,8 @@ $(document).ready(function() {
         adaptiveHeight: true,
         adaptiveHeightSpeed: 10,
         preloadImages: 'all',
-        controls: false
+        controls: false,
+        preventDefaultSwipeX: true,
     });
 
 
@@ -212,6 +213,12 @@ $(document).ready(function() {
 
             }
         }
+    });
+
+    //Tooltipster
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-light',
+      delay: 10,
     });
 
 

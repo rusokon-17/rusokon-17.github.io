@@ -86,7 +86,7 @@ module.exports = function(grunt) {
                         'js/vendor/jquery.bxslider.min.js',
                         'js/vendor/jquery.fancybox.min.js',
                         'js/vendor/jquery.responsiveTabs.min.js',
-                        'js/retina.min.js',
+                        'js/vendor/tooltipster.bundle.min.js',
                         'js/scripts.js'
 
                     ]
@@ -118,14 +118,14 @@ module.exports = function(grunt) {
                     to: ' '
                 }]
             },
-            scriptsRemoveRetinaJs: {
+            scriptsRemoveTooltipster: {
                 src: ['build/*.html'],
                 overwrite: true, // overwrite matched source files
                 replacements: [{
-                    from: '<script src="js/vendor/retina.min.js"></script>',
+                    from: '<script src="js/vendor/tooltipster.bundle.min.js"></script>',
                     to: ' '
                 }]
-            }
+            },
            
         },
     });

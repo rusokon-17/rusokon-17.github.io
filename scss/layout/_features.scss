@@ -64,17 +64,16 @@
     flex: 1;
     margin-right: 30px;
     padding-left: 40px;
-        width: 330px;
+    width: 330px;
   }
-    @include mq-lg {
-      padding-left: 55px;
-    }
-
+  @include mq-lg {
+    padding-left: 55px;
+  }
 }
+
 // .bx91:nth-of-type(1n+2) {
 //     margin-left: 30px;
 //   }
-
 .bxslider11 {
   padding: 0;
   margin: 0;
@@ -102,15 +101,17 @@
   @include mq-md {
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    // left: 30px;
+    top: 60px; // left: 30px;
   }
   @include mq-lg {
-    top: 35px;
-    // left: 55px;
+    top: 35px; // left: 55px;
   }
 }
-
+// Скрываем подсказки всплывающие
+.tooltip_templates {
+  display: none;
+    font: 14px $cr;
+}
 .bx-pager__link11 {
   flex: 0 0 62px;
   margin-bottom: 20px;
@@ -182,62 +183,62 @@
 
 .bxslider11-1 {
   background: url('../images/bxslider11-1.png') center bottom no-repeat;
-    @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-1big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-1big.png') 95px bottom no-repeat;
+  }
 }
 
 .bxslider11-2 {
   background: url('../images/bxslider11-2.png') center bottom no-repeat;
-      @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-2big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-2big.png') 95px bottom no-repeat;
+  }
 }
 
 .bxslider11-3 {
   background: url('../images/bxslider11-3.png') center bottom no-repeat;
-      @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-3big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-3big.png') 95px bottom no-repeat;
+  }
 }
 
 .bxslider11-4 {
   background: url('../images/bxslider11-4.png') center bottom no-repeat;
-      @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-4big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-4big.png') 95px bottom no-repeat;
+  }
 }
 
 .bxslider11-5 {
   background: url('../images/bxslider11-5.png') center bottom no-repeat;
-      @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-5big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-5big.png') 95px bottom no-repeat;
+  }
 }
 
 .bxslider11-6 {
   background: url('../images/bxslider11-6.png') center bottom no-repeat;
-      @include mq-md {
-      background-position: 70px bottom;
-    }
-    @include mq-lg {
-       background: url('../images/bxslider11-6big.png') 95px bottom no-repeat;
-    }
+  @include mq-md {
+    background-position: 70px bottom;
+  }
+  @include mq-lg {
+    background: url('../images/bxslider11-6big.png') 95px bottom no-repeat;
+  }
 }
 
 
