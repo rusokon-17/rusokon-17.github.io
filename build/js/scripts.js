@@ -224,13 +224,16 @@ s.isSwiping=e>45&&e<135?"y":"x"),s.canTap=!1,s.instance.current.isMoved=!1,s.sta
 
     $('.bxslider11').bxSlider({
         pagerCustom: '#bx-pager11',
+        mode: 'horizontal',
+        speed: 10,
         infiniteLoop: false,
-        mode: 'fade',
-        speed: 1,
         preventDefaultSwipeX: true,
         adaptiveHeight: true,
-        controls: false,
+        adaptiveHeightSpeed: 10,
+        preloadImages: 'all',
+        controls: false
     });
+
 
     // FancyBox
     $("[data-fancybox]").fancybox({

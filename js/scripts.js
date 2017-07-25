@@ -186,13 +186,16 @@ $(document).ready(function() {
 
     $('.bxslider11').bxSlider({
         pagerCustom: '#bx-pager11',
+        mode: 'horizontal',
+        speed: 10,
         infiniteLoop: false,
-        mode: 'fade',
-        speed: 1,
         preventDefaultSwipeX: true,
         adaptiveHeight: true,
-        controls: false,
+        adaptiveHeightSpeed: 10,
+        preloadImages: 'all',
+        controls: false
     });
+
 
     // FancyBox
     $("[data-fancybox]").fancybox({
