@@ -7,8 +7,6 @@ $(document).ready(function() {
         oneToOneTouch: false,
         mode: 'horizontal',
         speed: 100,
-
-
     });
     // awards slider
     $('.bxslider2').bxSlider({
@@ -30,8 +28,7 @@ $(document).ready(function() {
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: true,
-        autoHover: true,
-       
+        autoHover: true
     });
 
     // contacts slider
@@ -215,11 +212,7 @@ $(document).ready(function() {
         }
     });
 
-    //Tooltipster
-    $('.tooltip').tooltipster({
-      theme: 'tooltipster-light',
-      delay: 10,
-    });
+
 
 
 

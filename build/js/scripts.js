@@ -48,8 +48,6 @@ this.__instance._$tooltip=b,this.__instance._trigger("created")},__destroy:funct
         oneToOneTouch: false,
         mode: 'horizontal',
         speed: 100,
-
-
     });
     // awards slider
     $('.bxslider2').bxSlider({
@@ -71,8 +69,7 @@ this.__instance._$tooltip=b,this.__instance._trigger("created")},__destroy:funct
         controls: false,
         oneToOneTouch: false,
         infiniteLoop: true,
-        autoHover: true,
-       
+        autoHover: true
     });
 
     // contacts slider
@@ -256,11 +253,7 @@ this.__instance._$tooltip=b,this.__instance._trigger("created")},__destroy:funct
         }
     });
 
-    //Tooltipster
-    $('.tooltip').tooltipster({
-      theme: 'tooltipster-light',
-      delay: 10,
-    });
+
 
 
 
