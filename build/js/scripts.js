@@ -253,6 +253,10 @@ this.__instance._$tooltip=b,this.__instance._trigger("created")},__destroy:funct
         }
     });
 
+    $('.tooltip').tooltipster({
+    theme: 'tooltipster-light'
+});
+
 
 
 

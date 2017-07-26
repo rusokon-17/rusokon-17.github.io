@@ -118,6 +118,22 @@ module.exports = function(grunt) {
                     to: ' '
                 }]
             },
+            scriptsRemoveFancybox: {
+                src: ['build/*.html'],
+                overwrite: true, // overwrite matched source files
+                replacements: [{
+                    from: '<script src="js/vendor/jquery.fancybox.min.js"></script>',
+                    to: ' '
+                }]
+            },
+            scriptsRemoveResponsiveTabs: {
+                src: ['build/*.html'],
+                overwrite: true, // overwrite matched source files
+                replacements: [{
+                    from: '<script src="js/vendor/jquery.responsiveTabs.min.js"></script>',
+                    to: ' '
+                }]
+            },
             scriptsRemoveTooltipster: {
                 src: ['build/*.html'],
                 overwrite: true, // overwrite matched source files
@@ -146,5 +162,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['clean', 'sass', 'autoprefixer','browserSync', 'watch']);
 
     // define build task
-    grunt.registerTask('build', ['clean', 'sass', 'copy', 'autoprefixer', 'cssmin', 'concat', 'replace']);
+    grunt.registerTask('build', ['clean', 'sass', 'autoprefixer', 'copy', 'cssmin', 'concat', 'replace']);
 };
