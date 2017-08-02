@@ -102,14 +102,6 @@ module.exports = function(grunt) {
                     to: 'css/style.min.css'
                 }]
             },
-            scriptsRemoveJquery: {
-                src: ['build/*.html'],
-                overwrite: true, // overwrite matched source files
-                replacements: [{
-                    from: '<script src="js/vendor/jquery.min.js"></script>',
-                    to: ' '
-                }]
-            },
             scriptsRemoveBxslider: {
                 src: ['build/*.html'],
                 overwrite: true, // overwrite matched source files
