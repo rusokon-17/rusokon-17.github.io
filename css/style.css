@@ -2030,7 +2030,7 @@ corresponds to the arrow we want to display */
   padding: 0; }
 
 .bxslider3-slide {
-  padding-top: 200px; }
+  /* padding-top: 200px;*/ }
   @media (min-width: 768px) {
     .bxslider3-slide {
       height: 630px;
@@ -2086,6 +2086,17 @@ corresponds to the arrow we want to display */
 
 .bx-pager__link--1.bx-pager__link.active {
   padding: 21px 0 18px 60px; }
+
+/* Новый баннер для тестов*/
+.banner-111 {
+  background: url("../images/banner-111-small.jpg") center top no-repeat;
+  background-size: auto 180px; }
+  @media (min-width: 768px) {
+    .banner-111 {
+      background: url("../images/banner-111.jpg") center top no-repeat; } }
+  @media (min-width: 1060px) {
+    .banner-111 {
+      background-size: cover; } }
 
 .banner-1 {
   background: url("../images/banner-11-small.jpg") center top no-repeat;
@@ -2202,7 +2213,8 @@ corresponds to the arrow we want to display */
 
 .bann__text2 {
   max-width: 290px;
-  margin: 20px auto 0; }
+  margin: 20px auto 0;
+  /* overflow: auto;*/ }
   @media (min-width: 768px) {
     .bann__text2 {
       margin: initial;
@@ -2265,10 +2277,12 @@ corresponds to the arrow we want to display */
   border: 8px solid #ff1a44;
   border-radius: 3px;
   height: 380px;
+  /*330*/
   padding: 30px 15px;
   background-color: #fff;
   max-width: 400px;
   margin: 40px auto 0;
+  /*40*/
   position: relative; }
   .banners .order:before {
     content: url("../images/order-icon.png");
@@ -2338,6 +2352,122 @@ corresponds to the arrow we want to display */
     @media (min-width: 768px) {
       .order__title-span i {
         font-size: 26px; } }
+
+.bannf {
+  /* border: 1px solid red;*/
+  margin: 20px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 320px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (min-width: 1060px) {
+    .bannf {
+      margin: 20px 0; } }
+
+.bannf__hits {
+  /* border: 1px solid red;*/
+  padding: 15px 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.bannf__hits--img {
+  background-color: #fff;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+
+.bannf__hits--img img {
+  margin: 0 auto; }
+
+.bannf__hits--text {
+  padding-left: 15px; }
+
+/* Вместо счетчика в новом банере*/
+.bannc {
+  /* border: 1px solid red;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bannc__item {
+  /* border: 1px solid red;*/
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.bannc__item i {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 2px;
+  font: 30px "Calibri-Regular", sans-serif;
+  color: #1d1d1b; }
+
+.bannc__item--text {
+  text-align: right;
+  padding-right: 5px; }
+
+.bannc__item--count {
+  text-align: left;
+  padding-left: 5px; }
+
+/* Вместо табов в новом баннере*/
+.bannt {
+  display: none; }
+  @media (min-width: 768px) {
+    .bannt {
+      /* border: 1px solid red;*/
+      height: 76px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 690px;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      padding: 10px 0;
+      background: url(../images/bg-banner-op.png) left top repeat; } }
+  @media (min-width: 1060px) {
+    .bannt {
+      width: 980px; } }
+
+.bannt__tab {
+  /* border: 1px solid red;*/
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 64px;
+  font: 14px "Calibri-Regular", sans-serif;
+  padding: 0 0 0 90px;
+  color: #fff; }
+  .bannt__tab:nth-of-type(1n+2) {
+    border-left: 2px solid #717273; }
+  @media (min-width: 1060px) {
+    .bannt__tab {
+      padding: 12px 0 0 90px; } }
+
+.bannt__bold {
+  font: 18px "Calibri-Regular", sans-serif;
+  color: #fff; }
+
+.bannt-2 {
+  background: url(../images/bann__text2-block--bg1.png) 15px center no-repeat; }
+
+.bannt-1 {
+  background: url(../images/bann__text2-block--bg2.png) 15px center no-repeat; }
+
+.bannt-3 {
+  background: url(../images/bann__text2-block--bg3.png) 15px center no-repeat; }
 
 .features {
   padding: 35px 0 10px;
