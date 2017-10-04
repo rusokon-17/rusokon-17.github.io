@@ -71,6 +71,8 @@ this.__instance._$tooltip=b,this.__instance._trigger("created")},__destroy:funct
         infiniteLoop: true,
         autoHover: true
     });
+// чтобы открывалась по умолчанию страница
+    $('#bx-pager8').data('default');
 
     // contacts slider
     var slider4 = $('.bxslider4').bxSlider({
