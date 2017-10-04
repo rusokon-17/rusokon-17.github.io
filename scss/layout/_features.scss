@@ -10,7 +10,7 @@
 }
 
 .headers {
-  text-align: center; // border: 1px solid red;
+  text-align: center; /* border: 1px solid red;*/
   padding-bottom: 50px;
 }
 
@@ -44,15 +44,16 @@
   }
 }
 
-// Начало нового блока
+/* Начало нового блока*/
 .bx9 {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   background: #fff;
   padding: 25px 15px;
   @include mq-md {
     vertical-align: top;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
   }
@@ -61,7 +62,9 @@
 .bx91 {
   position: relative;
   @include mq-md {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-right: 30px;
     padding-left: 40px;
     width: 330px;
@@ -71,9 +74,9 @@
   }
 }
 
-// .bx91:nth-of-type(1n+2) {
-//     margin-left: 30px;
-//   }
+/* .bx91:nth-of-type(1n+2) {*/
+/*     margin-left: 30px;*/
+/*   }*/
 .bxslider11 {
   padding: 0;
   margin: 0;
@@ -93,40 +96,55 @@
 }
 
 #bx-pager11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 240px;
   margin: 0 auto;
   @include mq-md {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
-    top: 60px; // left: 30px;
+    top: 60px; /* left: 30px;*/
   }
   @include mq-lg {
-    top: 35px; // left: 55px;
+    top: 35px; /* left: 55px;*/
   }
 }
-// Скрываем подсказки всплывающие
+/* Скрываем подсказки всплывающие*/
 .tooltip_templates {
   display: none;
     font: 14px $cr;
 }
 .bx-pager__link11 {
-  flex: 0 0 62px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62px;
+          flex: 0 0 62px;
   margin-bottom: 20px;
   border: 2px solid #c0c1c5;
   height: 62px;
   border-radius: 10px;
   display: block;
   @include mq-md {
-    flex: 0 0 42px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 42px;
+            flex: 0 0 42px;
     height: 42px;
     width: 42px;
     margin-bottom: 8px;
   }
   @include mq-lg {
-    flex: 0 0 54px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 54px;
+            flex: 0 0 54px;
     height: 54px;
     width: 54px;
     margin-bottom: 8px;
@@ -244,10 +262,15 @@
 
 .bx92 {
   @include mq-md {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     vertical-align: top;
-    align-self: center;
-    box-sizing: border-box;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-right: 40px;
     width: 330px;
   }
@@ -272,7 +295,7 @@
 
 .bx92__price,
 .bx92__price span {
-  font: 18px $cb; // line-height: 42px;
+  font: 18px $cb; /* line-height: 42px;*/
   @include mq-lg {
     font-size: 26px;
   }
@@ -286,8 +309,12 @@
 }
 
 .bx92__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 42px;
   border-bottom: 2px solid #cdcdcd;
   @include mq-lg {
@@ -296,7 +323,9 @@
 }
 
 .bx92__price-numb {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   padding-left: 20px;
   @include mq-md {
     padding-left: 0;
@@ -304,7 +333,9 @@
 }
 
 .bx92__price-icon {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .bx92__img {
@@ -332,6 +363,8 @@
 .bx92__buy {
   margin-top: 20px;
   @include mq-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -342,7 +375,9 @@
     text-align: left;
   }
   @include mq-lg {
-    flex: 2;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 
@@ -368,7 +403,9 @@
     text-align: left;
   }
   @include mq-lg {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-top: 0;
   }
 }
@@ -379,13 +416,23 @@
   margin: 40px auto 0;
 
   @include mq-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   @include mq-lg {
-    flex-flow: row nowrap; // margin: 60px auto 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; /* margin: 60px auto 0;*/
   }
 }
 
@@ -396,7 +443,9 @@
     margin-bottom: 20px;
   }
   @include mq-sm {
-    flex: 0 0 200px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
     padding: 120px 0 0 0;
     height: 250px;
     height: initial;
@@ -412,7 +461,9 @@
     }
   }
   @include mq-lg {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     &:nth-of-type(odd) {
       margin-right: 20px;
       margin-bottom: 0;
@@ -492,5 +543,14 @@
       text-align: center;
       top: -21px;
     }
+  }
+}
+
+/* Новый баннер*/
+.bx92__sp {
+width: 35px;
+float: right;
+  @include mq-lg {
+    width: 45px;
   }
 }
