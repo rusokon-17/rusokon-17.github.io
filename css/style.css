@@ -2030,7 +2030,7 @@ corresponds to the arrow we want to display */
   padding: 0; }
 
 .bxslider3-slide {
-  /* padding-top: 200px;*/ }
+  padding-top: 200px; }
   @media (min-width: 768px) {
     .bxslider3-slide {
       height: 630px;
